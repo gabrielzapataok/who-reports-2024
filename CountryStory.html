@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css">
@@ -13,19 +14,28 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0fd078418e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css">
+
+    <!-- Swiper -->
+    <script src="./javascript/swipper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./javascript/swipper/swiper-bundle.min.css">
+
     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Story</title>
 </head>
+
 <body>
+
+    <!-- Slider main container -->
     <main class="result-report-2023">
         <header class="header-section">
             <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
             <div class="overlay flex flex-direction-column text-white text-center">
                 <label>COUNTRY PROFILE</label>
                 <div class="country">
-                    <span class="flag" style="background-image: url('https://cdn-auth-cms.who.int/media/images/default-source/countries-overview/flags/arm.jpg?sfvrsn=f7bc990d_19')"></span>
+                    <span class="flag"
+                        style="background-image: url('https://cdn-auth-cms.who.int/media/images/default-source/countries-overview/flags/arm.jpg?sfvrsn=f7bc990d_19')"></span>
                     Armenia
                 </div>
                 <label>EASTERN MEDITERRANEAN</label>
@@ -36,21 +46,24 @@
             </div>
             <div class="credits">
                 <div class="credits-content">
-                    <p class="epigraph px-3 pt-3"><b>Epigraph: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit, optio iste. Consequatur et rem voluptate dolorum provident debitis ut necessitatibus tempore magni, sint laudantium placeat molestias.</p>
+                    <p class="epigraph px-3 pt-3"><b>Epigraph: </b> Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit, optio iste. Consequatur et rem voluptate dolorum provident debitis ut necessitatibus
+                        tempore magni, sint laudantium placeat molestias.</p>
                     <hr>
                     <p class="author px-3 pb-3"><b>Author: </b> WHO </p>
                 </div>
                 <div class="credits-label">
-                    <span><i class="fas fa-camera mr-10"></i>Credits</span><i class="fas fa-plus"></i><i class="fas fa-minus hidden"></i>
+                    <span><i class="fas fa-camera mr-10"></i>Credits</span><i class="fas fa-plus"></i><i
+                        class="fas fa-minus hidden"></i>
                 </div>
             </div>
         </header>
-                
+
         <!-- Menú -->
 
         <nav class="menu">
             <ul class="items list-style-none flex flex-wrap m-0 text-white">
-                <li><a href="" class="active"><i class="fas fa-home"></i>Home</a></li> 
+                <li><a href="" class="active"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="">Overview</a></li>
                 <li><a href="">working togheter</a></li>
                 <li><a href="">Our contributions</a></li>
@@ -59,7 +72,7 @@
         </nav>
 
         <!-- narrative -->
-        
+
         <section class="text-grey section-grey pt-40 pb-70">
             <h2 class="title-section text-center mb-40">How WHO is driving impact on the ground</h2>
             <div class="narratives section-white">
@@ -80,14 +93,211 @@
 
                     <div class="container text-grey">
                         <h3 class="text-center title-section">Overview of investment</h3>
-                        <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event-driven budget segments: emergency operations and appeals, and polio eradication, the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs. , the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with oping for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs.</p>
+                        <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                            2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a
+                            total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a
+                            good level of financing (US$ 8.3 billion), including projections, which exceeded the total
+                            approved. The good level of financing is explained by two event-driven budget segments:
+                            emergency operations and appeals, and polio eradication, the financing for which has needed
+                            to exceed the amounts established in the Programme budget in order to keep step with
+                            operational needs. , the financing for which has needed to exceed the amounts established in
+                            the Programme budget in order to keep step with oping for which has needed to exceed the
+                            amounts established in the Programme budget in order to keep step with operational needs.
+                        </p>
                     </div>
 
                     <!-- Results -->
 
-                    
-                    <div class="container text-grey">
+                    <style>
+                        .results .swiper .swiper-slide {
+                            width: 700px;
+                        }
+                    </style>
+                    <div class="text-grey results">
                         <h2 class="text-center title-section">Results</h2>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-result">
+                                        <div class="title">
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5
+                                        </div>
+                                        <div class="img-container">
+                                            <img src="./assets/img-left.png" alt="">
+                                            <div class="figcaption">
+                                                <div class="author"><b>Author: </b>WHO</div>
+                                                <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                    consectetur
+                                                    adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5 in
+                                            May 2022, revising the approved base programmes segment of the Programme
+                                            budget
+                                            2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the
+                                            total
+                                            Programme budget has a good level of financing (US$ 8.3 billion), including
+                                            projections,
+                                            which exceeded the total approved. The good level of financing is explained
+                                            by two event
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                                            2022, the
+                                            approved base programmes segment of the Programme budget 2022-2023 to a of
+                                            US$ 6.726
+                                            billion. By the end of the first year, total Programme has a good of
+                                            financing (US$ 8.3
+                                            ), including projections, which exceeded the total approved. The good level
+                                            of financing
+                                            is explained two event May 2022, revising the approved base programmes
+                                            segment of the
+                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of
+                                            the first
+                                            year, the total Programme has a level of financing (US$ 8.3 billion),
+                                            including
+                                            projections, which exceeded the total approved. The good level of financing
+                                            is explained
+                                            by two event</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-result">
+                                        <div class="title">
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5
+                                        </div>
+                                        <div class="img-container">
+                                            <img src="./assets/billions2.jpg" alt="">
+                                            <div class="figcaption">
+                                                <div class="author"><b>Author: </b>WHO</div>
+                                                <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                    consectetur
+                                                    adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5 in
+                                            May 2022, revising the approved base programmes segment of the Programme
+                                            budget
+                                            2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the
+                                            total
+                                            Programme budget has a good level of financing (US$ 8.3 billion), including
+                                            projections,
+                                            which exceeded the total approved. The good level of financing is explained
+                                            by two event
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                                            2022, the
+                                            approved base programmes segment of the Programme budget 2022-2023 to a of
+                                            US$ 6.726
+                                            billion. By the end of the first year, total Programme has a good of
+                                            financing (US$ 8.3
+                                            ), including projections, which exceeded the total approved. The good level
+                                            of financing
+                                            is explained two event May 2022, revising the approved base programmes
+                                            segment of the
+                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of
+                                            the first
+                                            year, the total Programme has a level of financing (US$ 8.3 billion),
+                                            including
+                                            projections, which exceeded the total approved. The good level of financing
+                                            is explained
+                                            by two event</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-result">
+                                        <div class="title">
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5
+                                        </div>
+                                        <div class="img-container">
+                                            <img src="./assets/billions4.jpg" alt="">
+                                            <div class="figcaption">
+                                                <div class="author"><b>Author: </b>WHO</div>
+                                                <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                    consectetur
+                                                    adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5 in
+                                            May 2022, revising the approved base programmes segment of the Programme
+                                            budget
+                                            2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the
+                                            total
+                                            Programme budget has a good level of financing (US$ 8.3 billion), including
+                                            projections,
+                                            which exceeded the total approved. The good level of financing is explained
+                                            by two event
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                                            2022, the
+                                            approved base programmes segment of the Programme budget 2022-2023 to a of
+                                            US$ 6.726
+                                            billion. By the end of the first year, total Programme has a good of
+                                            financing (US$ 8.3
+                                            ), including projections, which exceeded the total approved. The good level
+                                            of financing
+                                            is explained two event May 2022, revising the approved base programmes
+                                            segment of the
+                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of
+                                            the first
+                                            year, the total Programme has a level of financing (US$ 8.3 billion),
+                                            including
+                                            projections, which exceeded the total approved. The good level of financing
+                                            is explained
+                                            by two event</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-result">
+                                        <div class="title">
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5
+                                        </div>
+                                        <div class="img-container">
+                                            <img src="./assets/billions3.jpg" alt="">
+                                            <div class="figcaption">
+                                                <div class="author"><b>Author: </b>WHO</div>
+                                                <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                    consectetur
+                                                    adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5 in
+                                            May 2022, revising the approved base programmes segment of the Programme
+                                            budget
+                                            2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the
+                                            total
+                                            Programme budget has a good level of financing (US$ 8.3 billion), including
+                                            projections,
+                                            which exceeded the total approved. The good level of financing is explained
+                                            by two event
+                                            The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                                            2022, the
+                                            approved base programmes segment of the Programme budget 2022-2023 to a of
+                                            US$ 6.726
+                                            billion. By the end of the first year, total Programme has a good of
+                                            financing (US$ 8.3
+                                            ), including projections, which exceeded the total approved. The good level
+                                            of financing
+                                            is explained two event May 2022, revising the approved base programmes
+                                            segment of the
+                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of
+                                            the first
+                                            year, the total Programme has a level of financing (US$ 8.3 billion),
+                                            including
+                                            projections, which exceeded the total approved. The good level of financing
+                                            is explained
+                                            by two event</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
                     </div>
 
                     <!-- Looking Forward -->
@@ -95,16 +305,30 @@
                     <div class="container text-grey">
                         <h2 class=" text-center title-section">Looking forward</h2>
                         <ul class="">
-                            <li><p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes </p></li>
-                            <li><p>Programme budget 2022-2023 to a total of US$ 6.726 billion. </p></li>
-                            <li><p>By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion). </p></li>
-                            <li><p>The good level of financing is explained by two event-driven budget segments: emergency operations and appeals, and polio eradication,</p></li>
-                            <li><p>The financing for which has needed to exceed the amounts established in the Programme budget in order to keep step.</p></li>
+                            <li>
+                                <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
+                                    revising the approved base programmes </p>
+                            </li>
+                            <li>
+                                <p>Programme budget 2022-2023 to a total of US$ 6.726 billion. </p>
+                            </li>
+                            <li>
+                                <p>By the end of the first year, the total Programme budget has a good level of
+                                    financing (US$ 8.3 billion). </p>
+                            </li>
+                            <li>
+                                <p>The good level of financing is explained by two event-driven budget segments:
+                                    emergency operations and appeals, and polio eradication,</p>
+                            </li>
+                            <li>
+                                <p>The financing for which has needed to exceed the amounts established in the Programme
+                                    budget in order to keep step.</p>
+                            </li>
                         </ul>
                     </div>
 
                 </div>
-                
+
                 <div class="container-tab bottom">
                     <ul class="tab">
                         <li class="menu-item selected">Service delivery</li>
@@ -159,5 +383,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="./javascript/Gsap/gsap-country-story.js"></script>
     <script src="./javascript/credits.js"></script>
+
+    <script>
+        
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            effect: 'coverflow',
+            // autoplay: {
+            //     delay: 4500, // Intervalo de tiempo en milisegundos
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 2,
+            centeredSlides: true,
+            coverflowEffect: {
+                depth: 500,
+                modifier: 1,
+                rotate: 0,
+                scale: 0.8,
+                slideShadows: false,
+                stretch: 0,
+            },
+            on: {
+                init: function() {
+                    var slides = document.querySelectorAll('.swiper-slide .card-result');
+                    var maxHeight = 0;                    
+                    slides.forEach(function(slide) {
+                        console.log(slide);
+                        var slideHeight = slide.clientHeight;
+                        if (slideHeight > maxHeight) {
+                            maxHeight = slideHeight;
+                        }
+                    });
+                    // Establecer la altura máxima en todas las diapositivas
+                    slides.forEach(function(slide) {
+                        slide.style.height = maxHeight + 'px';
+                    });
+                }
+            } 
+        });
+    </script>
 </body>
+
 </html>
