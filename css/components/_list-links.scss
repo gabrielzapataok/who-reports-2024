@@ -1,0 +1,18 @@
+.list-links li{
+    list-style: none;
+    transition: .5s;
+    a{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        color: white;
+        align-items: center;
+        gap: 10px;
+    }
+    &:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    &:hover{
+        background-color: rgba(255, 355, 355, .1);
+    }
+}

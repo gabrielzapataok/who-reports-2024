@@ -1,0 +1,118 @@
+.result-detail-preview{
+    font-family: 'Poppins', sans-serif;
+    line-height: 150%;
+    color: #666666;
+    width: 90vw;
+    height: 90vh;
+    overflow-y: scroll;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:1px solid #666666;
+    padding: 50px 0;
+
+    h1,h2,h3,h4,h5,h6{
+        line-height: 120%;
+        font-weight: bold;
+    }
+
+    q{
+        display: block;
+        text-align: center;
+    }
+
+    .editorial-box-content {
+        padding: 90px;
+    }
+
+    .box-left {
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: bottom right;
+        flex-direction: row;
+        figure{
+            min-width: 400px;
+            max-width: 400px;
+        }
+    }
+    .box-top {
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: bottom right;
+        flex-direction: column;
+        figure{
+            height: 400px;
+        }
+    }
+    .box-right {
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: bottom left;
+        flex-direction: row-reverse;
+        figure{
+            min-width: 400px;
+            max-width: 400px;
+        }
+    }
+    .editorial-box {
+        display: flex;
+        background-color: #D5DFEC;
+    }
+    figure{
+        margin: 0;
+        color: white;
+        position: relative;
+    }
+    figure img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    figure cite{
+        background: linear-gradient(90deg, #000000, #00000000);
+        padding: 8px;
+        display: inline-block;
+    }
+    figcaption{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    figure p{
+        background: #000000bf;
+        margin: 0;
+        padding: 8px;
+    }
+    &> :not(.editorial-box) {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 1200px) { 
+            max-width: 900px;
+        }
+        @media (max-width: 992px) { 
+            max-width: 600px;
+        }
+        @media (max-width: 700px) { 
+            max-width: 400px;
+        }
+        @media (max-width: 400px) { 
+            padding: 0 20px;
+        }
+    }
+    @media (max-width: 800px) {
+        .box-left, .box-right {
+            flex-direction: column;
+            figure{
+                height: 400px;
+                max-width: unset;
+                max-height: unset;
+            }
+        }
+        .editorial-box-content {
+            padding: 40px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.credits{
+    width: 300px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.credits-label{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        color: $active-color;
+    }
+}
+.credits-content{
+    height: 0px;
+    background-color: rgb(60, 60, 60);
+    @include size(14);
+    transition: .5s;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 12px;
+    .author{
+        padding: 10px;
+    }
+    &.active{
+        height: 100px;
+    }
+}

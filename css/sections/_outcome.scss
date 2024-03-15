@@ -1,0 +1,71 @@
+.outcomes-content{
+    background-image: url("");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+
+.outcomes-header{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    h2{
+        @include absolute(0,0,0,0);
+        @include center;
+        // z-index: 1;
+        background: linear-gradient(#031c4c00, #031c4c);
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.change-outcome{
+    background: #00306D;
+    @include center;
+    .output-description, .outcome-description {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0px 100px;
+        text-align: center;
+        @include max(800){
+            display: none;
+        }
+    }
+    .current-outcome-link {
+        white-space: nowrap
+    }
+}
+
+.nav-button{
+    background: #00306D;
+}
+.nav-button-container{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    align-items: center;
+}
+
+
+.grid-cards.more-outcomes-slick {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grid-cards.more-outcomes-slick .rr-card{
+    flex-basis: 343px;
+}
+
+
+.explore-the-progress .pb-indicators {
+    padding: 0;
+}

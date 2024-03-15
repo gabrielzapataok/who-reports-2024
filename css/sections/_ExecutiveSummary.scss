@@ -1,0 +1,33 @@
+.billions{
+    width: 100%; 
+    height:30vw;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .overlay {
+        background: linear-gradient(180deg, rgba(0, 32, 92, 0.16) 4.31%, rgba(0, 32, 92, 0.8) 104.31%);
+        @include absolute(0,0,0,0);
+        @include center();
+    }
+
+    .overlay-two {
+        background: linear-gradient(180deg, rgba(91, 44, 134, 0.32) 4.31%, rgba(91, 44, 134, 0.8) 104.31%);
+        @include absolute(0,0,0,0);
+        @include center();
+    }
+
+    h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        @include size(38);
+    }
+}
+
+.chart-billion-bg{
+    background: linear-gradient(180deg, #ffffff99 0%, #FFFFFF 50%);
+    width: 60%;
+    bottom: 0;
+    position: relative;
+    transform: translateY(-50%);
+    margin: auto;
+}

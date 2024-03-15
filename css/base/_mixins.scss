@@ -1,0 +1,46 @@
+// @mixin size($max-value){
+//     $min-value: $max-value * 0.7;
+//     font-size: calc(#{$min-value}px + (#{$max-value} - #{$min-value}) * (((100vw - #{$xs}px) / (1600 - 300))));
+// }
+@mixin size($value){
+    font-size: calc(#{$value * 0.7}px + (#{$value * 0.3}) * ((100vw - 300px) / 1300));
+}
+
+@mixin max($width){
+    @media (max-width:#{$width}px) {
+        @content;
+    }
+}
+
+@mixin min($width){
+    @media (min-width:#{$width}px) {
+        @content;
+    }
+}
+
+@mixin font($font-family, $font-weight, $color, $lineheight:initial ) {
+    color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    line-height: $lineheight;
+}
+
+@mixin absolute($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

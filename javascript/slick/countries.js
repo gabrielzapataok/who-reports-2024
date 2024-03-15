@@ -1,0 +1,1 @@
+$(".slick-sistem").slick()

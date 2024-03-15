@@ -1,0 +1,107 @@
+.img-country-header{
+    width: 20px;
+    position: initial;
+}
+
+#link_return_outcome {
+    align-items: center;
+    margin-left: -30px;
+
+    em {
+        margin-left: 0;
+    }
+}
+
+.references{
+    margin-top: 30px;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    &>*, ul, ol{
+        max-width: 1140px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        @media (max-width: 1200px) { 
+            max-width: 900px !important;
+        }
+        @media (max-width: 992px) { 
+            max-width: 600px !important;
+        }
+        @media (max-width: 700px) { 
+            max-width: 400px !important;
+        }
+        @media (max-width: 400px) { 
+            padding: 0 20px !important;
+        }
+    }
+    &>h2:first-child{
+        font-size: 40px !important;
+    }
+    li:not(:last-child) {
+        margin-bottom: 1em;
+    }
+    a{
+        color: white !important;
+    }
+
+    &::before {
+        content: "";
+        background-color: $bgBlue;
+        width: 200vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+}
+.key-contributions{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $text;
+    background: #e1eeff;
+    padding: 30px 0;
+    &>*, ul, ol{
+        max-width: 1140px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        @media (max-width: 1200px) { 
+            max-width: 900px !important;
+        }
+        @media (max-width: 992px) { 
+            max-width: 600px !important;
+        }
+        @media (max-width: 700px) { 
+            max-width: 400px !important;
+        }
+        @media (max-width: 400px) { 
+            padding: 0 20px !important;
+        }
+    }
+    &>h2:first-child{
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+    li:not(:last-child) {
+        margin-bottom: 1em;
+    }
+}
+
+.country-content-body > :not(.references,.key-contributions) {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1200px) { 
+        max-width: 900px;
+    }
+    @media (max-width: 992px) { 
+        max-width: 600px;
+    }
+    @media (max-width: 700px) { 
+        max-width: 400px;
+    }
+    @media (max-width: 400px) { 
+        padding: 0 20px;
+    }
+}

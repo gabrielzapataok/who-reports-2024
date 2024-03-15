@@ -1,0 +1,56 @@
+.button {
+    @include size(16);
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    background-color: $button;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    width: max-content;
+    &::after {
+        content: "";
+        background: $white;
+        display: flex;
+        opacity: .5;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transform: skew(-30deg, 0deg) translateX(-150%);
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:hover::after {
+        transition: .5s;
+        left: 100%;
+        transform: translateX(100%);
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:active {
+        transition: .1s;
+        transform: scale(1);
+    }
+    &-transparent{
+        background-color: transparent;
+        color: $active-color;
+        border: none;
+        outline: none;
+    }
+    &-red{
+        background-color: #DF4D4D;
+    }
+}
+
+.button-text{
+    @include size(16);
+    color:$button;
+}

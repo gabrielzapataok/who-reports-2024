@@ -1,0 +1,76 @@
+/* General */
+
+* :not( .fa, .far, .fas, .k-chart *, .k-treemap ){
+    font-family: $poppins !important;
+}
+
+/* quotes */
+
+q {
+    @include size(26);
+}
+q::before, q::after {
+    @include size(30);
+}
+
+/* tables */
+
+table {
+    font-size: 16px;
+    outline: 1px solid #ccc;
+    border-spacing: inherit;
+    border-collapse: collapse;
+    width: 100% !important;
+}
+table td {
+    border-bottom: 1px solid #ccc;
+}
+th, td {
+    padding: .5em;
+}
+table, th, tr, td {
+    font-size: 14px !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.2em;
+}
+
+
+/*Links en listas sin underline*/
+.sf-content-block li a {
+    text-decoration: none !important;
+}
+
+/*Ningun link cambia de color su background con hover o focus*/
+.sf-content-block.content-block p a:focus,
+.sf-content-block.content-block li a:focus,
+.sf-content-block.content-block p a:hover,
+.sf-content-block.content-block li a:hover{
+    background-color: unset;
+}
+
+/*Links sin bordes*/
+.sf-detail-body-wrapper a:link, 
+.sf-content-block.content-block p a:link, 
+.sf-content-block.content-block li a:link {
+    border: none;    
+}
+
+/*Links en listas sin border-bottom*/
+.list-links li a:link,
+.list-links li a:hover{
+    color: white;
+    border-bottom: 0;
+}
+
+/*Links en menu blancos*/
+.menu li a:link,
+.menu li a:visited {
+    color: white
+}
+
+

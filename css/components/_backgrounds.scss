@@ -1,0 +1,23 @@
+%bg-img {
+    background-repeat: no-repeat;
+    background-size: 200px;
+    @include max(800){
+        background-size: 100px;
+    }
+}
+.bg-top-left {
+    @extend %bg-img;
+    background-position: top left;
+}
+.bg-top-right {
+    @extend %bg-img;
+    background-position: top right;
+}
+.bg-bottom-left {
+    @extend %bg-img;
+    background-position: bottom left;
+}
+.bg-bottom-right {
+    @extend %bg-img;
+    background-position: bottom right;
+}

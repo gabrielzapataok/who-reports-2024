@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Charts -->
+    <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/kendo.all.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0fd078418e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+</head>
+<body>
+    <main class="result-report-2023">
+
+        <!-- header -->
+
+        <header class="header-sections">
+            <img src="./assets/Header2.png">
+            <div class="overlay flex flex-direction-column text-white text-center">
+                <h1 class="title-section h1">Budget</h1>
+            </div>
+        </header>
+
+        <!-- Menú -->
+
+        <nav class="menu">
+            <ul class="items list-style-none flex flex-wrap justify-content-center m-0 py-20 text-white">
+                <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li> 
+                <li><a href="./ExecutiveSummary.html" class="active">Overview</a></li>
+                <li><a href="./Outcome.html">working togheter</a></li>
+                <li><a href="./Output.html">contributions</a></li>
+                <li><a href="./Budget.html">resources</a></li>
+            </ul>
+        </nav>
+
+        <!-- content -->
+
+        <section class="py-70 flex-direction-column flex align-items-center">
+
+            <div class="container text-grey">
+                <h2 class="mb-20 title-section h2 text-center">Budget intro</h2>
+                <p class="mb-0">When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had been reported to WHO, and some 300 000 people had lost their lives. A year later, the number of cases has ballooned more than 40-fold, to almost 160 million, and the number of deaths has increased 11 times, to more than 3.3 million.</p>
+            </div>
+
+            <div class="container py-70">
+                <table class="my-0">
+                    <thead class="text-center">
+                        <tr>
+                            <th></th>
+                            <th> Approved Budget <br> <span>US$ Million</span></th>
+                            <th>Available funds <br> <span>US$ Million</span></th>
+                            <th>Utilization <br> <span>US$ Million</span></th>
+                            <th>Funding level <br> <span>%</span></th>
+                            <th>Utilization level <br><span>%</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Base Programmers</td>
+                            <td class="text-center">345</td>
+                            <td class="text-center">345</td>
+                            <td class="text-center">345</td>
+                            <td class="text-center">345</td>
+                            <td class="text-center">345</td>
+                        </tr>
+                        <tr>
+                            <td >Polio eradication</td>
+                            <td class="text-center">244</td>
+                            <td class="text-center">244</td>
+                            <td class="text-center">244</td>
+                            <td class="text-center">244</td>
+                            <td class="text-center">244</td>
+                        </tr>
+                        <tr>
+                            <td>Emergency operation and appeals</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">10000</td>
+                            <td class="text-center">10000</td>
+                        </tr>
+                        <tr>
+                            <td>Special programmes</td>
+                            <td class="text-center">124</td>
+                            <td class="text-center">124</td>
+                            <td class="text-center">124</td>
+                            <td class="text-center">124</td>
+                            <td class="text-center">124</td>
+                        </tr>
+                        <tr>
+                            <td>Gran total</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center">4</td>
+                            <td class="text-center">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="container-tab">
+                <ul class="tab">
+                    <li class="menu-item selected">Global</li>
+                    <li class="menu-item">Overview</li>
+                    <li class="menu-item">Base programmes</li>
+                    <li class="menu-item">Polio erradication</li>
+                    <li class="menu-item">Special Programmes</li>
+                    <li class="menu-item">Emergency operation and appeals</li>
+                    <div class="line"></div>
+                </ul>
+            </div>
+            
+            <section class="seccion-grey py-70">
+                <div class="container grid-2x2">
+                    <div class="chart-container">
+                        <div class="chart" id="output_indicator_line_chart3"></div>
+                        <script type="text/javascript" src="./javascript/charts/output_indicator_line_chart3.js"></script>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart" id="output_indicator_line_chart2"></div>
+                        <script type="text/javascript" src="./javascript/charts/output_indicator_line_chart2.js"></script>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart" id="exec_summary_stacked"></div>
+                        <script type="text/javascript" src="./javascript/charts/chart-1.js"></script>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart" id="grid4"></div>
+                        <script type="text/javascript" src="./javascript/charts/grid-4.js"></script>
+                    </div>
+                </div>
+            </section>
+            <button class="button mt-70">View PB Portal</button>
+        </section>
+        <section>
+            
+            <script src="./javascript/tab.js"></script>
+        </section>
+        
+
+    </main>
+</body>
+</html>

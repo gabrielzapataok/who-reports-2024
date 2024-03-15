@@ -1,0 +1,109 @@
+.header-sections{
+    height: 26vw;
+    min-height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .overlay {
+        background-color: #00000099;
+        @include absolute(0,0,0,0);
+        @include center();
+        flex-wrap: nowrap;
+    }
+
+    .img-country-header{
+        width: 30px;
+        height: 20px;
+        position: initial;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        @include max(800){
+            height: 130%;
+            width: unset;
+        }
+        @include max(600){
+            height: 160%;
+            width: unset;
+        }
+    }
+    cite{
+        background: linear-gradient(90deg, #000000, #00000000);
+        padding: 8px;
+        display: inline-block;
+    }
+    figcaption{
+        @include absolute(unset,0,0,0);
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        @include size(16);
+    }
+    figcaption p{
+        background: #000000bf;
+        margin: 0;
+        padding: 8px;
+        @include size(16);
+        width: 100%;
+        text-align: left;
+    }
+    .country{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: 700;
+        .flag{
+            display: flex;
+            width: 30px;
+            height: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .title-section{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0;
+        @include size(40);
+        line-height: $lh20;
+        @include max(600){
+            font-size: 22px;
+        }
+    }
+    .output-code{
+        color: $who;
+        font-weight: 700;
+        @include size(22);
+    }
+    .outcome-code {
+        color: $who;
+        font-weight: 700;
+        @include size(22);
+    }
+}
+
+.header-sections:after {
+    content: "MID-TERM RESULTS REPORT PROGRAMME BUDGET 2022 - 2023";
+    background: repeating-linear-gradient(45deg, #008dc9, #41c6ff 100%);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+    border-radius:  0 5px 0 0;
+}

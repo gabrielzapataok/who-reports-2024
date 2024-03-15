@@ -1,0 +1,49 @@
+
+.chart-billion{
+    width: 80%;
+    height: 40px;
+    border: 2px solid $active-color;
+    display: flex;
+    margin: auto;
+}
+
+.chart-billion-progress{
+    background-color: $active-color;
+    @include size(14);
+    @include center;
+    white-space: nowrap;
+}
+.shortfall {
+    flex: 1;
+    @include size(10);
+    @include center;
+    white-space: nowrap;
+}
+.progress-spare {
+    width: 0;
+    @include size(10);
+    @include center;
+    background: #0dcaf0;
+}
+
+.chart-billion-two{
+    width: 80%;
+    height: 40px;
+    border: 2px solid $billion1;
+}
+
+
+.pb-chart {
+    flex: 1;
+    min-width:400px;
+}
+
+.b-one .chart-billion-progress:after {
+    content: "1 Billion target";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    transform: translateX(50%);
+    margin-top: 6px;
+    color: #0fa0df;
+}
