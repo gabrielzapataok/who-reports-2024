@@ -139,8 +139,10 @@ small{
 }
 
 .title-section{
+    @include size(32);
+    letter-spacing: .1em;
     font-weight: 700;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .grid-2x2{
@@ -162,18 +164,26 @@ small{
     }
 }
 
-.seccion-grey{
+.section-grey{
     width: 100%;
     background: rgba(217, 217, 217, 0.24);
 }
 
-.seccion-violet{
+.section-violet{
     width: 100%;
     background: #592C81;
 }
 
-.seccion-blue{
+.section-blue{
     background: $bgBlue;
+}
+
+.section-white{
+    background: white;
+}
+
+.section-black{
+    background: black;
 }
 
 .quote{

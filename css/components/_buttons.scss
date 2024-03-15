@@ -24,9 +24,6 @@
         left: 0;
         transform: skew(-30deg, 0deg) translateX(-150%);
     }
-    &:hover {
-        transform: scale(1.1);
-    }
     &:hover::after {
         transition: .5s;
         left: 100%;

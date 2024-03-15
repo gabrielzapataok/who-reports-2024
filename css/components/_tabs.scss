@@ -1,5 +1,4 @@
 .container-tab{
-    border-top: 1px solid #ccc;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -10,15 +9,24 @@
         text-transform: uppercase;
         font-weight: 600;
     }
+    &.bottom {
+        .menu-item {
+            margin-top: .5rem;
+        }
+        .line {
+            top: 0;
+        }
+    }
+    &.top {
+        .menu-item {
+            margin-bottom: .5rem;
+        }
+        .line {
+            bottom: 0;
+        }
+    } 
 }
 
-.container-tab.second-tab .tab .line {
-    top: 0;
-    
-}
-.container-tab.second-tab .tab .menu-item {
-    align-items: flex-end;
-}
 
 .tab{
     display: flex !important;
@@ -50,7 +58,6 @@
         width: 10px;
         position: absolute;
         height: 10px;
-        bottom: 0;
         transition: .5s;
         background: $who;
         @include max(800){

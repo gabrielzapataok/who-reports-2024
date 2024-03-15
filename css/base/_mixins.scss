@@ -1,7 +1,3 @@
-// @mixin size($max-value){
-//     $min-value: $max-value * 0.7;
-//     font-size: calc(#{$min-value}px + (#{$max-value} - #{$min-value}) * (((100vw - #{$xs}px) / (1600 - 300))));
-// }
 @mixin size($value){
     font-size: calc(#{$value * 0.7}px + (#{$value * 0.3}) * ((100vw - 300px) / 1300));
 }

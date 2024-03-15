@@ -123,30 +123,30 @@
     font-size: 25px
 }
 
-.sf-main-site .section-heading,.sf-main-site .section-header,.sf-main-site .search-heading {
+.sf-main-site section-heading,.sf-main-site section-header,.sf-main-site .search-heading {
     font-size: 20px;
     line-height: normal;
     font-weight: 700
 }
 
 @media (min-width: 768px) {
-    .sf-main-site .section-heading,.sf-main-site .section-header,.sf-main-site .search-heading {
+    .sf-main-site section-heading,.sf-main-site section-header,.sf-main-site .search-heading {
         font-size:25px
     }
 }
 
-.sf-main-site .section-heading h1,.sf-main-site .section-heading h2,.sf-main-site .section-heading h3,.sf-main-site .section-heading p,.sf-main-site .section-heading a,.sf-main-site .section-header h1,.sf-main-site .section-header h2,.sf-main-site .section-header h3,.sf-main-site .section-header p,.sf-main-site .section-header a,.sf-main-site .search-heading h1,.sf-main-site .search-heading h2,.sf-main-site .search-heading h3,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
+.sf-main-site section-heading h1,.sf-main-site section-heading h2,.sf-main-site section-heading h3,.sf-main-site section-heading p,.sf-main-site section-heading a,.sf-main-site section-header h1,.sf-main-site section-header h2,.sf-main-site section-header h3,.sf-main-site section-header p,.sf-main-site section-header a,.sf-main-site .search-heading h1,.sf-main-site .search-heading h2,.sf-main-site .search-heading h3,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
     font-size: 20px;
     line-height: normal
 }
 
 @media (min-width: 768px) {
-    .sf-main-site .section-heading h1,.sf-main-site .section-heading h2,.sf-main-site .section-heading h3,.sf-main-site .section-heading p,.sf-main-site .section-heading a,.sf-main-site .section-header h1,.sf-main-site .section-header h2,.sf-main-site .section-header h3,.sf-main-site .section-header p,.sf-main-site .section-header a,.sf-main-site .search-heading h1,.sf-main-site .search-heading h2,.sf-main-site .search-heading h3,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
+    .sf-main-site section-heading h1,.sf-main-site section-heading h2,.sf-main-site section-heading h3,.sf-main-site section-heading p,.sf-main-site section-heading a,.sf-main-site section-header h1,.sf-main-site section-header h2,.sf-main-site section-header h3,.sf-main-site section-header p,.sf-main-site section-header a,.sf-main-site .search-heading h1,.sf-main-site .search-heading h2,.sf-main-site .search-heading h3,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
         font-size:25px
     }
 }
 
-.sf-main-site .section-heading p,.sf-main-site .section-heading a,.sf-main-site .section-header p,.sf-main-site .section-header a,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
+.sf-main-site section-heading p,.sf-main-site section-heading a,.sf-main-site section-header p,.sf-main-site section-header a,.sf-main-site .search-heading p,.sf-main-site .search-heading a {
     font-weight: 700
 }
 
@@ -2587,7 +2587,7 @@ html .sfPageEditor .k-window .k-edit-buttons .k-button.k-primary {
     }
 }
 
-.language-selector-page .section-header {
+.language-selector-page section-header {
     display: inline-block;
     width: inherit;
     padding-bottom: 0;
@@ -2600,7 +2600,7 @@ html .sfPageEditor .k-window .k-edit-buttons .k-button.k-primary {
 }
 
 @media (min-width: 768px) {
-    .language-selector-page .section-header {
+    .language-selector-page section-header {
         display:block;
         width: 100%
     }
@@ -2650,7 +2650,7 @@ html .sfPageEditor .k-window .k-edit-buttons .k-button.k-primary {
     margin-right: 0
 }
 
-.right-to-left .main-site .language-selector-page .section-header,.right-to-left .sf-main-site .language-selector-page .section-header {
+.right-to-left .main-site .language-selector-page section-header,.right-to-left .sf-main-site .language-selector-page section-header {
     margin-right: inherit;
     margin-left: 10px
 }

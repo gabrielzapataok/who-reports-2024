@@ -9,7 +9,6 @@
     .items {
         background: #031C4C;
         flex-grow: 1;
-        gap: 50px;
         justify-content: center;
         margin-top: 0;
         transition: .3s;
@@ -52,7 +51,7 @@
         white-space: nowrap;
         color: $white;
         display: flex;
-        padding: 16px;
+        padding: 16px 18px;
         &:active, 
         &:hover,
         &.active{
