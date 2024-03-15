@@ -59,10 +59,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 }
 
 .result-report-2024 {
-  font-size: calc(14px + 6 * (100vw - 300px) / 1300);
-}
-
-.result-report-2024 {
   line-height: normal;
   /*--------------*\
   |------BASE------|
@@ -558,9 +554,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 }
 .result-report-2024 .h6 {
   font-size: calc(16.8px + (7.2) * (100vw - 300px) / 1300);
-}
-.result-report-2024 p {
-  font-size: calc(14px + (6) * (100vw - 300px) / 1300);
 }
 .result-report-2024 small {
   font-size: calc(11.2px + (4.8) * (100vw - 300px) / 1300);
