@@ -1,57 +1,57 @@
-body:has(.result-report-2023) .main-site {
+body:has(.result-report-2024) .main-site {
   overflow: initial;
 }
 
-body:has(.result-report-2023) .main-footer {
+body:has(.result-report-2024) .main-footer {
   margin: 0;
 }
 
-.sfPageEditor .result-report-2023 .container-modal {
+.sfPageEditor .result-report-2024 .container-modal {
   position: static !important;
 }
 
-.sf-content:has(.result-report-2023) .breadcrumb{
+.sf-content:has(.result-report-2024) .breadcrumb{
   display: none;
 }
 
 .main-site:has(.program-budget-2023 .filter-sticky){
   overflow: initial !important;
 }
-body:has(.result-report-2023) #navigationToScrape.attached {
+body:has(.result-report-2024) #navigationToScrape.attached {
   position: initial;
 }
 
 @media (min-width: 768px) {
-  .main-site:has(.result-report-2023) {
+  .main-site:has(.result-report-2024) {
       overflow-x: initial !important;
   }
 }
-.sf-main-site:has(.result-report-2023) .result-report-2023 * ,
-.sf-body:has(.result-report-2023) .result-report-2023 * {
+.sf-main-site:has(.result-report-2024) .result-report-2024 * ,
+.sf-body:has(.result-report-2024) .result-report-2024 * {
   line-height: initial;
 }
 
-.sfPageEditor .result-report-2023 .temporary-absolute-position {
+.sfPageEditor .result-report-2024 .temporary-absolute-position {
   position: inherit;
   z-index: auto;
 }
-.sfPageEditor .result-report-2023 .hidden {
+.sfPageEditor .result-report-2024 .hidden {
   border: 1px solid red;
   display: initial !important;
   position: static !important;
 }
 
-body:has(.result-report-2023) .k-widget.k-tooltip.k-popup.k-group.k-reset {
+body:has(.result-report-2024) .k-widget.k-tooltip.k-popup.k-group.k-reset {
   background: rgb(97 97 97 / 100%) !important;
 }
 
-body:has(.result-report-2023) .k-tooltip-content {
+body:has(.result-report-2024) .k-tooltip-content {
   color: white !important;
 }
 
 //   Tooltip
-body:has(.result-report-2023) .k-chart-crosshair-tooltip,
-body:has(.result-report-2023) .k-chart-shared-tooltip {
+body:has(.result-report-2024) .k-chart-crosshair-tooltip,
+body:has(.result-report-2024) .k-chart-shared-tooltip {
   background-color: rgba(0,0,0,0.87);
   color: white;
 }

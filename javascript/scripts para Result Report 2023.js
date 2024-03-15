@@ -340,7 +340,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  if ($('body').has('.result-report-2023').length) {
+  if ($('body').has('.result-report-2024').length) {
     $('.main-footer').css('margin', 0);
   }
 });
