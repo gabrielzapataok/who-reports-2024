@@ -92,7 +92,7 @@
                     <!-- Overview of investment -->
 
                     <div class="container text-grey">
-                        <h3 class="text-center title-section">Overview of investment</h3>
+                        <h3 class="text-center title-section mb-4">Overview of investment</h3>
                         <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
                             2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a
                             total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a
@@ -113,10 +113,10 @@
                             width: 700px;
                         }
                     </style>
-                    <div class="text-grey results">
-                        <h2 class="text-center title-section">Results</h2>
+                    <div class="text-grey results mt-40 mb-70">
+                        <h2 class="text-center title-section mb-4">Results</h2>
                         <div class="swiper">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper pb-5">
                                 <div class="swiper-slide">
                                     <div class="card-result">
                                         <div class="title">
@@ -296,6 +296,8 @@
                             </div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
+
+                            <div class="swiper-pagination"></div>
                         </div>
 
                     </div>
@@ -303,7 +305,7 @@
                     <!-- Looking Forward -->
 
                     <div class="container text-grey">
-                        <h2 class=" text-center title-section">Looking forward</h2>
+                        <h2 class=" text-center title-section mb-4">Looking forward</h2>
                         <ul class="">
                             <li>
                                 <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
@@ -387,13 +389,17 @@
     <script src="./javascript/tab.js"></script>
 
     <script>
-        
+
         const swiper = new Swiper('.swiper', {
             loop: true,
             effect: 'coverflow',
             // autoplay: {
             //     delay: 4500, // Intervalo de tiempo en milisegundos
             // },
+            pagination: {
+                el: '.swiper-pagination', // Selector del elemento donde se colocarán los bullets
+                clickable: true, // Permitir hacer clic en los bullets para cambiar de diapositiva
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -409,22 +415,21 @@
                 stretch: 0,
             },
             on: {
-                init: function() {
+                init: function () {
                     var slides = document.querySelectorAll('.swiper-slide .card-result');
-                    var maxHeight = 0;                    
-                    slides.forEach(function(slide) {
+                    var maxHeight = 0;
+                    slides.forEach(function (slide) {
                         console.log(slide);
                         var slideHeight = slide.clientHeight;
                         if (slideHeight > maxHeight) {
                             maxHeight = slideHeight;
                         }
                     });
-                    // Establecer la altura máxima en todas las diapositivas
-                    slides.forEach(function(slide) {
+                    slides.forEach(function (slide) {
                         slide.style.height = maxHeight + 'px';
                     });
                 }
-            } 
+            }
         });
     </script>
 </body>
