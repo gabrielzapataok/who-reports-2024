@@ -26,13 +26,13 @@ $types: (
         @each $d, $direction in $directions {
             .#{$t}#{$d}-#{$i} {
                 @if $d == "x" {
-                    #{$type}-left: $value;
-                    #{$type}-right: $value;
+                    #{$type}-left: $value !important;
+                    #{$type}-right: $value !important;
                 } @else if $d == "y" {
-                    #{$type}-top: $value;
-                    #{$type}-bottom: $value;
+                    #{$type}-top: $value !important;
+                    #{$type}-bottom: $value !important;
                 } @else {
-                    #{$type}#{$direction}: $value;
+                    #{$type}#{$direction}: $value !important;
                 }
             }
         }

@@ -76,23 +76,25 @@
 
         <!-- Section impact story -->
 
-        <section class="container pt-40 pb-70">
-            <h2 class="title-section text-grey text-center mb-4">Impact story</h2>
-            <h1 class="text-center mb-4">Afghanistan influenza surveillance system stands solid</h1>
-            <div class="row mx-0">
-                <div class="col-6 pl-0">
-                    <img src="./assets/hospital.png" alt="" srcset="">
-                </div>
-                <div class="col-6 pr-0">
-                    <p class="mb-4">Afghanistan’s health system remains stretched in many ways. The country continues to grapple with economic difficulties making it challenging to provide and maintain basic health services, especially given the geographic barriers linked to access and insecurity. Nonetheless, WHO Afghanistan together with partners have been able to invest in surveillance systems, particularly for influenza, which have been strongly leveraged for the COVID-19 pandemic. The established system...</p>
-                    <button class="button">Read more</button>
+        <section class="bg-top-right">
+            <div class="container pt-40 pb-70">
+                <h2 class="title-section text-grey text-center mb-4">Impact story</h2>
+                <h1 class="text-center mb-4">Afghanistan influenza surveillance system stands solid</h1>
+                <div class="row mx-0">
+                    <div class="col-6 pl-0">
+                        <img src="./assets/hospital.png" alt="" srcset="">
+                    </div>
+                    <div class="col-6 pr-0">
+                        <p class="mb-4">Afghanistan’s health system remains stretched in many ways. The country continues to grapple with economic difficulties making it challenging to provide and maintain basic health services, especially given the geographic barriers linked to access and insecurity. Nonetheless, WHO Afghanistan together with partners have been able to invest in surveillance systems, particularly for influenza, which have been strongly leveraged for the COVID-19 pandemic. The established system...</p>
+                        <button class="button">Read more</button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section contribution -->
 
-        <section class="section-blue pt-40 pb-70 text-white">
+        <section class="section-blue pt-40 pb-70 text-white bg-top-left">
 
             <h2 class="title-section text-center">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
             <h3 class="subtitle-section text-center mb-4">WHO's Output Scorecard measures its performance for accountability</h3>
@@ -170,7 +172,7 @@
 
         <!-- narrative -->
 
-        <section class="text-grey section-grey pt-40 pb-70">
+        <section class="text-grey section-grey pt-40 pb-70 bg-top-right">
             <h2 class="title-section text-center mb-40">How WHO is driving impact on the ground</h2>
             <div class="narratives section-white">
                 <div class="container-tab top">
@@ -328,7 +330,7 @@
 
         <!-- Budget details tickers -->
 
-        <section class="section-blue pb-70 pt-40">
+        <section class="section-blue pb-70 pt-40 bg-top-left">
             <div class="container relative text-white text-center">
                 <h1 class="h2 title-section pb-20">BUDGET DETAILS</h1>
                 <div class="tickers pt-20 flex justify-content-evenly flex-wrap">
@@ -354,14 +356,50 @@
 
         <!-- Indicator coming soon! -->
 
-        <section class="pb-70 pt-40">
+        <section class="pb-70 pt-40 bg-bottom-right">
             <div class="container text-center">
                 <h1 class="title-section mb-4">INDICATORS</h1>
-                <p class="text-center mb-4">-Coming soon-</p>
+                <div class="d-flex align-items-center" style="background: url(./assets/bgcs.png) 270px center no-repeat; height: 300px">
+                    <h1 class="text-center mb-4 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON</h1>
+                </div>
             </div>
         </section>
 
+        <div class="hidden">
+            <div class="img-wrapper">
+                <img id="img-top-right" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-10.png?sfvrsn=63153776_3" alt="" sf-size="37391">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-bottom-left" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-9.png?sfvrsn=3371292c_4" alt="" sf-size="37812">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-top-left" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-8b93b413a-3ea2-482d-b1db-e2655fa0216b.png?sfvrsn=dfc783e1_3" alt="" sf-size="36970">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-bottom-right" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-7.png?sfvrsn=c7d5b33e_4" alt="" sf-size="36818">
+            </div>
+        </div>
     </main>
+
+
+    <script>
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+
+        var imgTopLeft = $('#img-top-left').attr('src');
+        $('.bg-top-left').css('background-image', 'url(' + imgTopLeft + ')');
+
+        var imgBottomRight = $('#img-bottom-right').attr('src');
+        $('.bg-bottom-right').css('background-image', 'url(' + imgBottomRight + ')');
+
+        var imgBottomLeft = $('#img-bottom-left').attr('src');
+        $('.bg-bottom-left').css('background-image', 'url(' + imgBottomLeft + ')');
+
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+    </script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="./javascript/Gsap/gsap-country-story.js"></script>
@@ -370,8 +408,7 @@
     <script src="./javascript/tab.js"></script>
     <script src="./javascript/charts/selector.js"></script>
 
-    <script src="./javascript/swiper-country-profile.js">
-    </script>
+    <script src="./javascript/swiper-country-profile.js"></script>
 </body>
 
 </html>
