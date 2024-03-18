@@ -98,12 +98,33 @@
             <h3 class="subtitle-section text-center mb-4">WHO's Output Scorecard measures its performance for accountability</h3>
             <div class="container">
                 <p class="text-center mb-4">The Scorecard below shows the assessment of WHO’s performance in delivering the programme budget outputs agreed with Member States using six different dimensions, i.e., technical support, leadership, global public health goods, value for money, gender, equity, human rights and disability. The dimension score (shown as a line) is the aggregate score of the different attributes (shown as sticks). A Scorecard is reported for every output at the global level. In addition, every major office reports its Scorecard for every output.</p>
-                <p class="text-center mb-4">-Selector-</p>
+                <div class="selector mb-10">
+                    <div class="selector-header">
+                        <div class="selector-title"></div>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="selector-options section-blue"></div>
+                </div>
             </div>
-            <p class="text-center mb-4">-Charts-</p>
+            <p class="text-center my-70">-Charts-</p>
             <div class="container">
-                <p class="text-center mb-4">-legends deimensions-</p>
-                <p class="text-center mb-4">-legends scoring scalees-</p>
+                <b class="d-block mb-10">Dimensions</b>
+                <div class="d-flex mb-40 flex-wrap">
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Technical support</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>LeaderShip</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Global Goods / TPs</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Gender, Equity, Human Rights and Disability</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Value for money</span>
+                </div> 
+
+                <b class="d-block mb-10">Scoring scale</b>
+                <div class="d-flex mb-40 flex-wrap">
+                    <span class="d-flex align-items-center mr-20"><span class="circle">1</span>Emergent</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle">2</span>Developing</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle">3</span>Satisfactory</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle">4</span>Strong</span>
+                </div> 
+
             </div>
             <div class="d-flex justify-content-center w-100">
                 <button class="button">View budget Details</button>
@@ -310,50 +331,9 @@
     <script src="./javascript/credits.js"></script>
 
     <script src="./javascript/tab.js"></script>
+    <script src="./javascript/charts/selector.js"></script>
 
-    <script>
-
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            effect: 'coverflow',
-            // autoplay: {
-            //     delay: 4500,
-            // },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            slidesPerView: 2,
-            centeredSlides: true,
-            coverflowEffect: {
-                depth: 500,
-                modifier: 1,
-                rotate: 0,
-                scale: 0.8,
-                slideShadows: false,
-                stretch: 0,
-            },
-            on: {
-                init: function () {
-                    var slides = document.querySelectorAll('.swiper-slide .card-result');
-                    var maxHeight = 0;
-                    slides.forEach(function (slide) {
-                        console.log(slide);
-                        var slideHeight = slide.clientHeight;
-                        if (slideHeight > maxHeight) {
-                            maxHeight = slideHeight;
-                        }
-                    });
-                    slides.forEach(function (slide) {
-                        slide.style.height = maxHeight + 'px';
-                    });
-                }
-            }
-        })
+    <script src="./javascript/swiper-country-profile.js">
     </script>
 </body>
 

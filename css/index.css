@@ -2250,4 +2250,18 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   flex-basis: 50%;
   font-size: calc(9.8px + (4.2) * (100vw - 300px) / 1300);
   padding: 1rem;
+}
+.result-report-2024 .circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: black;
+  border-radius: 50%;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
