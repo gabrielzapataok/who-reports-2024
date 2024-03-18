@@ -2264,4 +2264,18 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   color: black;
   border-radius: 50%;
   text-align: center;
+}
+.result-report-2024 .chart-contribution {
+  flex-basis: 244px;
+  padding: 0 0.5rem;
+}
+.result-report-2024 .chart-contribution .chart {
+  width: 244px;
+  height: 244px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=index.css.map */

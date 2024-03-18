@@ -12,3 +12,18 @@
     border-radius: 50%;
     text-align: center;
 }
+
+.chart-contribution {
+    flex-basis: 244px;
+    padding: 0 .5rem;
+    .chart {
+        width: 244px;
+        height: 244px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        color: white;
+        margin-bottom: 1rem;
+    }
+}
