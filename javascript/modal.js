@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#change-outcome").click(function() {
+    $("#change-country").click(function() {
         $(".container-modal").removeClass("hidden");
     });
     $(".header-modal .fa-times").click(function() {

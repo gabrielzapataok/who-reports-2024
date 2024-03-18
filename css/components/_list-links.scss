@@ -16,3 +16,33 @@
         background-color: rgba(255, 355, 355, .1);
     }
 }
+
+
+.list-countries li{
+    list-style: none;
+    transition: .5s;
+    a {
+        display: flex;
+        padding: 20px 10px;
+        color: black;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 60px;
+            height: 40px;
+        }
+        .country-name {
+            font-weight: 500;
+        }
+        .region {
+            letter-spacing: .1em;
+            font-size: 11px;
+        }
+    }
+    &:not(:last-child){
+        border-bottom: 1px solid #ccc;
+    }
+    &:hover{
+        background-color: #203c503a
+    }
+}

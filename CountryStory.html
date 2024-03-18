@@ -29,7 +29,7 @@
 
     <!-- Slider main container -->
     <main class="result-report-2024">
-
+        
         <!-- Header cpuntry profile -->
 
         <header class="header-section">
@@ -42,7 +42,7 @@
                     Armenia
                 </div>
                 <label>EASTERN MEDITERRANEAN</label>
-                <button class="btn text-white change-country mt-3">Change country</button>
+                <button class="btn text-white change-country mt-3" id="change-country">Change country</button>
                 <div class="report-version">
                     END OF BIENNIUM RESULTS <br> REPORT 2022 - 2023
                 </div>
@@ -61,6 +61,114 @@
                 </div>
             </div>
         </header>
+
+        <!-- Modal -->
+
+        <div class="container-modal hidden">
+            <div class="modal-overlay">
+                <div class="modal text-grey">
+                    <div class="header-modal">
+                        <span class="title-modal" id="change-country">Change country</span>
+                        <i class="fas fa-times text-grey"></i>
+                    </div>
+                    <div class="filters row my-10 mx-0">
+                        <input type="text" class="form-control" placeholder="Country name"/>
+                        <select type="text" class="form-control" placeholder="Country name">
+                            <option value="">Region</option>
+                            <option value="">Region</option>
+                            <option value="">Region</option>
+                            <option value="">Region</option>
+                            <option value="">Region</option>
+                        </select>
+                    </div>
+                    <div class="content-modal">
+                        <ul class="list-countries px-0 my-0">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/col.png" alt="" srcset="">
+                                    <div>
+                                        <div class="country-name">Argentina</div>
+                                        <div class="region">REGION OF THE AMERICAS</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Menú -->
 
@@ -85,7 +193,12 @@
                         <img src="./assets/hospital.png" alt="" srcset="">
                     </div>
                     <div class="col-6 pr-0">
-                        <p class="mb-4">Afghanistan’s health system remains stretched in many ways. The country continues to grapple with economic difficulties making it challenging to provide and maintain basic health services, especially given the geographic barriers linked to access and insecurity. Nonetheless, WHO Afghanistan together with partners have been able to invest in surveillance systems, particularly for influenza, which have been strongly leveraged for the COVID-19 pandemic. The established system...</p>
+                        <p class="mb-4">Afghanistan’s health system remains stretched in many ways. The country
+                            continues to grapple with economic difficulties making it challenging to provide and
+                            maintain basic health services, especially given the geographic barriers linked to access
+                            and insecurity. Nonetheless, WHO Afghanistan together with partners have been able to invest
+                            in surveillance systems, particularly for influenza, which have been strongly leveraged for
+                            the COVID-19 pandemic. The established system...</p>
                         <button class="button">Read more</button>
                     </div>
                 </div>
@@ -97,9 +210,15 @@
         <section class="section-blue pt-40 pb-70 text-white bg-top-left">
 
             <h2 class="title-section text-center">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
-            <h3 class="subtitle-section text-center mb-4">WHO's Output Scorecard measures its performance for accountability</h3>
+            <h3 class="subtitle-section text-center mb-4">WHO's Output Scorecard measures its performance for
+                accountability</h3>
             <div class="container">
-                <p class="text-center mb-4">The Scorecard below shows the assessment of WHO’s performance in delivering the programme budget outputs agreed with Member States using six different dimensions, i.e., technical support, leadership, global public health goods, value for money, gender, equity, human rights and disability. The dimension score (shown as a line) is the aggregate score of the different attributes (shown as sticks). A Scorecard is reported for every output at the global level. In addition, every major office reports its Scorecard for every output.</p>
+                <p class="text-center mb-4">The Scorecard below shows the assessment of WHO’s performance in delivering
+                    the programme budget outputs agreed with Member States using six different dimensions, i.e.,
+                    technical support, leadership, global public health goods, value for money, gender, equity, human
+                    rights and disability. The dimension score (shown as a line) is the aggregate score of the different
+                    attributes (shown as sticks). A Scorecard is reported for every output at the global level. In
+                    addition, every major office reports its Scorecard for every output.</p>
                 <div class="selector mb-10">
                     <div class="selector-header">
                         <div class="selector-title"></div>
@@ -108,34 +227,38 @@
                     <div class="selector-options section-blue"></div>
                 </div>
             </div>
-            
+
             <div class="charts-contribution d-flex justify-content-center my-70 text-center">
                 <div class="chart-contribution">
                     <div class="chart">
                         chart
                     </div>
-                    <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on primary health
+                    <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
+                    primary health
                     care strategies and comprehensive essential service packages
                 </div>
                 <div class="chart-contribution">
                     <div class="chart">
                         chart
                     </div>
-                    <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and disease-specific
+                    <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
+                    disease-specific
                     service coverage results
                 </div>
                 <div class="chart-contribution">
                     <div class="chart">
                         chart
                     </div>
-                    <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific health needs
+                    <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
+                    health needs
                     and barriers to equity across the life course
                 </div>
                 <div class="chart-contribution">
                     <div class="chart">
                         chart
                     </div>
-                    <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency, accountability,
+                    <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
+                    accountability,
                     responsiveness and empowerment of communities
                 </div>
                 <div class="chart-contribution">
@@ -145,16 +268,17 @@
                     <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
                 </div>
             </div>
-            
+
             <div class="container">
                 <b class="d-block mb-10">Dimensions</b>
                 <div class="d-flex mb-40 flex-wrap">
                     <span class="d-flex align-items-center mr-20"><span class="circle"></span>Technical support</span>
                     <span class="d-flex align-items-center mr-20"><span class="circle"></span>LeaderShip</span>
                     <span class="d-flex align-items-center mr-20"><span class="circle"></span>Global Goods / TPs</span>
-                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Gender, Equity, Human Rights and Disability</span>
+                    <span class="d-flex align-items-center mr-20"><span class="circle"></span>Gender, Equity, Human
+                        Rights and Disability</span>
                     <span class="d-flex align-items-center mr-20"><span class="circle"></span>Value for money</span>
-                </div> 
+                </div>
 
                 <b class="d-block mb-10">Scoring scale</b>
                 <div class="d-flex mb-40 flex-wrap">
@@ -162,7 +286,7 @@
                     <span class="d-flex align-items-center mr-20"><span class="circle">2</span>Developing</span>
                     <span class="d-flex align-items-center mr-20"><span class="circle">3</span>Satisfactory</span>
                     <span class="d-flex align-items-center mr-20"><span class="circle">4</span>Strong</span>
-                </div> 
+                </div>
 
             </div>
             <div class="d-flex justify-content-center w-100">
@@ -218,61 +342,137 @@
                             <div class="swiper-wrapper pb-5">
                                 <div class="swiper-slide">
                                     <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution WHA75.5</div>
+                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5</div>
                                         <div class="card-content-wrapper">
                                             <div class="img-container">
                                                 <img src="./assets/billions3.jpg" alt="">
                                                 <div class="figcaption">
                                                     <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.</div>
+                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                        nesciunt ipsa.</div>
                                                 </div>
                                             </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, the approved base programmes segment of the Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the first year, total Programme has a good of financing (US$ 8.3 ), including projections, which exceeded the total approved. The good level of financing is explained two event May 2022, revising the approved base programmes segment of the                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme has a level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event</p>
+                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                billion. By the end of the first year, the total Programme budget has a
+                                                good level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event The Seventy-fifth World Health Assembly adopted resolution
+                                                WHA75.5 in May 2022, the approved base programmes segment of the
+                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                first year, total Programme has a good of financing (US$ 8.3 ),
+                                                including projections, which exceeded the total approved. The good level
+                                                of financing is explained two event May 2022, revising the approved base
+                                                programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                6.726 billion. By the end of the first year, the total Programme has a
+                                                level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution WHA75.5</div>
+                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5</div>
                                         <div class="card-content-wrapper">
                                             <div class="img-container">
                                                 <img src="./assets/img-left.png" alt="">
                                                 <div class="figcaption">
                                                     <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.</div>
+                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                        nesciunt ipsa.</div>
                                                 </div>
                                             </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, the approved base programmes segment of the Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the first year, total Programme has a good of financing (US$ 8.3 ), including projections, which exceeded the total approved. The good level of financing is explained two event May 2022, revising the approved base programmes segment of the                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme has a level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event</p>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution WHA75.5</div>
-                                        <div class="card-content-wrapper">
-                                            <div class="img-container">
-                                                <img src="./assets/billions4.jpg" alt="">
-                                                <div class="figcaption">
-                                                    <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.</div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, the approved base programmes segment of the Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the first year, total Programme has a good of financing (US$ 8.3 ), including projections, which exceeded the total approved. The good level of financing is explained two event May 2022, revising the approved base programmes segment of the                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme has a level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event</p>
+                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                billion. By the end of the first year, the total Programme budget has a
+                                                good level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event The Seventy-fifth World Health Assembly adopted resolution
+                                                WHA75.5 in May 2022, the approved base programmes segment of the
+                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                first year, total Programme has a good of financing (US$ 8.3 ),
+                                                including projections, which exceeded the total approved. The good level
+                                                of financing is explained two event May 2022, revising the approved base
+                                                programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                6.726 billion. By the end of the first year, the total Programme has a
+                                                level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution WHA75.5</div>
+                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5</div>
+                                        <div class="card-content-wrapper">
+                                            <div class="img-container">
+                                                <img src="./assets/billions4.jpg" alt="">
+                                                <div class="figcaption">
+                                                    <div class="author"><b>Author: </b>WHO</div>
+                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                        nesciunt ipsa.</div>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                billion. By the end of the first year, the total Programme budget has a
+                                                good level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event The Seventy-fifth World Health Assembly adopted resolution
+                                                WHA75.5 in May 2022, the approved base programmes segment of the
+                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                first year, total Programme has a good of financing (US$ 8.3 ),
+                                                including projections, which exceeded the total approved. The good level
+                                                of financing is explained two event May 2022, revising the approved base
+                                                programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                6.726 billion. By the end of the first year, the total Programme has a
+                                                level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-result">
+                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                            WHA75.5</div>
                                         <div class="card-content-wrapper">
                                             <div class="img-container">
                                                 <img src="./assets/billions2.jpg" alt="">
                                                 <div class="figcaption">
                                                     <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptatum molestias, quae nesciunt ipsa.</div>
+                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                        nesciunt ipsa.</div>
                                                 </div>
                                             </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, the approved base programmes segment of the Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the first year, total Programme has a good of financing (US$ 8.3 ), including projections, which exceeded the total approved. The good level of financing is explained two event May 2022, revising the approved base programmes segment of the                                            Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme has a level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event</p>
+                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                billion. By the end of the first year, the total Programme budget has a
+                                                good level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event The Seventy-fifth World Health Assembly adopted resolution
+                                                WHA75.5 in May 2022, the approved base programmes segment of the
+                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                first year, total Programme has a good of financing (US$ 8.3 ),
+                                                including projections, which exceeded the total approved. The good level
+                                                of financing is explained two event May 2022, revising the approved base
+                                                programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                6.726 billion. By the end of the first year, the total Programme has a
+                                                level of financing (US$ 8.3 billion), including projections, which
+                                                exceeded the total approved. The good level of financing is explained by
+                                                two event</p>
                                         </div>
                                     </div>
                                 </div>
@@ -359,24 +559,34 @@
         <section class="pb-70 pt-40 bg-bottom-right">
             <div class="container text-center">
                 <h1 class="title-section mb-4">INDICATORS</h1>
-                <div class="d-flex align-items-center" style="background: url(./assets/bgcs.png) 270px center no-repeat; height: 300px">
-                    <h1 class="text-center mb-4 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON</h1>
+                <div class="d-flex align-items-center"
+                    style="background: url(./assets/bgcs.png) 270px center no-repeat; height: 300px">
+                    <h1 class="text-center mb-4 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON
+                    </h1>
                 </div>
             </div>
         </section>
 
         <div class="hidden">
             <div class="img-wrapper">
-                <img id="img-top-right" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-10.png?sfvrsn=63153776_3" alt="" sf-size="37391">
+                <img id="img-top-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-10.png?sfvrsn=63153776_3"
+                    alt="" sf-size="37391">
             </div>
             <div class="img-wrapper">
-                <img id="img-bottom-left" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-9.png?sfvrsn=3371292c_4" alt="" sf-size="37812">
+                <img id="img-bottom-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-9.png?sfvrsn=3371292c_4"
+                    alt="" sf-size="37812">
             </div>
             <div class="img-wrapper">
-                <img id="img-top-left" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-8b93b413a-3ea2-482d-b1db-e2655fa0216b.png?sfvrsn=dfc783e1_3" alt="" sf-size="36970">
+                <img id="img-top-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-8b93b413a-3ea2-482d-b1db-e2655fa0216b.png?sfvrsn=dfc783e1_3"
+                    alt="" sf-size="36970">
             </div>
             <div class="img-wrapper">
-                <img id="img-bottom-right" src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-7.png?sfvrsn=c7d5b33e_4" alt="" sf-size="36818">
+                <img id="img-bottom-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-7.png?sfvrsn=c7d5b33e_4"
+                    alt="" sf-size="36818">
             </div>
         </div>
     </main>
@@ -407,6 +617,8 @@
 
     <script src="./javascript/tab.js"></script>
     <script src="./javascript/charts/selector.js"></script>
+
+    <script src="javascript/modal.js"></script>
 
     <script src="./javascript/swiper-country-profile.js"></script>
 </body>
