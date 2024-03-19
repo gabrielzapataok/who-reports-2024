@@ -2233,6 +2233,15 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
     height: 32px;
   }
 }
+.result-report-2024 .results .swiper .swiper-slide .card-result {
+  /* width: 80vw !important; */
+}
+.result-report-2024 .swiper-slide {
+  transition: 0.5s;
+}
+.result-report-2024 .swiper-slide:not(.swiper-slide-visible) {
+  opacity: 0;
+}
 .result-report-2024 .card-result {
   color: white;
   background-color: #031C4C;
@@ -2272,8 +2281,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   align-self: stretch;
   flex-grow: 1;
   flex-basis: 50%;
-  font-size: calc(9.8px + (4.2) * (100vw - 300px) / 1300);
-  padding: 1rem;
+  font-size: 13px;
+  padding: 2rem;
+  line-height: 2;
 }
 .result-report-2024 .circle {
   width: 20px;

@@ -1,3 +1,13 @@
+.results .swiper .swiper-slide .card-result {
+    /* width: 80vw !important; */
+}
+.swiper-slide {
+    transition: .5s;
+}
+.swiper-slide:not(.swiper-slide-visible) {
+    opacity: 0;
+}
+
 .card-result{
     color: white;
     background-color: #031C4C;
@@ -34,8 +44,9 @@
             align-self: stretch;
             flex-grow: 1;
             flex-basis: 50%;
-            @include size(14);
-            padding: 1rem;
+            font-size: 13px;
+            padding: 2rem;
+            line-height: 2;
         }
     }
 }

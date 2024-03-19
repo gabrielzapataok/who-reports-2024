@@ -1,9 +1,7 @@
 const swiper = new Swiper('.swiper', {
     loop: true,
     effect: 'coverflow',
-    autoplay: {
-        delay: 10000,
-    },
+    autoplay: false,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -15,12 +13,12 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2,
     centeredSlides: true,
     coverflowEffect: {
-        depth: 500,
+        depth: 1000,
         modifier: 1,
         rotate: 0,
-        scale: 0.8,
+        scale: .8,
         slideShadows: false,
-        stretch: 0,
+        stretch: 300,
     },
     on: {
         init: function () {
