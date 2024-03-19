@@ -2254,6 +2254,8 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding: 1rem;
   background-color: black;
   color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .result-report-2024 .card-result .card-content-wrapper {
   flex-grow: 1;
@@ -2263,6 +2265,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .card-result .card-content-wrapper .img-container {
   position: relative;
   flex: 1 0 300px;
+  align-self: stretch;
 }
 .result-report-2024 .card-result .card-content-wrapper .img-container img {
   width: 100%;
@@ -2276,6 +2279,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding: 4rem 1rem 1rem 1rem;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.862745098));
+}
+.result-report-2024 .card-result .card-content-wrapper .img-container .figcaption * {
+  font-size: 13px;
 }
 .result-report-2024 .card-result .card-content-wrapper .card-text {
   align-self: stretch;

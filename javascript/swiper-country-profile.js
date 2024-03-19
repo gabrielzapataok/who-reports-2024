@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 2,
+    slidesPerView: 1.4,
     centeredSlides: true,
     coverflowEffect: {
         depth: 1000,
