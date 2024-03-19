@@ -2291,6 +2291,13 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding: 2rem;
   line-height: 2;
 }
+.result-report-2024 .legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  white-space: nowrap;
+}
 .result-report-2024 .circle {
   width: 20px;
   height: 20px;
