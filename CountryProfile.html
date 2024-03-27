@@ -9,7 +9,7 @@
     <!-- Charts -->
     <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/kendo.all.min.js"></script>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/grid.min.css">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/origin.min.css">
     <link rel="stylesheet" href="./css/print.min.css">
     <link rel="stylesheet" href="./css/index.css">
-    
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0fd078418e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css">
@@ -42,11 +42,13 @@
 
     <!-- Slider main container -->
     <main class="result-report-2024">
-        
+
         <!-- Header cpuntry profile -->
 
         <header class="header-section">
-            <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
+            <div class="img-wrapper">
+                <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
+            </div>
             <div class="overlay flex flex-direction-column text-white text-center">
                 <label>COUNTRY PROFILE</label>
                 <div class="country">
@@ -55,18 +57,18 @@
                     Armenia
                 </div>
                 <label>EASTERN MEDITERRANEAN</label>
-                <button class="btn text-white change-country mt-3" id="change-country">Change country</button>
+                <button class="btn text-white change-country mt-20" id="change-country">Change country</button>
                 <div class="report-version">
                     END OF BIENNIUM RESULTS <br> REPORT 2022 - 2023
                 </div>
             </div>
             <div class="credits">
                 <div class="credits-content">
-                    <p class="epigraph px-3 pt-3"><b>Epigraph: </b> Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p class="epigraph px-10 pt-3"><b>Epigraph: </b> Lorem ipsum dolor sit amet consectetur adipisicing
                         elit, optio iste. Consequatur et rem voluptate dolorum provident debitis ut necessitatibus
                         tempore magni, sint laudantium placeat molestias.</p>
                     <hr>
-                    <p class="author px-3 pb-3"><b>Author: </b> WHO </p>
+                    <p class="author px-10 pb-20"><b>Author: </b> WHO </p>
                 </div>
                 <div class="credits-label">
                     <span><i class="fas fa-camera mr-10"></i>Credits</span><i class="fas fa-plus"></i><i
@@ -85,7 +87,7 @@
                         <i class="fas fa-times text-grey"></i>
                     </div>
                     <div class="filters row my-10 mx-0">
-                        <input type="text" class="form-control" placeholder="Country name"/>
+                        <input type="text" class="form-control" placeholder="Country name" />
                         <select type="text" class="form-control" placeholder="Country name">
                             <option value="">Region</option>
                             <option value="">Region</option>
@@ -197,42 +199,34 @@
 
         <!-- Section impact story -->
 
-        <section class="bg-top-right">
-            <div class="container pt-40 pb-70">
-                <h2 class="title-section text-grey text-center mb-4">Impact story</h2>
-                <h1 class="text-center mb-4">Afghanistan influenza surveillance system stands solid</h1>
-                <div class="row mx-0">
-                    <div class="col-md-6 px-10">
-                        <img src="./assets/hospital.png" alt="" srcset="">
-                    </div>
-                    <div class="col-md-6 px-10">
-                        <p class="mb-4">Afghanistan’s health system remains stretched in many ways. The country
-                            continues to grapple with economic difficulties making it challenging to provide and
-                            maintain basic health services, especially given the geographic barriers linked to access
-                            and insecurity. Nonetheless, WHO Afghanistan together with partners have been able to invest
-                            in surveillance systems, particularly for influenza, which have been strongly leveraged for
-                            the COVID-19 pandemic. The established system...</p>
-                        <a href="./CountryStory.html" class="button">Read more</a>
-                    </div>
+        <div class="bg-top-right">
+            <div class="container highlight px-0 py-70">
+                <div class="highlight-image"><img
+                        src="https://cdn-auth-cms.who.int/media/images/default-source/results-report/2022-midterm/country-stories/afghanistan/afghanistan-2.jpg?sfvrsn=554e6455_3">
+                </div>
+                <div class="highlight-content">
+                    <h2 class="title-section text-grey mb-20">Impact story</h2>
+                    <h1 class="mb-20 impact-story-title">Afghanistan influenza surveillance system stands solid</h1><a
+                        href="./CountryStory.html" class="button my-0" data-sf-ec-immutable="">Read more</a>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- Section contribution -->
 
-        <section class="section-blue pt-40 pb-70 text-white bg-top-left">
+        <div class="section-blue pt-40 pb-70 text-white bg-top-left">
 
             <h2 class="title-section text-center">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
-            <h3 class="subtitle-section text-center mb-4">WHO's Output Scorecard measures its performance for
+            <h3 class="subtitle-section text-center mb-20">WHO's Output Scorecard measures its performance for
                 accountability</h3>
             <div class="container">
-                <p class="text-center mb-4">The Scorecard below shows the assessment of WHO’s performance in delivering
+                <p class="text-center mb-20">The Scorecard below shows the assessment of WHO’s performance in delivering
                     the programme budget outputs agreed with Member States using six different dimensions, i.e.,
                     technical support, leadership, global public health goods, value for money, gender, equity, human
                     rights and disability. The dimension score (shown as a line) is the aggregate score of the different
                     attributes (shown as sticks). A Scorecard is reported for every output at the global level. In
                     addition, every major office reports its Scorecard for every output.</p>
-                <div class="selector mb-10">
+                <div class="selector mb-40">
                     <div class="selector-header">
                         <div class="selector-title"></div>
                         <i class="fas fa-angle-down"></i>
@@ -241,75 +235,136 @@
                 </div>
             </div>
 
-            <div class="charts-contribution d-flex justify-content-center my-70 text-center flex-wrap">
-                <div class="chart-contribution mb-10">
-                    <div class="chart">
-                        chart
-                    </div>
-                    <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
-                    primary health
-                    care strategies and comprehensive essential service packages
-                </div>
-                <div class="chart-contribution mb-10">
-                    <div class="chart">
-                        chart
-                    </div>
-                    <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
-                    disease-specific
-                    service coverage results
-                </div>
-                <div class="chart-contribution mb-10">
-                    <div class="chart">
-                        chart
-                    </div>
-                    <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
-                    health needs
-                    and barriers to equity across the life course
-                </div>
-                <div class="chart-contribution mb-10">
-                    <div class="chart">
-                        chart
-                    </div>
-                    <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
-                    accountability,
-                    responsiveness and empowerment of communities
-                </div>
-                <div class="chart-contribution mb-10">
-                    <div class="chart">
-                        chart
-                    </div>
-                    <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
-                </div>
-            </div>
 
-            <div class="container">
-                <b class="d-block mb-10 text-center">Dimensions</b>
-                <div class="d-flex mb-40 flex-wrap justify-content-center">
+            <div class="charts-technical-dimension">
+
+                <div class="charts-contribution">
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
+                        primary health
+                        care strategies and comprehensive essential service packages
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
+                        disease-specific
+                        service coverage results
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
+                        health needs
+                        and barriers to equity across the life course
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
+                        accountability,
+                        responsiveness and empowerment of communities
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
+                    </div>
+                </div>
+
+                <b class="d-block mb-10 text-center">Technical dimensions</b>
+                <div class="d-flex mb-20 flex-wrap justify-content-center">
                     <span class="legend-item"><span class="circle"></span>Technical support</span>
                     <span class="legend-item"><span class="circle"></span>LeaderShip</span>
                     <span class="legend-item"><span class="circle"></span>Global Goods / TPs</span>
-                    <span class="legend-item"><span class="circle"></span>Gender, Equity, Human Rights and Disability</span>
+                    <span class="legend-item"><span class="circle"></span>Gender, Equity, Human Rights and
+                        Disability</span>
                     <span class="legend-item"><span class="circle"></span>Value for money</span>
                 </div>
+            </div>
 
+
+            <div class="charts-enabled-dimensions">
+
+                <div class="charts-contribution">
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
+                        primary health
+                        care strategies and comprehensive essential service packages
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
+                        disease-specific
+                        service coverage results
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
+                        health needs
+                        and barriers to equity across the life course
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
+                        accountability,
+                        responsiveness and empowerment of communities
+                    </div>
+                    <div class="chart-contribution mb-10">
+                        <div class="chart">
+                            chart
+                        </div>
+                        <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
+                    </div>
+                </div>
+
+                <b class="d-block mb-10 text-center">Enabled dimensions</b>
+                <div class="d-flex mb-20 flex-wrap justify-content-center">
+                    <span class="legend-item"><span class="circle"></span>Strategy and Leadership</span>
+                    <span class="legend-item"><span class="circle"></span>Accountability</span>
+                    <span class="legend-item"><span class="circle"></span>Client service delivery</span>
+                    <span class="legend-item"><span class="circle"></span>Gender, Equity, Human Rights and
+                        Disability</span>
+                    <span class="legend-item"><span class="circle"></span>Value for Money</span>
+                </div>
+            </div>
+
+
+            <div class="container">
                 <b class="d-block mb-10 text-center">Scoring scale</b>
-                <div class="d-flex mb-40 flex-wrap justify-content-center">
+                <div class="d-flex mb-20 flex-wrap justify-content-center">
                     <span class="legend-item"><span class="circle">1</span>Emergent</span>
                     <span class="legend-item"><span class="circle">2</span>Developing</span>
                     <span class="legend-item"><span class="circle">3</span>Satisfactory</span>
                     <span class="legend-item"><span class="circle">4</span>Strong</span>
                 </div>
+            </div>
 
-            </div>
             <div class="d-flex justify-content-center w-100">
-                <button class="button">View budget Details</button>
+                <a class="button">View budget details</a>
             </div>
-        </section>
+        </div>
 
         <!-- narrative -->
 
-        <section class="text-grey section-grey pt-40 pb-70 bg-top-right">
-            <h2 class="title-section text-center mb-40">How WHO is driving impact on the ground</h2>
+        <div class="text-grey section-grey pt-40 pb-70 bg-top-right">
+            <h2 class="title-section text-center mb-20">How WHO is driving impact on the ground</h2>
             <div class="narratives section-white">
                 <div class="container-tab top">
                     <ul class="tab">
@@ -327,7 +382,7 @@
                     <!-- Overview of investment -->
 
                     <div class="container text-grey">
-                        <h3 class="text-center title-section mb-4">Overview of investment</h3>
+                        <h3 class="text-center title-section mb-20">Overview of investment</h3>
                         <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
                             2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a
                             total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a
@@ -344,9 +399,9 @@
                     <!-- Results -->
 
                     <div class="text-grey results mt-40 mb-70">
-                        <h2 class="text-center title-section mb-4">Results</h2>
+                        <h2 class="text-center title-section mb-20">Results</h2>
                         <div class="swiper">
-                            <div class="swiper-wrapper pb-5">
+                            <div class="swiper-wrapper pb-40">
                                 <div class="swiper-slide">
                                     <div class="card-result">
                                         <div class="title">The Seventy-fifth World Health Assembly adopted resolution
@@ -495,7 +550,7 @@
                     <!-- Looking Forward -->
 
                     <div class="container text-grey">
-                        <h2 class=" text-center title-section mb-4">Looking forward</h2>
+                        <h2 class=" text-center title-section mb-20">Looking forward</h2>
                         <ul class="">
                             <li>
                                 <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
@@ -533,25 +588,25 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
         <!-- Budget details tickers -->
 
-        <section class="section-blue pb-70 pt-40 bg-top-left">
+        <div class="section-blue pb-70 pt-40 bg-top-left">
             <div class="container relative text-white text-center">
                 <h1 class="h2 title-section pb-20">BUDGET DETAILS</h1>
                 <div class="tickers pt-20 flex justify-content-evenly flex-wrap">
-                    <div class="ticker flex flex-direction-column">
+                    <div class="ticker flex flex-direction-column ticker-approved-programme">
                         <span class="ticker-number">100</span>
                         <b>USD Million</b>
                         <p>APPROVED PROGRAMME <br> BUDGET</p>
                     </div>
-                    <div class="ticker flex flex-direction-column">
+                    <div class="ticker flex flex-direction-column ticker-available-funds">
                         <span class="ticker-number">54</span>
                         <b>USD Million</b>
                         <p>Available funds</p>
                     </div>
-                    <div class="ticker flex flex-direction-column">
+                    <div class="ticker flex flex-direction-column ticker-implementation">
                         <span class="ticker-number">1000</span>
                         <b>USD Million</b>
                         <p>Implementation</p>
@@ -559,20 +614,20 @@
                 </div>
                 <button class="button">View budget Details</button>
             </div>
-        </section>
+        </div>
 
         <!-- Indicator coming soon! -->
 
-        <section class="pb-70 pt-40 bg-bottom-right">
+        <div class="pb-70 pt-40 bg-bottom-right">
             <div class="container text-center">
-                <h1 class="title-section mb-4">INDICATORS</h1>
-                <div class="d-flex align-items-center"
+                <h1 class="title-section mb-20">INDICATORS</h1>
+                <div class="d-flex align-items-center justify-content-center"
                     style="background: url(./assets/bgcs.png) 270px center no-repeat; height: 300px">
-                    <h1 class="text-center mb-4 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON
+                    <h1 class="text-center mb-20 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON
                     </h1>
                 </div>
             </div>
-        </section>
+        </div>
 
         <div class="hidden">
             <div class="img-wrapper">
