@@ -1,9 +1,11 @@
-.results .swiper .swiper-slide .card-result {
-    /* width: 80vw !important; */
+#EOB-country-profile-container {
+    display: none;
 }
+
 .swiper-slide {
     transition: .5s;
 }
+
 .swiper-slide:not(.swiper-slide-visible) {
     opacity: 0;
 }

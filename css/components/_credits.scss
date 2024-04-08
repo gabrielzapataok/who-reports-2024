@@ -21,8 +21,27 @@
         transition: .5s;
         height: 0px;
         overflow: auto;
+        padding: 0 1rem;
+        font-weight: bold;
         &.active{
             height: 300px;
+        }
+        &:before {
+            padding: 1rem 0;
+            content: "";
+            display: block;
+        }
+        .photo-name {
+            padding: 0 0 1rem 0;
+            font-weight: 400;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            
+        }
+        .photo-description {
+            padding: 1rem 0;
+            display: block;
+            font-weight: 400;
         }
     }
 }

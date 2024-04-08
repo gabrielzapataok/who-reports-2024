@@ -10,7 +10,7 @@
 
   @import "./base/variables";
   @import "./base/mixins";
-  @import "./base/normalice";
+  // @import "./base/normalice";
   @import "./base/settings";
   @import "./base/utilities";
 
@@ -19,24 +19,24 @@
   \*--------------*/
 
   @import "./sections/home";
-  @import "./sections/ExecutiveSummary";
-  @import "./sections/outcome";
+  // @import "./sections/ExecutiveSummary";
+  // @import "./sections/outcome";
   @import "./sections/CountryStory";
-  @import "./sections/Budget";
+  // @import "./sections/Budget";
 
   /*--------------*\
   |---COMPONENTS---|
   \*--------------*/
   
-  @import "./components/header-video";
-  @import "./components/slick.scss";
+  // @import "./components/header-video";
+  // @import "./components/slick.scss";
   @import "./components/menu";
-  @import "./components/card";
+  // @import "./components/card";
   @import "./components/header-sections";
   @import "./components/sub-menu";
   @import "./components/buttons";
-  @import "./components/chart-barra";
-  @import "./components/chart";
+  // @import "./components/chart-barra";
+  // @import "./components/chart";
   @import "./components/tabs";
   @import "./components/selectores";
   @import "./components/list-links";
@@ -47,5 +47,7 @@
   @import "./components/loading.scss";
   @import "./components/card-result.scss";
 
+
   @import "./components/country-prfile.scss";
+  @import "./components/highlight";
 }
