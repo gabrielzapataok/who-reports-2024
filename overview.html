@@ -45,8 +45,10 @@
 
         <!-- Header cpuntry profile -->
 
-        <header class="header-section">
-            <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
+        <div class="header-section">
+            <div class="img-wrapper">
+                <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
+            </div>
             <div class="overlay flex flex-direction-column text-white text-center">
                 <h1>Executive overview</h1>
                 <div class="report-version">
@@ -66,7 +68,7 @@
                         class="fas fa-minus hidden"></i>
                 </div>
             </div>
-        </header>
+        </div>
 
 
         <!-- Menú -->
@@ -75,16 +77,15 @@
             <ul class="items list-style-none flex flex-wrap m-0 text-white">
                 <li><a href="" class="active"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="">working togheter <i class="fas fa-angle-down"></i></a></li>
-                <li><a href="">Our contributions <i class="fas fa-angle-down"></i></a></li>
+                <li class=""><a href="" class="flex align-items-center">working togheter <i class="ml-10 fas fa-angle-down"></i></a></li>
+                <li class=""><a href="" class="flex align-items-center">Our contributions <i class="ml-10 fas fa-angle-down"></i></a></li>
             </ul>
         </nav>
 
 
         <!-- content -->
-        <section class="es-intro py-70">
-            <div class="container flex align-items-center flex-direction-column text-grey">
-                
+        <div class="es-intro">
+            <div class="container py-70 flex align-items-center flex-direction-column text-grey">
                 <h2 class="title-section text-grey text-center mb-20">Introduction</h2>
                 <p>WHO is marking its 75th anniversary this year, with its 194 Member States and partners, by calling for a renewed drive for health equity. The past seven and a half decades have seen extraordinary progress in protecting people from diseases, health risks and harms. However, as this report shows, further progress is needed to achieve the triple billion targets towards attaining the health-related Sustainable Development Goals and meeting other health challenges, such as mental health, antimicrobial resistance and climate change.
                     <br><br>
@@ -93,10 +94,10 @@
                     This mid-term review of implementation of the Programme budget 2022–2023 presents the progress in 2022 towards the triple billion targets, outcomes and outputs, based on the GPW 13 results framework, which includes indicators. As various evaluations have recommended simplifying the output monitoring process, this report includes progress on deliverables planned for the biennium with the main results that have emerged in the first year of the biennium as reported by the output delivery teams,  leaving the more extensive programmatic assessment using the output scorecard for the end of biennium. In addition, key accomplishments are highlighted based on a selection by senior management and selected impact case studies are presented to exemplify how the Secretariat and Member States work together to drive health impacts at the country level, where it matters most.
                 </p>
             </div>
-        </section>
+        </div>
 
         <!-- billions -->
-        <section class="es-billions">
+        <div class="es-billions">
 
             <div class="container flex align-items-center flex-direction-column mb-40 text-grey">
                 <h2 class="title-section text-grey text-center mb-20">PROGRESS ON THE TRIPLE BILLION TARGETS AND THE SUSTAINABLE DEVELOPMENT GOALS</h2>
@@ -173,15 +174,15 @@
             <div class="text-center mb-70">
                 <a class="button" href="https://www.who.int/data/triple-billion-dashboard">Triple Billion Dashboard - WHO</a>
             </div>
-        </section>
+        </div>
 
         
 
         <!--  Programme budget financing and implementation -->
 
-        <section class="container text-grey">
+        <div class="container text-grey">
             <div>
-                <h2 class="text-center title-section h2 pt-70 pb-20"> Programme budget financing and implementation</h2>
+                <h2 class="text-center title-section pb-40"> Programme budget financing and implementation</h2>
                 <p>
                     In May 2022, the Seventy-fifth World Health Assembly adopted resolution WHA75.5 on revision of the Programme budget 2022‒2023, in which it further approved the increase in the base budget segment of the Programme budget 2022–2023, as approved in resolution WHA74.3 (2021). Through resolution WHA75.5, the total Programme budget now stands at US$ 6726.1 million for the financial period 2022–2023.
                     <br>
@@ -261,12 +262,12 @@
                 For more details on the financing and implementation of the Programme budget 2022-2023, see the budget section of the results report.
             </p>
 
-            <div class="chart-container light mb-70">
+            <div class="light my-70 report-custom-chart-container">
                 <div class="chart" id="output_indicator_line_chart3"></div>
                 <script type="text/javascript" src="./javascript/charts/output_indicator_line_chart3.js"></script>
             </div>
 
-        </section>
+        </div>
 
 
 
@@ -316,15 +317,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="./javascript/Gsap/gsap-country-story.js"></script>
     <script src="./javascript/credits.js"></script>
+    <script src="./javascript/Gsap/gsap-executive-summary.js"></script>
 
-    <script src="./javascript/tab.js"></script>
-    <script src="./javascript/charts/selector.js"></script>
-
-    <script src="javascript/modal.js"></script>
-
-    <script src="./javascript/swiper-country-profile.js"></script>
 </body>
 
 </html>
