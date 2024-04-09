@@ -947,7 +947,8 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .menu li {
   margin: 0;
 }
-.result-report-2024 .menu a {
+.result-report-2024 .menu .item_link {
+  cursor: pointer;
   font-size: calc(12.6px + (5.4) * (100vw - 300px) / 1300);
   text-transform: uppercase;
   font-weight: 700;
@@ -956,7 +957,13 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   display: flex;
   padding: 16px 18px;
 }
-.result-report-2024 .menu a:active, .result-report-2024 .menu a:hover, .result-report-2024 .menu a.active {
+.result-report-2024 .menu .item_link i {
+  transition: 0.5s;
+}
+.result-report-2024 .menu .item_link.active i {
+  transform: rotate(180deg);
+}
+.result-report-2024 .menu .item_link:active, .result-report-2024 .menu .item_link:hover, .result-report-2024 .menu .item_link.active {
   background-color: #0078d4 !important;
   color: white !important;
 }
@@ -983,6 +990,28 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.result-report-2024 .mega-menu-outcomes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #0078d4;
+}
+.result-report-2024 .mega-menu-outcomes .container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.result-report-2024 .mega-menu-outcomes .container::before, .result-report-2024 .mega-menu-outcomes .container::after {
+  content: unset;
+}
+.result-report-2024 .mega-menu-outcomes .container a {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+.result-report-2024 .mega-menu-outcomes .container a:hover {
+  background: #1189e5;
 }
 .result-report-2024 .header-section {
   min-height: 450px;
