@@ -24,16 +24,19 @@ const swiper = new Swiper('.swiper', {
         init: function () {
             var slides = document.querySelectorAll('.swiper-slide .card-result');
             var maxHeight = 0;
-            slides.forEach(function (slide) {
-                console.log(slide);
-                var slideHeight = slide.clientHeight;
-                if (slideHeight > maxHeight) {
-                    maxHeight = slideHeight;
-                }
-            });
-            slides.forEach(function (slide) {
-                slide.style.height = maxHeight + 'px';
-            });
+            var normalice = false;
+            setTimeout(() => {
+                slides.forEach(function (slide) {
+                    var slideHeight = slide.clientHeight;
+                    if (slideHeight > maxHeight) {
+                        maxHeight = slideHeight;
+                    }
+                    
+                });
+                slides.forEach(function (slide) {
+                    slide.style.height = maxHeight + 'px';
+                });
+            }, 500);
         }
     }
 })
