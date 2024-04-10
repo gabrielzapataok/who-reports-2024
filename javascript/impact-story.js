@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 
 
+
 // header parallax 
 
 const parallaxTL = gsap.timeline({

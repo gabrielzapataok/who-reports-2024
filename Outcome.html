@@ -9,298 +9,512 @@
     <!-- Charts -->
     <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/jquery.min.js"></script>
     <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/kendo.all.min.js"></script>
+
     <!-- CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/grid.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/origin.css">
+    <link rel="stylesheet" href="./css/origin.min.css">
+    <link rel="stylesheet" href="./css/print.min.css">
     <link rel="stylesheet" href="./css/index.css">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0fd078418e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css">
-    <!-- Slick -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> 
+
+    <!-- Swiper -->
+    <script src="./javascript/swipper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./javascript/swipper/swiper-bundle.min.css">
+
     <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outcome</title>
+    <title>Country Story</title>
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 </head>
 
-<body class="sf-body">
+<body>
+
+    <!-- Slider main container -->
     <main class="result-report-2024">
-        <header class="header-sections">
-            <img src="./assets/outcome.jpg">
-            <div class="overlay flex flex-direction-column text-white text-center">
-                <h2 class="h5">- Outcome -</h2>
-                <h1 class="title-section h1">IMPROVED ACCESS TO QUALITY ESSENTIAL HEALTH SERVICES</h1>
+
+        <!-- Header outcome -->
+
+        <div class="header-section">
+            <div class="img-wrapper">
+                <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
             </div>
-        </header>
+            <div class="overlay flex flex-direction-column text-white text-center">
+                <label>OUTCOME 1.1</label>
+                <div class="container">
+                    <h1>Improved access to quality essentitial health services irresspective of gender, age or
+                        disability status</h1>
+                </div>
+                <div class="report-version">
+                    END OF BIENNIUM RESULTS <br> REPORT 2022 - 2023
+                </div>
+            </div>
+            <div class="credits">
+                <div class="credits-content">
+                    <p class="epigraph px-10 pt-3"><b>Epigraph: </b> Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit, optio iste. Consequatur et rem voluptate dolorum provident debitis ut necessitatibus
+                        tempore magni, sint laudantium placeat molestias.</p>
+                    <hr>
+                    <p class="author px-10 pb-20"><b>Author: </b> WHO </p>
+                </div>
+                <div class="credits-label">
+                    <span><i class="fas fa-camera mr-10"></i>Credits</span><i class="fas fa-plus"></i><i
+                        class="fas fa-minus hidden"></i>
+                </div>
+            </div>
+        </div>
 
         <!-- Menú -->
-        <nav class="menu">
-            <ul class="items list-style-none flex flex-wrap justify-content-center m-0 text-white">
-                <li><a href="./ExecutiveSummary.html"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="./ExecutiveSummary.html">Overview</a></li>
-                <li><a href="./ExecutiveSummary.html" class="active">working togheter</a></li>
-                <li><a href="./ExecutiveSummary.html">contributions</a></li>
-                <li><a href="./ExecutiveSummary.html">resources</a></li>
+
+        <div class="menu relative">
+            <ul class="items list-style-none flex flex-wrap m-0 text-white">
+                <li>
+                    <a href="" class="item_link flex align-items-center"><i class="mr-10 fas fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a class="item_link" href="">Overview</a>
+                </li>
+                <li id="menu-working-togheter" class="active">
+                    <span class="item_link flex align-items-center">working togheter <i class="ml-10 fas fa-angle-down"></i></span>
+                </li>
+                <li class="">
+                    <a href="" class="item_link flex align-items-center">Our contributions <i class="ml-10 fas fa-angle-down"></i></a>
+                </li>
             </ul>
-        </nav>
+        </div>
 
-        <section class="section-grey py-70">
-            <div class="container text-grey">
-                <h2 class="title-section h2 text-center mb-20">Introduction</h2>
-                <p>When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had been
-                    reported to WHO, and some 300 000 people had lost their lives. A year later, the number of cases has
-                    ballooned more than 40-fold, to almost 160 million, and the number of deaths has increased 11 times,
-                    to more than 3.3 million.</p>
-                <p>When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had been
-                    reported to WHO, and some 300 000 people had lost their lives. A year later, the number of cases has
-                    ballooned more than 40-fold, to almost 160 million, and the number of deaths has increased 11 times,
-                    to more than 3.3 million.</p>
-            </div>
-        </section>
+        <div class="mega-menu-outcomes" style="display: none;">
+            <ul class="container py-20">
+                <li><a href="#">Outcome 01</a></li>
+                <li><a href="#">Outcome 02</a></li>
+                <li><a href="#">Outcome 03</a></li>
+                <li><a href="#">Outcome 04</a></li>
+                <li><a href="#">Outcome 05</a></li>
+                <li><a href="#">Outcome 06</a></li>
+                <li><a href="#">Outcome 07</a></li>
+                <li><a href="#">Outcome 08</a></li>
+                <li><a href="#">Outcome 09</a></li>
+                <li><a href="#">Outcome 10</a></li>
+                <li><a href="#">Outcome 11</a></li>
+                <li><a href="#">Outcome 12</a></li>
+            </ul>
+        </div>
+        <!-- Intro -->
 
-        <section class="container py-70 text-grey">
-            <h2 class="title-section h2 text-center mb-20"> STORIES OF WHO'S IMPACT</h2>
-            <div class="country-stories-outcome grid-cards pb-70 pt-70 slick-sistem">
-                <div class="rr-card">
-                    <div class="cards-country">
-                        <img class="header-card" src="/assets/ukrania.jpg" alt="">
-                        <h6 class="h6 text-white title-section">Ukraine</h6>
-                        <img class="flag-countries" src="/assets/uk.png">
-                    </div>
-                    <div class="px-20 py-20 relative flex-1">
-                        <h6 class="h6 title-section">Addressing socioeconomic</h6>
-                        <span>Addressing socioeconomic hardship associated with TB inAddressing socioeconomic hardship
-                            associated </span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
 
-                <div class="rr-card">
-                    <div class="cards-country">
-                        <img class="header-card" src="/assets/venezuela.jpg" alt="">
-                        <h6 class="h6 text-white title-section">vENEZUELA</h6>
-                        <img class="flag-countries" src="/assets/vnzl.png">
-                    </div>
-                    <div class="px-20 py-20 relative flex-1">
-                        <h6 class="h6 title-section">Addressing socioeconomic</h6>
-                        <span>Addressing socioeconomic hardship associated with TB inAddressing socioeconomic hardship
-                            associated </span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
+        <!-- radar and curve charts -->
 
-                <div class="rr-card">
-                    <div class="cards-country">
-                        <img class="header-card" src="/assets/colobia.jpg" alt="">
-                        <h6 class="h6 text-white title-section">Colombia</h6>
-                        <img class="flag-countries" src="/assets/co.png">
-                    </div>
-                    <div class="px-20 py-20 relative flex-1">
-                        <h6 class="h6 title-section">Addressing socioeconomic</h6>
-                        <span>Addressing socioeconomic hardship associated with TB inAddressing socioeconomic hardship
-                            associated </span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-violet py-70 text-white">
+        <div class="text-grey py-70 bg-top-left">
             <div class="container">
-                <h2 class="title-section h2 text-center mb-20">Explore the progress</h2>
-                <p class="mb-40">When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had bee</p>
-                <div class="selector mb-10">
-                    <div class="selector-header">
-                        <div class="selector-title"></div>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="selector-options section-violet"></div>
+                <h2 class="text-center title-section mb-20">Introduction</h2>
+                <div class="text-center links-technical-products">
+                    <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event-driven budget segments: emergency operations and appeals, and polio eradication, the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs. , the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with oping for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs.</p>
                 </div>
-                <div class="report-custom-chart-container">
+            </div>
+        </div>
+
+
+        <!-- Section progress -->
+
+        <div class="section-grey py-70 bg-bottom-right">
+            <div class="container">
+                <h2 class="title-section text-center">explore the progress - outcome indicators</h2>
+                <div class="light mt-40 report-custom-chart-container">
                     <div class="chart" id="output_indicator_line_chart3"></div>
                     <script type="text/javascript" src="./javascript/charts/output_indicator_line_chart3.js"></script>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- narrative -->
+
+        <div class="section-blue pt-40 pb-70">
+            <h2 class="title-section text-center mb-20 text-white">How WHO is driving impact on the ground</h2>
+            <div class="narratives section-white">
+                <div class="container-tab top">
+                    <ul class="tab">
+                        <li class="menu-item">Global</li>
+                        <li class="menu-item">Headquarters</li>
+                        <li class="menu-item">African Region</li>
+                        <li class="menu-item">Region of the Americas</li>
+                        <li class="menu-item">Eastern Mediterranean Region</li>
+                        <li class="menu-item">European Region</li>
+                        <li class="menu-item">South-East Asia Region</li>
+                        <li class="menu-item">Western Pacific Region</li>
+                        <div class="line"></div>
+                    </ul>
+                </div>
+
+                <div class="py-70 narrative">
+
+                    <!-- Budget details tickers -->
+
+                    <div class="mb-70">
+                        <div class="container text-center">
+                            <h2 class="title-section mb-20">budget financing and implementation</h2>
+                            <div class="tickers pt-20 flex justify-content-evenly flex-wrap">
+                                <div class="ticker flex flex-direction-column ticker-approved-programme">
+                                    <span class="ticker-number">100</span>
+                                    <b>USD Million</b>
+                                    <p>APPROVED PROGRAMME <br> BUDGET</p>
+                                </div>
+                                <div class="ticker flex flex-direction-column ticker-available-funds">
+                                    <span class="ticker-number">54</span>
+                                    <b>USD Million</b>
+                                    <p>Available funds</p>
+                                </div>
+                                <div class="ticker flex flex-direction-column ticker-implementation">
+                                    <span class="ticker-number">1000</span>
+                                    <b>USD Million</b>
+                                    <p>Implementation</p>
+                                </div>
+                            </div>
+                            <button class="button">View budget details</button>
+                        </div>
+                    </div>
+
+                    <!-- Sub narrative -->
+                    <h2 class="title-section text-center mb-20">How WHO is driving impact on the ground</h2>
+                    <div class="narratives section-white mb-70">
+                        <div class="container-tab top">
+                            <ul class="tab">
+                                <li class="menu-item">Service delivery</li>
+                                <li class="menu-item">Condition and disease-specific coverage</li>
+                                <li class="menu-item">Life course</li>
+                                <li class="menu-item">Systems governance</li>
+                                <li class="menu-item">Health care and workforce</li>
+                                <div class="line"></div>
+                            </ul>
+                        </div>
+                        <div class="py-70 narrative">
+
+                            <!-- Overview of investment -->
+        
+                            <div class="container text-grey mb-70">
+                                <h3 class="text-center title-section mb-20">Overview of investment</h3>
+                                <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
+                                    2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a
+                                    total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a
+                                    good level of financing (US$ 8.3 billion), including projections, which exceeded the total
+                                    approved. The good level of financing is explained by two event-driven budget segments:
+                                    emergency operations and appeals, and polio eradication, the financing for which has needed
+                                    to exceed the amounts established in the Programme budget in order to keep step with
+                                    operational needs. , the financing for which has needed to exceed the amounts established in
+                                    the Programme budget in order to keep step with oping for which has needed to exceed the
+                                    amounts established in the Programme budget in order to keep step with operational needs.
+                                </p>
+                            </div>
+        
+
+                            <!-- PB Fundin implementation -->
+
+                            <div class="container text-grey mb-70">
+                                <h2 class="text-center title-section mb-10">programme budget funding and implementation</h2>
+                                <h3 class="text-center subtitle-section mb-40">This section provides ab overview of the available financial resources and their utiliziation to support delivery of the output 2023.</h3>
+                                <div class="chart-billion">
+                                    <div class="chart-billion-progress text-white text-center" style="width: 70%">690 million more people by 2023</div>
+                                    <div class="shortfall text-grey text-center">shortfall 310</div>
+                                </div>
+                                <div class="d-flex justify-content-center w-100 mt-40">
+                                    <a class="button my-0">View budget details</a>
+                                </div>
+                            </div>
+
+                            <!-- Results -->
+        
+                            <div class="text-grey results mb-70">
+                                <h2 class="text-center title-section mb-20">Results</h2>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper pb-40">
+                                        <div class="swiper-slide">
+                                            <div class="card-result">
+                                                <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                                    WHA75.5</div>
+                                                <div class="card-content-wrapper">
+                                                    <div class="img-container">
+                                                        <img src="./assets/billions3.jpg" alt="">
+                                                        <div class="figcaption">
+                                                            <div class="author"><b>Author: </b>WHO</div>
+                                                            <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                                consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                                nesciunt ipsa.</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                        resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                        segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                        billion. By the end of the first year, the total Programme budget has a
+                                                        good level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event The Seventy-fifth World Health Assembly adopted resolution
+                                                        WHA75.5 in May 2022, the approved base programmes segment of the
+                                                        Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                        first year, total Programme has a good of financing (US$ 8.3 ),
+                                                        including projections, which exceeded the total approved. The good level
+                                                        of financing is explained two event May 2022, revising the approved base
+                                                        programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                        6.726 billion. By the end of the first year, the total Programme has a
+                                                        level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-result">
+                                                <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                                    WHA75.5</div>
+                                                <div class="card-content-wrapper">
+                                                    <div class="img-container">
+                                                        <img src="./assets/fs2.jpg" alt="">
+                                                        <div class="figcaption">
+                                                            <div class="author"><b>Author: </b>WHO</div>
+                                                            <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                                consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                                nesciunt ipsa.</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                        resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                        segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                        billion. By the end of the first year, the total Programme budget has a
+                                                        good level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event The Seventy-fifth World Health Assembly adopted resolution
+                                                        WHA75.5 in May 2022, the approved base programmes segment of the
+                                                        Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                        first year, total Programme has a good of financing (US$ 8.3 ),
+                                                        including projections, which exceeded the total approved. The good level
+                                                        of financing is explained two event May 2022, revising the approved base
+                                                        programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                        6.726 billion. By the end of the first year, the total Programme has a
+                                                        level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-result">
+                                                <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                                    WHA75.5</div>
+                                                <div class="card-content-wrapper">
+                                                    <div class="img-container">
+                                                        <img src="./assets/billions4.jpg" alt="">
+                                                        <div class="figcaption">
+                                                            <div class="author"><b>Author: </b>WHO</div>
+                                                            <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                                consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                                nesciunt ipsa.</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                        resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                        segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                        billion. By the end of the first year, the total Programme budget has a
+                                                        good level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event The Seventy-fifth World Health Assembly adopted resolution
+                                                        WHA75.5 in May 2022, the approved base programmes segment of the
+                                                        Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                        first year, total Programme has a good of financing (US$ 8.3 ),
+                                                        including projections, which exceeded the total approved. The good level
+                                                        of financing is explained two event May 2022, revising the approved base
+                                                        programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                        6.726 billion. By the end of the first year, the total Programme has a
+                                                        level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-result">
+                                                <div class="title">The Seventy-fifth World Health Assembly adopted resolution
+                                                    WHA75.5</div>
+                                                <div class="card-content-wrapper">
+                                                    <div class="img-container">
+                                                        <img src="./assets/billions2.jpg" alt="">
+                                                        <div class="figcaption">
+                                                            <div class="author"><b>Author: </b>WHO</div>
+                                                            <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
+                                                                consectetur adipisicing elit. Fuga voluptatum molestias, quae
+                                                                nesciunt ipsa.</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">The Seventy-fifth World Health Assembly adopted
+                                                        resolution WHA75.5 in May 2022, revising the approved base programmes
+                                                        segment of the Programme budget 2022-2023 to a total of US$ 6.726
+                                                        billion. By the end of the first year, the total Programme budget has a
+                                                        good level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event The Seventy-fifth World Health Assembly adopted resolution
+                                                        WHA75.5 in May 2022, the approved base programmes segment of the
+                                                        Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
+                                                        first year, total Programme has a good of financing (US$ 8.3 ),
+                                                        including projections, which exceeded the total approved. The good level
+                                                        of financing is explained two event May 2022, revising the approved base
+                                                        programmes segment of the Programme budget 2022-2023 to a total of US$
+                                                        6.726 billion. By the end of the first year, the total Programme has a
+                                                        level of financing (US$ 8.3 billion), including projections, which
+                                                        exceeded the total approved. The good level of financing is explained by
+                                                        two event</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+        
+                                    <div class="swiper-pagination"></div>
+                                </div>
+        
+                            </div>
+
+                            <!-- radar and curve charts -->
+
+                            <div class="container text-grey">
+                                <h2 class="text-center title-section mb-20">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
+                                <div class="text-center links-technical-products">
+                                    <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a good level of financing (US$ 8.3 billion), including projections, which exceeded the total approved. The good level of financing is explained by two event-driven budget segments: emergency operations and appeals, and polio eradication, the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs. , the financing for which has needed to exceed the amounts established in the Programme budget in order to keep step with oping for which has needed to exceed the amounts established in the Programme budget in order to keep step with operational needs.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
 
-        <!-- WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES -->
-        <section>
-            <div class="outcomes-header">
-                <img src="./assets/outcomes.jpg" alt="">
-                <h2 class="title-section h2 text-center text-white">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
+                    <!-- Technical products -->
+
+                    <div class="container text-grey mb-70">
+                        <h2 class=" text-center title-section mb-20">Technical products on norms and standards, data and
+                            research produce by who</h2>
+                        <div class="links-technical-products">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-link mx-3"></i>
+                                <a href="#">The Seventy-fifth World Health Assembly adopted resolution WHA75.5</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-link mx-3"></i>
+                                <a href="#">Programme budget 2022-2023</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-link mx-3"></i>
+                                <a href="#">By the end of the first year, the total Programme budget</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Looking Forward -->
+
+                    <div class="container text-grey">
+                        <h2 class=" text-center title-section mb-20">Looking forward</h2>
+                        <ul class="">
+                            <li>
+                                <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
+                                    revising the approved base programmes </p>
+                            </li>
+                            <li>
+                                <p>Programme budget 2022-2023 to a total of US$ 6.726 billion. </p>
+                            </li>
+                            <li>
+                                <p>By the end of the first year, the total Programme budget has a good level of
+                                    financing (US$ 8.3 billion). </p>
+                            </li>
+                            <li>
+                                <p>The good level of financing is explained by two event-driven budget segments:
+                                    emergency operations and appeals, and polio eradication,</p>
+                            </li>
+                            <li>
+                                <p>The financing for which has needed to exceed the amounts established in the Programme
+                                    budget in order to keep step.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="container-tab bottom">
+                    <ul class="tab">
+                        <li class="menu-item selected">Service delivery</li>
+                        <li class="menu-item">Health workforce</li>
+                        <li class="menu-item">Governance</li>
+                        <li class="menu-item">Health information systems</li>
+                        <li class="menu-item">Emergency preparedness</li>
+                        <div class="line"></div>
+                    </ul>
+                </div>
+
             </div>
+        </div>
 
-            <div class="section-blue">
-                <div class="output-card-result-report grid-cards container pb-70 pt-90">
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.1</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
 
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.2</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous
-                                decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
 
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.3</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous
-                                decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
-                </div>
-
-                <div class="grid-cards container pb-70 pt-20">
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.4</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous
-                                decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
-
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.5</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous
-                                decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
-
-                    <div class="cards-outcomes">
-                        <div class="cards-outcomes-title">
-                            <h6 class="h6 text-white title-section text-center py-20">1.1.6</h6>
-                        </div>
-                        <div class="px-20 py-20 relative flex-1">
-                            <span class="text-grey">Assessing and supporting adolescents' capacity for autonomous
-                                decision-making in health care settings: a tool for health-care providers</span>
-                        </div>
-                        <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                    </div>
-                </div>
+        <div class="hidden">
+            <div class="img-wrapper">
+                <img id="img-top-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-10.png?sfvrsn=63153776_3"
+                    alt="" sf-size="37391">
             </div>
-        </section>
-
-
-        <section class="home-budget-summary pt-70 pb-150 relative">
-            <div class="container relative text-grey text-center">
-                <h2 class="title-section h2 text-center text-grey mb-20">These are the resources</h2>
-                <p>When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had been
-                    reported to WHO, and some 300 000 people had lost their lives. A year later, the number of cases has
-                    ballooned more than 40-fold, to almost 160 million, and the number of deaths has increased 11 times,
-                    to more than 3.3 million.<br>A year ago, vaccines were still a distant hope; now they are giving us
-                    real hope of bringing the pandemic under control. Even so, the shocking disparity in the global
-                    distribution of vaccines is another painful reminder of the inequities that blight our world and lie
-                    at the root of so many of its problems.</p>
-                <div class="tickers pt-20 flex justify-content-evenly flex-wrap">
-                    <div class="ticker flex flex-direction-column">
-                        <span class="ticker-number">100</span>
-                        <b>USD Million</b>
-                        <p>APPROVED PROGRAMME <br> BUDGET</p>
-                    </div>
-                    <div class="ticker flex flex-direction-column">
-                        <span class="ticker-number">54</span>
-                        <b>USD Million</b>
-                        <p>Available funds</p>
-                    </div>
-                    <div class="ticker flex flex-direction-column">
-                        <span class="ticker-number">1000</span>
-                        <b>USD Million</b>
-                        <p>Implementation</p>
-                    </div>
-                </div>
-                <button class="button">View budget Details</button>
+            <div class="img-wrapper">
+                <img id="img-bottom-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-9.png?sfvrsn=3371292c_4"
+                    alt="" sf-size="37812">
             </div>
-            <img class="arrow" src="./assets/arrow-75-anniversary.png" alt="">
-        </section>
-
-        <section class="section-grey py-70">
-            <div class="container">
-                <h2 class="title-section h2 text-center text-grey">Explore more outcomes</h2>
+            <div class="img-wrapper">
+                <img id="img-top-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-8b93b413a-3ea2-482d-b1db-e2655fa0216b.png?sfvrsn=dfc783e1_3"
+                    alt="" sf-size="36970">
             </div>
-
-
-            <div class="grid-cards container pb-70 pt-90 more-outcomes-slick">
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-01.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.1</b>
-                        <span>Reduced number of people suffering financial hardship</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-02.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.2</b>
-                        <span>Improved access to quality essential health services</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-03.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.3</b>
-                        <span>Improved access to essential medicines, vaccines, diagnostics and devices for primary
-                            health care</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-01.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.1</b>
-                        <span>Reduced number of people suffering financial hardship</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-02.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.2</b>
-                        <span>Improved access to quality essential health services</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
-                <div class="rr-card">
-                    <img class="header-card" src="/assets/out-03.png" alt="">
-                    <div class="px-20 py-20 relative text-center flex-1">
-                        <b class="number-outcome">1.3</b>
-                        <span>Improved access to essential medicines, vaccines, diagnostics and devices for primary
-                            health care</span>
-                    </div>
-                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
-                </div>
+            <div class="img-wrapper">
+                <img id="img-bottom-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-7.png?sfvrsn=c7d5b33e_4"
+                    alt="" sf-size="36818">
             </div>
-
-
-        </section>
-
+        </div>
     </main>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./javascript/slick/more-outcomes-slick.js"></script>
+
+
+    <script>
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+
+        var imgTopLeft = $('#img-top-left').attr('src');
+        $('.bg-top-left').css('background-image', 'url(' + imgTopLeft + ')');
+
+        var imgBottomRight = $('#img-bottom-right').attr('src');
+        $('.bg-bottom-right').css('background-image', 'url(' + imgBottomRight + ')');
+
+        var imgBottomLeft = $('#img-bottom-left').attr('src');
+        $('.bg-bottom-left').css('background-image', 'url(' + imgBottomLeft + ')');
+
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./javascript/Gsap/gsap-country-story.js"></script>
+    <script src="./javascript/credits.js"></script>
+
+    <script src="./javascript/tab.js"></script>
     <script src="./javascript/charts/selector.js"></script>
+
+    <script src="javascript/modal.js"></script>
+    <script src="javascript/megamenu.js"></script>
+
+    <script src="./javascript/swiper-country-profile.js"></script>
 </body>
 
 </html>

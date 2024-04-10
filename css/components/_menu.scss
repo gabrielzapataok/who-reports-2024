@@ -44,7 +44,8 @@
     li{
         margin: 0;
     }
-    a{
+    .item_link {
+        cursor: pointer;
         @include size(18);
         text-transform: uppercase;
         font-weight: 700;
@@ -52,6 +53,12 @@
         color: $white;
         display: flex;
         padding: 16px 18px;
+        i {
+            transition: .5s;
+        }
+        &.active i {
+            transform: rotate(180deg);
+        }
         &:active, 
         &:hover,
         &.active{
@@ -82,4 +89,29 @@ a#menu_home {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.mega-menu-outcomes {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #0078d4;
+    .container {
+        list-style: none;
+        &::before,&::after{content:unset}
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        a {
+            color: white;
+            padding: .5rem 1rem;
+            display: flex;
+            &:hover {
+                background: #1189e5;
+            }
+        }
+    }
+}
+
+.rotate {
+    
 }
