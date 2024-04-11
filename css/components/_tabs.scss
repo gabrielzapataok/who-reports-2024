@@ -10,7 +10,7 @@
         font-weight: 600;
     }
     &.bottom {
-        .menu-item {
+        .menu-item,.tab-item {
             margin-top: .5rem;
         }
         .line {
@@ -18,7 +18,7 @@
         }
     }
     &.top {
-        .menu-item {
+        .menu-item,.tab-item {
             margin-bottom: .5rem;
         }
         .line {
@@ -41,7 +41,7 @@
     @include max(800){
         justify-content: center;
     }
-    .menu-item {
+    .menu-item,.tab-item {
         padding: 10px;
         display: flex;
         cursor: pointer;

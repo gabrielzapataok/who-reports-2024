@@ -1383,13 +1383,13 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   text-transform: uppercase;
   font-weight: 600;
 }
-.result-report-2024 .container-tab.bottom .menu-item {
+.result-report-2024 .container-tab.bottom .menu-item, .result-report-2024 .container-tab.bottom .tab-item {
   margin-top: 0.5rem;
 }
 .result-report-2024 .container-tab.bottom .line {
   top: 0;
 }
-.result-report-2024 .container-tab.top .menu-item {
+.result-report-2024 .container-tab.top .menu-item, .result-report-2024 .container-tab.top .tab-item {
   margin-bottom: 0.5rem;
 }
 .result-report-2024 .container-tab.top .line {
@@ -1411,13 +1411,13 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
     justify-content: center;
   }
 }
-.result-report-2024 .tab .menu-item {
+.result-report-2024 .tab .menu-item, .result-report-2024 .tab .tab-item {
   padding: 10px;
   display: flex;
   cursor: pointer;
   font-size: calc(11.2px + (4.8) * (100vw - 300px) / 1300);
 }
-.result-report-2024 .tab .menu-item:hover {
+.result-report-2024 .tab .menu-item:hover, .result-report-2024 .tab .tab-item:hover {
   color: #0FA0DF;
 }
 .result-report-2024 .tab .selected {
@@ -1584,6 +1584,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   border: 1px solid #031C4C;
   margin: 0 10px;
   background: white;
+}
+.result-report-2024 .page-section-narrative-regions .narratives {
+  border-color: #031C4C;
 }
 .result-report-2024 .page-section-narrative-outputs {
   background-color: #f2f2f2;
