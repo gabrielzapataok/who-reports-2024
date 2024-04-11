@@ -1580,6 +1580,19 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+.result-report-2024 .page-section-narrative-regions .narrative {
+  border: 1px solid #031C4C;
+  margin: 0 10px;
+  background: white;
+}
+.result-report-2024 .page-section-narrative-outputs {
+  background-color: #f2f2f2;
+}
+.result-report-2024 .page-section-narrative-outputs .narrative {
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  background: white;
+}
 .result-report-2024 .container-modal {
   top: 0;
   width: 100%;
