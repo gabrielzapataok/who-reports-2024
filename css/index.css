@@ -1486,6 +1486,12 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .selector-options .selector-option:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+.result-report-2024 .selector-outcome-indicator {
+  background-color: white;
+}
+.result-report-2024 .selector-outcome-indicator .selector-header, .result-report-2024 .selector-outcome-indicator .selector-options {
+  border-color: black !important;
+}
 .result-report-2024 .selector.active .selector-header {
   border-radius: 8px 8px 0 0;
 }
@@ -1494,7 +1500,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 }
 .result-report-2024 .selector.active .selector-options {
   max-height: 300px;
-  border: 1px solid white;
+  border: 1px solid;
 }
 .result-report-2024 .list-links li {
   list-style: none;
