@@ -17,9 +17,9 @@ $(document).ready(function () {
 
 
   //abrir/cerrar dropdown
-  let dropdow = $('.selector');
+  let dropdown = $('.selector');
   dropdownHeader.click(function() {
-    dropdow.toggleClass('active');
+    dropdown.toggleClass('active');
   });
 
 

@@ -1,24 +1,24 @@
 
 
 
-$(document).ready(function() {
-	$(".header-section-image").attr("src", $(".EOB-country-story").css("background-image").replace(/url\(['"]?(.*?)['"]?\)/i, "$1"));
-	$(".title-section").html($(".country-title").html());
-	$(".country").html($(".country-name-flag").html());
-	$(".header-section .caption-text").html($(".country-image-summary").html());
-  	$(".figcaption .author").html($(".photo-name").html());
-  	$(".country-story-content").html($(".country-main-content").html());
-  	// $(".key-contributions").appendTo(".key-contributions-content");
-  	// $(".references").appendTo(".references-content");
-  	$(".country-main-content").children().appendTo(".country-content-body");
-  	$("#link_return_outcome").attr("href", $(".outcome-list li").attr("data-outcome-url").replace("/country-story/", "/outcome/"));
-  	$(".Reports_EOB-country-story").hide()
-  })
+$(document).ready(function () {
+  $(".header-section-image").attr("src", $(".EOB-country-story").css("background-image").replace(/url\(['"]?(.*?)['"]?\)/i, "$1"));
+  $(".title-section").html($(".country-title").html());
+  $(".country").html($(".country-name-flag").html());
+  $(".header-section .caption-text").html($(".country-image-summary").html());
+  $(".figcaption .author").html($(".photo-name").html());
+  $(".country-story-content").html($(".country-main-content").html());
+  // $(".key-contributions").appendTo(".key-contributions-content");
+  // $(".references").appendTo(".references-content");
+  $(".country-main-content").children().appendTo(".country-content-body");
+  $("#link_return_outcome").attr("href", $(".outcome-list li").attr("data-outcome-url").replace("/country-story/", "/outcome/"));
+  $(".Reports_EOB-country-story").hide()
+})
 
 
 
 // stivky text hidden
-$(document).ready(function() {
+$(document).ready(function () {
   var hiddenTextSticky = $(".output-description");
   hiddenTextSticky.hide();
   $(window).scroll(function () {
@@ -57,7 +57,7 @@ $(".adtional-content").html(decodeURIComponent(currentOutcome.additionalContent)
 const myOutcomeList = $(".list-links");
 
 const dataOutcomesList = [];
-$('.outcome-list li').each(function() {
+$('.outcome-list li').each(function () {
   const outComeTitle = $(this).text();
   const outComeURL = $(this).attr("data-outcome-url");
   const outComeCode = $(this).attr("data-outcome-code");
@@ -66,7 +66,7 @@ $('.outcome-list li').each(function() {
 
 
 dataOutcomesList.forEach(({ outComeTitle, outComeURL, outComeCode }) => {
-  	const $card = $(`
+  const $card = $(`
 
 		<li>
 			<a href="${outComeURL}" data-sf-ec-immutable="">
@@ -90,7 +90,7 @@ dataOutcomesList.forEach(({ outComeTitle, outComeURL, outComeCode }) => {
 const myOutputList = $(".#change-output");
 
 const dataOutputsList = [];
-$('.output-list li').each(function() {
+$('.output-list li').each(function () {
   const outputTitle = $(this).text();
   const outputURL = $(this).attr("data-output-url");
   const outputCode = $(this).attr("data-output-code");
@@ -99,7 +99,7 @@ $('.output-list li').each(function() {
 
 
 dataOutputsList.forEach(({ outputTitle, outputURL, outputCode }) => {
-  	const $card = $(`
+  const $card = $(`
 
 		<li>
 			<a href="${outputURL}" data-sf-ec-immutable="">
@@ -120,16 +120,16 @@ $('.output-list').hide();
 
 // replace currentOutput content
 var currentOutput = {
-    code: '1.1.1',
-    title: 'Countries enabled to provide high-quality, people-centred health services, based on primary health care strategies and comprehensive essential service packages',
-    summary: 'This is the summary for 1.1.1',
-    overview: 'This+is+the+overview+for+1.1.1',
-    additionalContent: '%3cp%3eThis+is+the+additional+content+for+1.1.1%3c%2fp%3e',
-    relatedOutcome: {
-      id: 'ff8e0772-013d-4e84-a98e-5aa86ad92408',
-      code: '1.1',
-      title: 'Improved access to quality essential health services irrespective of gender, age or disability status'
-    }
+  code: '1.1.1',
+  title: 'Countries enabled to provide high-quality, people-centred health services, based on primary health care strategies and comprehensive essential service packages',
+  summary: 'This is the summary for 1.1.1',
+  overview: 'This+is+the+overview+for+1.1.1',
+  additionalContent: '%3cp%3eThis+is+the+additional+content+for+1.1.1%3c%2fp%3e',
+  relatedOutcome: {
+    id: 'ff8e0772-013d-4e84-a98e-5aa86ad92408',
+    code: '1.1',
+    title: 'Improved access to quality essential health services irrespective of gender, age or disability status'
+  }
 };
 
 
@@ -146,7 +146,7 @@ $(".output-code").text(currentOutput.code);
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   var list = $('.technical-products-container > li');
   var btn = $('.btn-read-more')
   btn.hide()
@@ -154,7 +154,7 @@ $(document).ready(function() {
     list.slice(10).hide();
     btn.show()
   }
-  btn.click(function() {
+  btn.click(function () {
     list.slice(10).show();
     btn.hide()
   });
@@ -166,7 +166,7 @@ $(document).ready(function() {
 // Replace tickers content
 const myTickers = $(".tickers ");
 const dataTickers = [];
-$(".Reports_EOB-budget-tickers-container .EOB-budget-ticker").each(function() {
+$(".Reports_EOB-budget-tickers-container .EOB-budget-ticker").each(function () {
   const value = $(this).find(".ticker-value").text()
   const amount = $(this).find(".ticker-amount").text()
   const unit = $(this).find(".ticker-unit").text()
@@ -181,7 +181,7 @@ dataTickers.forEach(({ value, amount, unit, title }) => {
     <p>${title}</p>
   </div>
 `);
-myTickers.append($ticker);
+  myTickers.append($ticker);
 });
 $(".Reports_EOB-budget-tickers-container").hide()
 
@@ -202,7 +202,7 @@ $(".Reports_EOB-budget-tickers-container").hide()
 // Explore more Outcomes
 const gridCards = $(".more-outcomes-slick");
 const data = [];
-$('.EOB-outcome-achievement').each(function() {
+$('.EOB-outcome-achievement').each(function () {
   const title = $(this).find('.outcome-title').text();
   const image = $(this).css("background-image").replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
   const url = $(this).attr("href");
@@ -230,14 +230,14 @@ $('.EOB-outcome-achievement').hide()
 // Outputs cards celestes
 const cardOutput = $(".output-card-result-report");
 const dataCardOutput = [];
-$('.output-list li').each(function() {
+$('.output-list li').each(function () {
   const outputCode = $(this).attr("data-output-code");
   const outputTitle = $(this).text();
   const outputURL = $(this).attr("data-output-url").replace("/outcome/", "/output/");
   dataCardOutput.push({ outputCode, outputTitle, outputURL });
 });
 dataCardOutput.forEach(({ outputCode, outputTitle, outputURL }) => {
-  	const $card = $(`
+  const $card = $(`
 		<a href="${outputURL}" class="cards-outcomes">
 		    <div class="cards-outcomes-title">
 		        <h6 class="h6 text-white title-section text-center py-20">${outputCode}</h6>
@@ -257,24 +257,24 @@ $('.output-list li').hide()
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   // Country stories cards
   let countrystories = $(".country-stories-outcome");
   let dataCountry = [];
-  
-  $('.EOB-country-story-card li').each(function() {
+
+  $('.EOB-country-story-card li').each(function () {
     const countryURL = $(this).find('.country-story').attr("href");
     const countryImage = $(this).find('.country-img').attr("src");
     const countryFlag = $(this).find('.country-flag').css("background-image").replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
     const countryTitle = $(this).find('.country-title').text();
     const countryName = $(this).find('.country-name').text();
-    dataCountry.push({ countryURL, countryImage, countryFlag, countryTitle, countryName});
+    dataCountry.push({ countryURL, countryImage, countryFlag, countryTitle, countryName });
   });
 
-  
+
   dataCountry.forEach(({ countryURL, countryImage, countryFlag, countryTitle, countryName }) => {
-      const $card = $(`
+    const $card = $(`
         <a href="${countryURL}" class="rr-card">
             <div class="cards-country">
                 <img class="header-card" src="${countryImage}" alt="">
@@ -289,11 +289,11 @@ $(document).ready(function() {
     `);
     countrystories.append($card);
   });
-  
+
   $('.EOB-country-story-card').hide();
-  
+
   // Change grid for slick
-  if(dataCountry.length > 3){
+  if (dataCountry.length > 3) {
     console.log('Hay mas de 3 country stories');
     $(".country-stories-outcome").removeClass("grid-cards");
     $(".country-stories-outcome").slick({
@@ -312,14 +312,14 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 2,
         }
-      },{
+      }, {
         breakpoint: 700,
         settings: {
           slidesToShow: 1,
         }
       }]
     });
-  }else{
+  } else {
     console.log('Hay menos de tres');
   }
 })
@@ -327,10 +327,10 @@ $(document).ready(function() {
 
 
 // Imagen del header en pagina de outcomes
-$(document).ready(function() {
+$(document).ready(function () {
   let titleOutcome = $('.header-sections .title-section').text()
-  $('.EOB-outcome-achievement').each(function(i,e) {
-    if($(e).find('.outcome-title').text() == titleOutcome){
+  $('.EOB-outcome-achievement').each(function (i, e) {
+    if ($(e).find('.outcome-title').text() == titleOutcome) {
       let currentOutcomeImage = $(e).css('background-image').replaceAll('url("', '').replaceAll('"', '')
       $(".header-sections .img-wrapper img").attr("src", currentOutcomeImage);
       return false;
@@ -339,7 +339,7 @@ $(document).ready(function() {
 })
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   if ($('body').has('.result-report-2024').length) {
     $('.main-footer').css('margin', 0);
   }
@@ -347,17 +347,17 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
   // Data number card
-  const outcomeCodes = ['1.1','1.2','1.3','2.1','2.2','2.3','3.1','3.2','3.3','4.1','4.2','4.3']
-    $(".more-outcomes-slick .rr-card").each(function(i,e) {
-    $(e).find('.info-card').text(outcomeCodes[i]); 
+  const outcomeCodes = ['1.1', '1.2', '1.3', '2.1', '2.2', '2.3', '3.1', '3.2', '3.3', '4.1', '4.2', '4.3']
+  $(".more-outcomes-slick .rr-card").each(function (i, e) {
+    $(e).find('.info-card').text(outcomeCodes[i]);
   });
 
   // Remove current
-  $(".more-outcomes-slick .rr-card").each(function(i,e) {
-    if(currentOutcome.code == $(e).find('.info-card').text() ) {
+  $(".more-outcomes-slick .rr-card").each(function (i, e) {
+    if (currentOutcome.code == $(e).find('.info-card').text()) {
       $(e).remove()
       return false;
     }
@@ -381,7 +381,7 @@ $(document).ready(function() {
       settings: {
         slidesToShow: 2,
       }
-    },{
+    }, {
       breakpoint: 700,
       settings: {
         slidesToShow: 1,
@@ -396,12 +396,12 @@ $(document).ready(function() {
 /*
 .dashboard-overview {border: 3px solid red;}.dashboard-base {border: 3px solid blue;}.dashboard-emergency {border: 3px solid chartreuse;}.all-dashboards {border: 3px solid violet;}
 */
-$(document).ready(function() {
+$(document).ready(function () {
   const items = $('.menu-item');
   const line = $('.line');
   const itemSelected = $('.menu-item.selected');
   line.css('width', `${itemSelected.outerWidth()}px`);
-  items.on('click', function() {
+  items.on('click', function () {
     items.removeClass('selected');
     $(this).addClass('selected');
     const itemPosition = $(this).position().left;
@@ -409,7 +409,7 @@ $(document).ready(function() {
     line.css('width', `${$(this).outerWidth()}px`);
   });
   $(".all-dashboards > .dashboard-overview ").show();
-  $(".tab li").click(function() {
+  $(".tab li").click(function () {
     $(".all-dashboards > div").removeClass("temporary-absolute-position");
     var id = $(this).attr("id");
     console.log(id)
@@ -421,3 +421,76 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+const myOutcomeList = $(".list-links");
+const dataOutcomesList = [];
+
+
+$('.outcome-list-container .outcome-list').first().find('li').each(function () {
+  const outComeTitle = $(this).text();
+  const outComeURL = $(this).attr("data-outcome-url");
+  const outComeCode = $(this).attr("data-outcome-code");
+  dataOutcomesList.push({ outComeTitle, outComeURL, outComeCode });
+});
+
+
+dataOutcomesList.forEach(({ outComeTitle, outComeURL, outComeCode }) => {
+  const $card = $(`
+
+  <li>
+    <a href="${outComeURL}" data-sf-ec-immutable="">
+      <span class="text-grey my-0">
+        <span class="number-highlight">${outComeCode}</span>
+        ${outComeTitle}
+      </span>
+      <i class="fas fa-angle-right text-orange"></i>
+    </a>
+  </li>
+  `);
+
+  myOutcomeList.append($card);
+});
+$('.outcome-list li').hide()
+
+
+
+// Init header section
+$(document).ready(function () {
+  $(".header-section h1").html(currentOutcome.title);
+  $('.EOB-outcome-achievement').each(function (i, e) {
+    if ($(e).find('.outcome-title').text() == currentOutcome.title) {
+      let currentOutcomeImage = $(e).css('background-image').replaceAll('url("', '').replaceAll('"', '')
+      console.log(currentOutcomeImage);
+      $(".header-section img").attr("src", currentOutcomeImage);
+      return false;
+    }
+  })
+})
+
+
+$('.EOB-outcome-achievement').each(function (i, e) {
+  var linkOutcome = $('<a>', {
+    text: $(e).find('.outcome-title').text(),
+    href: $(e).attr("src")
+  });
+  $('.mega-menu-outcomes .container').append(linkOutcome)
+})
+
+
+
+$(document).ready(() => {
+    $(".header-section h1").html(currentOutcome.title);
+    $(".overview-result-report").html(decodeURIComponent(currentOutcome.overview).replace(/\+/g, " "));
+    $(".adtional-content").html(decodeURIComponent(currentOutcome.additionalContent).replace(/\+/g, " "));
+    $('.outcome-code').text(currentOutcome.code);
+    $(".outcome-description").text(currentOutcome.code + ' ' + currentOutcome.title);
+    initializeIndicatorsByOutcome(currentOutcome.code);
+    initializeViewBudgetButton();
+})

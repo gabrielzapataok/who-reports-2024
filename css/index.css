@@ -1074,11 +1074,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   font-weight: 700;
   font-size: calc(15.4px + (6.6) * (100vw - 300px) / 1300);
 }
-.result-report-2024 .header-section .outcome-code {
-  color: #0FA0DF;
-  font-weight: 700;
-  font-size: calc(15.4px + (6.6) * (100vw - 300px) / 1300);
-}
 .result-report-2024 .header-section .report-version {
   background: repeating-linear-gradient(45deg, #008dc9, #41c6ff 100%);
   color: white;

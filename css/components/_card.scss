@@ -188,21 +188,21 @@
             @include max(992) {
                 height: auto;
             }
-            .outcome-code {
-                display: block;
-                width: 70px;
-                border-radius: 16px 16px 0 0;
-                padding: 4px;
-                background-color: $white;
-                color: #5791ff;
-                letter-spacing: .1;
-                @include size(22);
-                font-weight: 900;
-                position: absolute;
-                top: -34px;
-                left: calc(50% - 35px);
-                text-align: center;
-            }
+            // .outcome-code {
+            //     display: block;
+            //     width: 70px;
+            //     border-radius: 16px 16px 0 0;
+            //     padding: 4px;
+            //     background-color: $white;
+            //     color: #5791ff;
+            //     letter-spacing: .1;
+            //     @include size(22);
+            //     font-weight: 900;
+            //     position: absolute;
+            //     top: -34px;
+            //     left: calc(50% - 35px);
+            //     text-align: center;
+            // }
 
             .outcome-title {
                 padding: 8px;
