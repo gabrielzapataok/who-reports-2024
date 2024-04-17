@@ -39,6 +39,12 @@ $billion-1: #0093D5;
         text-transform: uppercase;
         @include size(38);
     }
+
+}
+
+
+.billion-header img {
+    width: 100%;
 }
 
 .chart-billion-bg{

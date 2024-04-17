@@ -679,6 +679,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        function animateBillElements() {
+        gsap.utils.toArray('.billion img').forEach(function(bill) {
+            console.log(bill);
+            gsap.fromTo(bill, {
+            y: '-50%'
+            }, {
+            y: '-0%',
+            duration: 1.5,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: bill,
+                start: 'top bottom',
+                end: 'bottom top',
+                toggleActions: 'play none none reverse',
+                scrub: true 
+            }
+            });
+        });
+        }
+        animateBillElements();
+    </script>
     <script src="./javascript/credits.js"></script>
     <script src="./javascript/Gsap/gsap-executive-summary.js"></script>
     <script src="./javascript/read-more-achievements.js"></script>
