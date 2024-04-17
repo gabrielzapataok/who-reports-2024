@@ -564,6 +564,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   bottom: -200px;
   left: 0;
   pointer-events: none;
+  width: 100%;
 }
 .result-report-2024 .home-budget-summary {
   overflow: hidden;
@@ -863,7 +864,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   }
 }
 .result-report-2024 .header-video {
-  height: calc(100vh - 64px);
+  height: calc(100vh - 700px);
   overflow: hidden;
   position: relative;
 }
