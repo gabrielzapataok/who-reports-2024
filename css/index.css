@@ -864,7 +864,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   }
 }
 .result-report-2024 .header-video {
-  height: calc(100vh - 700px);
+  height: 700px;
   overflow: hidden;
   position: relative;
 }
