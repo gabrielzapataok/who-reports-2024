@@ -23,8 +23,11 @@ $billion-1: #0093D5;
     --billion-gradient-start: #{$billion-4}29;
     --billion-gradient-end: #{$billion-4}cc;
 }
+
+
+
 .billion-header{
-    width: 100%; 
+    width: 100%;
     height:30vw;
     background-size: cover;
     position: relative;
@@ -39,23 +42,18 @@ $billion-1: #0093D5;
         text-transform: uppercase;
         @include size(38);
     }
-
-}
-
-
-.billion-header img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .chart-billion-bg{
     background: linear-gradient(180deg, #ffffff99 0%, #FFFFFF 50%);
-    // width: 60%;
     bottom: 0;
     position: relative;
     transform: translateY(-50%);
     margin: auto;
 }
-
 
 // Achievements
 .highlighted-achievements {
@@ -65,6 +63,7 @@ $billion-1: #0093D5;
     .achievement {
         flex: 1 0 280px;
         .achievement-header {
+            min-height: 5em;
             display: flex;
             align-items: center;
             border-bottom: 4px solid var(--billion);
@@ -84,6 +83,7 @@ $billion-1: #0093D5;
                 font-size: 1rem;
                 line-height: 120%;
                 padding: .5rem;
+                min-height: 112px; // 5lines + padding
             }
         }
         .text-collapsed {

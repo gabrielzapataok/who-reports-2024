@@ -756,6 +756,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   flex: 1 0 280px;
 }
 .result-report-2024 .highlighted-achievements .achievement .achievement-header {
+  min-height: 5em;
   display: flex;
   align-items: center;
   border-bottom: 4px solid var(--billion);
@@ -777,6 +778,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   font-size: 1rem;
   line-height: 120%;
   padding: 0.5rem;
+  min-height: 112px;
 }
 .result-report-2024 .highlighted-achievements .achievement .text-collapsed {
   display: block;
