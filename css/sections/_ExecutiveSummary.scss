@@ -43,7 +43,7 @@ $billion-1: #0093D5;
 
 .chart-billion-bg{
     background: linear-gradient(180deg, #ffffff99 0%, #FFFFFF 50%);
-    width: 60%;
+    // width: 60%;
     bottom: 0;
     position: relative;
     transform: translateY(-50%);
@@ -91,4 +91,45 @@ $billion-1: #0093D5;
             color: var(--billion);
         }
     }
+}
+
+
+
+.chart-billion{
+    width: 80%;
+    height: 40px;
+    border: 2px solid var(--billion);
+    display: flex;
+    margin: auto;
+}
+
+.chart-billion-progress{
+    background-color: var(--billion);
+    @include size(14);
+    @include center;
+    white-space: nowrap;
+}
+.shortfall {
+    flex: 1;
+    @include size(10);
+    @include center;
+    white-space: nowrap;
+}
+.progress-spare {
+    width: 0;
+    @include size(10);
+    @include center;
+    background: #0dcaf0;
+}
+
+.chart-billion-two{
+    width: 80%;
+    height: 40px;
+    border: 2px solid $billion1;
+}
+
+
+.pb-chart {
+    flex: 1;
+    min-width:400px;
 }

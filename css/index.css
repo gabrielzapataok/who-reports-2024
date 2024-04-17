@@ -739,7 +739,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 }
 .result-report-2024 .chart-billion-bg {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 50%);
-  width: 60%;
   bottom: 0;
   position: relative;
   transform: translateY(-50%);
@@ -785,6 +784,46 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .highlighted-achievements .achievement button {
   font-weight: 600;
   color: var(--billion);
+}
+.result-report-2024 .chart-billion {
+  width: 80%;
+  height: 40px;
+  border: 2px solid var(--billion);
+  display: flex;
+  margin: auto;
+}
+.result-report-2024 .chart-billion-progress {
+  background-color: var(--billion);
+  font-size: calc(9.8px + (4.2) * (100vw - 300px) / 1300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.result-report-2024 .shortfall {
+  flex: 1;
+  font-size: calc(7px + (3) * (100vw - 300px) / 1300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.result-report-2024 .progress-spare {
+  width: 0;
+  font-size: calc(7px + (3) * (100vw - 300px) / 1300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0dcaf0;
+}
+.result-report-2024 .chart-billion-two {
+  width: 80%;
+  height: 40px;
+  border: 2px solid #5D2E87;
+}
+.result-report-2024 .pb-chart {
+  flex: 1;
+  min-width: 400px;
 }
 .result-report-2024 .img-country-header {
   width: 20px;
@@ -1512,55 +1551,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .button-text {
   font-size: calc(11.2px + (4.8) * (100vw - 300px) / 1300);
   color: #FF774C;
-}
-.result-report-2024 .chart-billion {
-  width: 80%;
-  height: 40px;
-  border: 2px solid #0FA0DF;
-  display: flex;
-  margin: auto;
-}
-.result-report-2024 .chart-billion-progress {
-  background-color: #0FA0DF;
-  font-size: calc(9.8px + (4.2) * (100vw - 300px) / 1300);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-}
-.result-report-2024 .shortfall {
-  flex: 1;
-  font-size: calc(7px + (3) * (100vw - 300px) / 1300);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-}
-.result-report-2024 .progress-spare {
-  width: 0;
-  font-size: calc(7px + (3) * (100vw - 300px) / 1300);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0dcaf0;
-}
-.result-report-2024 .chart-billion-two {
-  width: 80%;
-  height: 40px;
-  border: 2px solid #5D2E87;
-}
-.result-report-2024 .pb-chart {
-  flex: 1;
-  min-width: 400px;
-}
-.result-report-2024 .b-one .chart-billion-progress:after {
-  content: "1 Billion target";
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  transform: translateX(50%);
-  margin-top: 6px;
-  color: #0fa0df;
 }
 .result-report-2024 .report-custom-chart-container {
   border: 1px solid #031c4c;
