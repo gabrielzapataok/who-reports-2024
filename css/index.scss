@@ -28,10 +28,10 @@
   |---COMPONENTS---|
   \*--------------*/
   
-  // @import "./components/header-video";
+  @import "./components/header-video";
   // @import "./components/slick.scss";
   @import "./components/menu";
-  // @import "./components/card";
+  @import "./components/card";
   @import "./components/header-sections";
   @import "./components/sub-menu";
   @import "./components/buttons";
@@ -46,6 +46,8 @@
   @import "./components/credits";
   @import "./components/loading.scss";
   @import "./components/card-result.scss";
+  @import "./components/regions-home";
+  @import "./components/achievements.scss";
 
 
   @import "./components/country-prfile.scss";

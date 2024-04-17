@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Charts -->
+    <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2022.3.1109/js/kendo.all.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/grid.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/origin.css">
+    <link rel="stylesheet" href="./css/origin.min.css">
+    <link rel="stylesheet" href="./css/print.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0fd078418e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- Swiper -->
+    <script src="./javascript/swipper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./javascript/swipper/swiper-bundle.min.css">
+
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Story</title>
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Slider main container -->
+    <main class="result-report-2024">
+
+        <div class="header-video" style="background-color: black;">
+            <video src="./assets/video_header_homeV2.mp4" muted autoplay loop></video>
+            <div class="report-version">
+                END OF BIENNIUM RESULTS <br> REPORT 2022 - 2023
+            </div>
+            <div class="overlay flex flex-direction-column text-white text-center">
+                <!-- <span class="mid-term">END OF BIENNIUM</span>
+                <h1>RESULT REPORT</h1>
+                <h2>Programme budget 2022–2023</h2> -->
+            </div>
+        </div>
+
+        <!-- Menú -->
+
+        <div class="menu relative">
+            <ul class="items list-style-none flex flex-wrap my-0 text-white">
+                <li>
+                    <a href="" class="item_link flex align-items-center"><i class="mr-10 fas fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a class="item_link" href="">Overview</a>
+                </li>
+                <li id="menu-working-togheter" class="active">
+                    <span class="item_link flex align-items-center">working togheter <i
+                            class="ml-10 fas fa-angle-down"></i></span>
+                </li>
+                <li class="">
+                    <a href="" class="item_link flex align-items-center">Our contributions <i
+                            class="ml-10 fas fa-angle-down"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mega-menu-outcomes" style="display: none;">
+            <ul class="container py-20">
+                <li><a href="#">Outcome 01</a></li>
+                <li><a href="#">Outcome 02</a></li>
+                <li><a href="#">Outcome 03</a></li>
+                <li><a href="#">Outcome 04</a></li>
+                <li><a href="#">Outcome 05</a></li>
+                <li><a href="#">Outcome 06</a></li>
+                <li><a href="#">Outcome 07</a></li>
+                <li><a href="#">Outcome 08</a></li>
+                <li><a href="#">Outcome 09</a></li>
+                <li><a href="#">Outcome 10</a></li>
+                <li><a href="#">Outcome 11</a></li>
+                <li><a href="#">Outcome 12</a></li>
+            </ul>
+        </div>
+
+        <script src="./javascript/menu.js"></script>
+
+        
+        <!-- Home intro video -->
+        <div class="home-intro-video pt-70 pb-40 bg-black text-white text-center">
+            <h2 class="d-block mt-10">Dr Tedros Adhanom Ghebreyesus</h2>
+            <small class="d-block mb-20">Director-General's foreword</small>
+        </div>
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/Hd2cRozCCI0?si=VTg1oCMA1cqD8Byj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- home executive summary -->
+        <div class="home-executive-summary pt-70 relative" style="padding-bottom: 150px;">
+            <div class="container relative text-white text-center">
+                <h1 class="h2 title-section">executive summary</h1>
+                <h2 class="mb-20 h5">Setting the scene and progress towards the 3 billion targets and SDGs.</h2>
+                <p>When I penned the Foreword to last year’s WHO Results Report, 4 million cases of COVID-19 had been
+                    reported to WHO, and some 300 000 people had lost their lives. A year later, the number of cases has
+                    ballooned more than 40-fold, to almost 160 million, and the number of deaths has increased 11 times,
+                    to more than 3.3 million.</p>
+                <button class="button mt-10 mr-10 mb-0">View Executive summary</button>
+                <button class="button mt-10 button-red mb-0">Download pdf</button>
+            </div>
+
+            <video class="arrow" src="./assets/flecha_fondo_transparente.webm" muted autoplay loop></video>
+            <!-- <img class="arrow" src="./assets/arrow-75-anniversary.png" alt=""> -->
+        </div>
+
+
+        <!-- Outcomes -->
+        <div class="container mb-70" style="padding-top: 150px">
+            <div class="grid-cards">
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-01.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">1.1</b>
+                        <span>Reduced number of people suffering financial hardship</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-02.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">1.2</b>
+                        <span>Improved access to quality essential health services</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-03.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">1.3</b>
+                        <span>Improved access to essential medicines, vaccines, diagnostics and devices for primary
+                            health care</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-04.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">2.1</b>
+                        <span>Improved access to quality essential health services</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-05.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">2.2</b>
+                        <span>Epidemics and pandemics prevented</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-06.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">2.3</b>
+                        <span>Health emergencies rapidly detected and responded to</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-07.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">3.1</b>
+                        <span>Determinants of health addressed</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-08.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">3.2</b>
+                        <span>Risk factors reduced through multisectoral action</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-09.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">3.3</b>
+                        <span>Risk factors reduced through multisectoral action</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-10.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">4.1</b>
+                        <span>Strengthened country capacity in data and innovation </span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-11.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">4.2</b>
+                        <span>Strengthened leadership, governance and advocacy for health</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+                <div class="rr-card">
+                    <div class="img-wrapper">
+                        <img class="header-card" src="/assets/out-12.png" alt="">
+                    </div>
+                    <div class="px-20 py-20 relative text-center flex-1">
+                        <b class="number-outcome">4.3</b>
+                        <span>Health emergencies rapidly detected and responded to</span>
+                    </div>
+                    <a href="google.com" class="px-20 py-10 read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section regions home -->
+        <div class="container pb-70">
+            <div class="grid-regions-container">
+                <div class="breadcrumbs">
+                    <span class="back-to-regions">WHO Regions&nbsp;</span>
+                    <span class="current-region"></span>
+                </div>
+                <div class="grid-regions-container-level-1"></div>
+            </div>
+        </div>
+
+        <!-- images -->
+        <div class="hidden">
+            <div class="img-wrapper">
+                <img id="img-top-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-10.png?sfvrsn=63153776_3"
+                    alt="" sf-size="37391">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-bottom-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-9.png?sfvrsn=3371292c_4"
+                    alt="" sf-size="37812">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-top-left"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-8b93b413a-3ea2-482d-b1db-e2655fa0216b.png?sfvrsn=dfc783e1_3"
+                    alt="" sf-size="36970">
+            </div>
+            <div class="img-wrapper">
+                <img id="img-bottom-right"
+                    src="https://cdn.who.int/media/images/default-source/results-report/2022-midterm/frame-7.png?sfvrsn=c7d5b33e_4"
+                    alt="" sf-size="36818">
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+
+        var imgTopLeft = $('#img-top-left').attr('src');
+        $('.bg-top-left').css('background-image', 'url(' + imgTopLeft + ')');
+
+        var imgBottomRight = $('#img-bottom-right').attr('src');
+        $('.bg-bottom-right').css('background-image', 'url(' + imgBottomRight + ')');
+
+        var imgBottomLeft = $('#img-bottom-left').attr('src');
+        $('.bg-bottom-left').css('background-image', 'url(' + imgBottomLeft + ')');
+
+        var imgTopRight = $('#img-top-right').attr('src');
+        $('.bg-top-right').css('background-image', 'url(' + imgTopRight + ')');
+    </script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> -->
+    <!-- <script src="./javascript/Gsap/gsap-country-story.js"></script> -->
+
+
+    <!-- <script src="./javascript/tabs-narratives-regions.js"></script> -->
+    <!-- <script src="./javascript/tabs-narratives-outputs.js"></script> -->
+    <!-- <script src="javascript/megamenu.js"></script> -->
+
+    <!-- <script src="./javascript/charts/outcomeIndicatorsDropDownData.js"></script> -->
+    <script src="./javascript/charts/regions-threemap.js"></script>
+</body>
+
+</html>

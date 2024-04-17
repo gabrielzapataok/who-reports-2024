@@ -13,9 +13,10 @@
         z-index: 1;
     }
     .arrow{
-        z-index: 0;
+        z-index: 2;
         @include absolute(unset,0,-200px,0);
         pointer-events: none;
+        width: 100%;
     }
 }
 

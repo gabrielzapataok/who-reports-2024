@@ -1,33 +1,141 @@
-.billions{
-    width: 100%; 
+$billion-4: #56BC4D;
+$billion-3: #E0A345;
+$billion-2: #5D2E87;
+$billion-1: #0093D5;
+
+.b-1{
+    --billion: #{$billion-1};
+    --billion-gradient-start: #{$billion-1}29;
+    --billion-gradient-end: #{$billion-1}cc;
+}
+.b-2{
+    --billion: #{$billion-2};
+    --billion-gradient-start: #{$billion-2}29;
+    --billion-gradient-end: #{$billion-2}cc;
+}
+.b-3{
+    --billion: #{$billion-3};
+    --billion-gradient-start: #{$billion-3}29;
+    --billion-gradient-end: #{$billion-3}cc;
+}
+.b-4{
+    --billion: #{$billion-4};
+    --billion-gradient-start: #{$billion-4}29;
+    --billion-gradient-end: #{$billion-4}cc;
+}
+
+
+
+.billion-header{
+    width: 100%;
     height:30vw;
     background-size: cover;
     position: relative;
     overflow: hidden;
     .overlay {
-        background: linear-gradient(180deg, rgba(0, 32, 92, 0.16) 4.31%, rgba(0, 32, 92, 0.8) 104.31%);
+        background: linear-gradient(180deg, var(--billion-gradient-start), var(--billion-gradient-end));
         @include absolute(0,0,0,0);
         @include center();
     }
-
-    .overlay-two {
-        background: linear-gradient(180deg, rgba(91, 44, 134, 0.32) 4.31%, rgba(91, 44, 134, 0.8) 104.31%);
-        @include absolute(0,0,0,0);
-        @include center();
-    }
-
     h3 {
         font-weight: 600;
         text-transform: uppercase;
         @include size(38);
     }
+    img {
+        width: 100%;
+    }
 }
 
 .chart-billion-bg{
     background: linear-gradient(180deg, #ffffff99 0%, #FFFFFF 50%);
-    width: 60%;
     bottom: 0;
     position: relative;
     transform: translateY(-50%);
     margin: auto;
+}
+
+// Achievements
+.highlighted-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    .achievement {
+        flex: 1 0 280px;
+        .achievement-header {
+            min-height: 5em;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid var(--billion);
+            margin-bottom: .5rem;
+            .img-wrapper {
+                width: 62px;
+                height: 62px;
+                flex-shrink: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .achievement-title {
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 120%;
+                padding: .5rem;
+                min-height: 112px; // 5lines + padding
+            }
+        }
+        .text-collapsed {
+            display: block;
+            overflow: hidden;
+            max-height: 3em;
+            text-overflow: ellipsis;
+        }
+        button {
+            font-weight: 600;
+            color: var(--billion);
+        }
+    }
+}
+
+
+
+.chart-billion{
+    width: 80%;
+    height: 40px;
+    border: 2px solid var(--billion);
+    display: flex;
+    margin: auto;
+}
+
+.chart-billion-progress{
+    background-color: var(--billion);
+    @include size(14);
+    @include center;
+    white-space: nowrap;
+}
+.shortfall {
+    flex: 1;
+    @include size(10);
+    @include center;
+    white-space: nowrap;
+}
+.progress-spare {
+    width: 0;
+    @include size(10);
+    @include center;
+    background: #0dcaf0;
+}
+
+.chart-billion-two{
+    width: 80%;
+    height: 40px;
+    border: 2px solid $billion1;
+}
+
+
+.pb-chart {
+    flex: 1;
+    min-width:400px;
 }

@@ -1,33 +1,33 @@
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('.card').forEach((card, index) => {
-  ScrollTrigger.create({
-    trigger: card,
-    animation: gsap.from(card, {
-      opacity: 0,
-      duration: .8,
-      y: 80,
-      delay: 0.18 * index,
-    }),
-    start: 'top 80%',
-  });
-});
+// gsap.utils.toArray('.card').forEach((card, index) => {
+//   ScrollTrigger.create({
+//     trigger: card,
+//     animation: gsap.from(card, {
+//       opacity: 0,
+//       duration: .8,
+//       y: 80,
+//       delay: 0.18 * index,
+//     }),
+//     start: 'top 80%',
+//   });
+// });
 
 // header parallax 
 
-const parallaxTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.header-sections',
-    start: 'top bottom',
-    end: 'bottom top',
-    scrub: true
-  }
-});
-parallaxTL.fromTo(
-  '.header-sections img',
-  { y: '-50%' },
-  { y: '0%', ease: 'none' }
-);
+// const parallaxTL = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.header-section',
+//     start: 'top bottom',
+//     end: 'bottom top',
+//     scrub: true
+//   }
+// });
+// parallaxTL.fromTo(
+//   '.header-section img',
+//   { y: '-50%' },
+//   { y: '0%', ease: 'none' }
+// );
 
 
 // billions bar
@@ -55,25 +55,26 @@ parallaxTL.fromTo(
 
 // Parallax billions
 
-function animateBillElements() {
-  gsap.utils.toArray('.billions img').forEach(function(bill) {
-    gsap.fromTo(bill, {
-      y: '-50%'
-    }, {
-      y: '-0%',
-      duration: 1.5,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: bill,
-        start: 'top bottom',
-        end: 'bottom top',
-        toggleActions: 'play none none reverse',
-        scrub: true 
-      }
-    });
-  });
-}
-animateBillElements();
+// function animateBillElements() {
+//   gsap.utils.toArray('.billion img').forEach(function(bill) {
+//     console.log(bill);
+//     gsap.fromTo(bill, {
+//       y: '-50%'
+//     }, {
+//       y: '-0%',
+//       duration: 1.5,
+//       ease: 'none',
+//       scrollTrigger: {
+//         trigger: bill,
+//         start: 'top bottom',
+//         end: 'bottom top',
+//         toggleActions: 'play none none reverse',
+//         scrub: true 
+//       }
+//     });
+//   });
+// }
+// animateBillElements();
 
 
 
