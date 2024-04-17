@@ -557,7 +557,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   z-index: 1;
 }
 .result-report-2024 .home-executive-summary .arrow {
-  z-index: 0;
+  z-index: 2;
   position: absolute;
   top: unset;
   right: 0;
