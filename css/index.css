@@ -544,6 +544,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .justify-content-center {
   justify-content: center !important;
 }
+.result-report-2024 .b-600 {
+  font-weight: 600;
+}
 .result-report-2024 .home-intro small {
   font-size: calc(11.2px + (4.8) * (100vw - 300px) / 1300);
 }
@@ -691,15 +694,35 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   height: 480px;
   display: block;
 }
-.result-report-2024 .billions {
+.result-report-2024 .b-1 {
+  --billion: #0093D5;
+  --billion-gradient-start: #0093D529;
+  --billion-gradient-end: #0093D5cc;
+}
+.result-report-2024 .b-2 {
+  --billion: #5D2E87;
+  --billion-gradient-start: #5D2E8729;
+  --billion-gradient-end: #5D2E87cc;
+}
+.result-report-2024 .b-3 {
+  --billion: #E0A345;
+  --billion-gradient-start: #E0A34529;
+  --billion-gradient-end: #E0A345cc;
+}
+.result-report-2024 .b-4 {
+  --billion: #56BC4D;
+  --billion-gradient-start: #56BC4D29;
+  --billion-gradient-end: #56BC4Dcc;
+}
+.result-report-2024 .billion-header {
   width: 100%;
   height: 30vw;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
-.result-report-2024 .billions .overlay {
-  background: linear-gradient(180deg, rgba(0, 32, 92, 0.16) 4.31%, rgba(0, 32, 92, 0.8) 104.31%);
+.result-report-2024 .billion-header .overlay {
+  background: linear-gradient(180deg, var(--billion-gradient-start), var(--billion-gradient-end));
   position: absolute;
   top: 0;
   right: 0;
@@ -709,18 +732,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   justify-content: center;
   align-items: center;
 }
-.result-report-2024 .billions .overlay-two {
-  background: linear-gradient(180deg, rgba(91, 44, 134, 0.32) 4.31%, rgba(91, 44, 134, 0.8) 104.31%);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.result-report-2024 .billions h3 {
+.result-report-2024 .billion-header h3 {
   font-weight: 600;
   text-transform: uppercase;
   font-size: calc(26.6px + (11.4) * (100vw - 300px) / 1300);
@@ -732,6 +744,47 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   position: relative;
   transform: translateY(-50%);
   margin: auto;
+}
+.result-report-2024 .highlighted-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.result-report-2024 .highlighted-achievements .achievement {
+  flex: 1 0 280px;
+}
+.result-report-2024 .highlighted-achievements .achievement .achievement-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid var(--billion);
+  margin-bottom: 0.5rem;
+}
+.result-report-2024 .highlighted-achievements .achievement .achievement-header .img-wrapper {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+}
+.result-report-2024 .highlighted-achievements .achievement .achievement-header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.result-report-2024 .highlighted-achievements .achievement .achievement-header .achievement-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 0.5rem;
+}
+.result-report-2024 .highlighted-achievements .achievement .text-collapsed {
+  display: block;
+  overflow: hidden;
+  max-height: 3em;
+  text-overflow: ellipsis;
+}
+.result-report-2024 .highlighted-achievements .achievement button {
+  font-weight: 600;
+  color: var(--billion);
 }
 .result-report-2024 .img-country-header {
   width: 20px;
