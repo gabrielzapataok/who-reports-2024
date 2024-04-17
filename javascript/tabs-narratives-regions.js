@@ -13,7 +13,7 @@ $(document).ready(function () {
     ]
     
     // Funcion que mueve la linea
-    function setLine(e) {
+    function setLineTabRegions(e) {
         const regionTabLine = $('.tabs-regions .line')
         const itemPosition = e.position().left;
         regionTabItems.removeClass('selected');
@@ -30,9 +30,9 @@ $(document).ready(function () {
     
     // Seteo linea en tab
     const regionTabItems = $('.tabs-regions .tab-item')
-    regionTabItems.on('click', function () { setLine($(this)) })
+    regionTabItems.on('click', function () { setLineTabRegions($(this)) })
 
     // Seteo linea en primer elemento
-    setLine(regionTabItems.first())
+    setLineTabRegions(regionTabItems.first())
 
 })

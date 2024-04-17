@@ -10,7 +10,7 @@ $(document).ready(function () {
     ]
     
     // Funcion que mueve la linea
-    function setLine(e) {
+    function setLineTabOutputs(e) {
         const outputTabLine = $('.tabs-outputs .line')
         const itemPosition = e.position().left;
         outputTabItems.removeClass('selected');
@@ -27,9 +27,9 @@ $(document).ready(function () {
     
     // Seteo linea en tab
     const outputTabItems = $('.tabs-outputs .tab-item')
-    outputTabItems.on('click', function () { setLine($(this)) })
+    outputTabItems.on('click', function () { setLineTabOutputs($(this)) })
 
     // Seteo linea en primer elemento
-    setLine(outputTabItems.first())
+    setLineTabOutputs(outputTabItems.first())
 
 })

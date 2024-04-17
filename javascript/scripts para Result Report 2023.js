@@ -486,11 +486,11 @@ $('.EOB-outcome-achievement').each(function (i, e) {
 
 
 $(document).ready(() => {
-    $(".header-section h1").html(currentOutcome.title);
-    $(".overview-result-report").html(decodeURIComponent(currentOutcome.overview).replace(/\+/g, " "));
-    $(".adtional-content").html(decodeURIComponent(currentOutcome.additionalContent).replace(/\+/g, " "));
+    // $(".header-section h1").html(currentOutcome.title);
+    $(".page-section-intro .container").html(decodeURIComponent(currentOutcome.overview).replace(/\+/g, " "));
     $('.outcome-code').text(currentOutcome.code);
-    $(".outcome-description").text(currentOutcome.code + ' ' + currentOutcome.title);
-    initializeIndicatorsByOutcome(currentOutcome.code);
-    initializeViewBudgetButton();
+    // $(".adtional-content").html(decodeURIComponent(currentOutcome.additionalContent).replace(/\+/g, " "));
+    // $(".outcome-description").text(currentOutcome.code + ' ' + currentOutcome.title);
+    // initializeIndicatorsByOutcome(currentOutcome.code);
+    // initializeViewBudgetButton();
 })
