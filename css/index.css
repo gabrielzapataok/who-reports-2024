@@ -1402,7 +1402,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   border-radius: 16px 16px 0 0;
   padding: 4px;
   background-color: #ffffff;
-  color: #5791ff;
+  color: var(--billion);
   letter-spacing: 0.1px;
   font-size: 18px;
   font-weight: 900;
