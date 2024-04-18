@@ -4,13 +4,14 @@
 .result-report-2024 {
 
   line-height: normal;
+  background-color: white;
   /*--------------*\
   |------BASE------|
   \*--------------*/
 
   @import "./base/variables";
   @import "./base/mixins";
-  // @import "./base/normalice";
+  @import "./base/normalice";
   @import "./base/settings";
   @import "./base/utilities";
 
