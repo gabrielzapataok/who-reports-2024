@@ -606,6 +606,18 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .border-0 {
   border: unset !important;
 }
+.result-report-2024 .flex-grow-1 {
+  flex-grow: 1 !important;
+}
+.result-report-2024 .z-index-0 {
+  z-index: 0 !important;
+}
+.result-report-2024 .z-index-1 {
+  z-index: 1 !important;
+}
+.result-report-2024 .z-index-2 {
+  z-index: 2 !important;
+}
 .result-report-2024 .home-intro small {
   font-size: calc(11.2px + (4.8) * (100vw - 300px) / 1300);
 }
