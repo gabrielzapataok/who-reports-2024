@@ -96,15 +96,20 @@ a#menu_home {
     left: 0;
     right: 0;
     background-color: #0078d4;
-    .container {
-        list-style: none;
+    overflow: auto;
+    @include max(800){position: relative;}
+    .filters-countries {
+        padding: .5rem 1rem;
+    }
+    .dropdown-items {
         &::before,&::after{content:unset}
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(auto-fill, minmax(min(316px, 100%), 1fr));
         a {
             color: white;
             padding: .5rem 1rem;
             display: flex;
+            flex-direction: column;
             &:hover {
                 background: #1189e5;
             }
@@ -112,6 +117,7 @@ a#menu_home {
     }
 }
 
-.rotate {
-    
+#menu-working-togheter {
+    flex-shrink: 1;
+    overflow: auto;
 }
