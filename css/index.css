@@ -431,6 +431,10 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding-top: 70px !important;
   padding-bottom: 70px !important;
 }
+.result-report-2024 .mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .result-report-2024 .container {
   max-width: 1140px;
   margin-left: auto;
@@ -1194,22 +1198,35 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   left: 0;
   right: 0;
   background-color: #0078d4;
+  overflow: auto;
 }
-.result-report-2024 .mega-menu-outcomes .container {
-  list-style: none;
+@media (max-width: 800px) {
+  .result-report-2024 .mega-menu-outcomes {
+    position: relative;
+  }
+}
+.result-report-2024 .mega-menu-outcomes .filters-countries {
+  padding: 0.5rem 1rem;
+}
+.result-report-2024 .mega-menu-outcomes .dropdown-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(min(316px, 100%), 1fr));
 }
-.result-report-2024 .mega-menu-outcomes .container::before, .result-report-2024 .mega-menu-outcomes .container::after {
+.result-report-2024 .mega-menu-outcomes .dropdown-items::before, .result-report-2024 .mega-menu-outcomes .dropdown-items::after {
   content: unset;
 }
-.result-report-2024 .mega-menu-outcomes .container a {
+.result-report-2024 .mega-menu-outcomes .dropdown-items a {
   color: white;
   padding: 0.5rem 1rem;
   display: flex;
+  flex-direction: column;
 }
-.result-report-2024 .mega-menu-outcomes .container a:hover {
+.result-report-2024 .mega-menu-outcomes .dropdown-items a:hover {
   background: #1189e5;
+}
+.result-report-2024 #menu-working-togheter {
+  flex-shrink: 1;
+  overflow: auto;
 }
 .result-report-2024 .grid-cards {
   display: grid;
