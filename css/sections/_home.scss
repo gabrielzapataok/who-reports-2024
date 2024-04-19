@@ -14,7 +14,7 @@
     }
     .arrow{
         z-index: 0;
-        @include absolute(unset,0,-200px,0);
+        position: absolute;
         pointer-events: none;
         width: 100%;
     }
@@ -27,8 +27,7 @@
     }
     .arrow{
         z-index: 0;
-        @include absolute(unset,0,0,0);
-        transform: translateY(15%);
+        position: absolute;
         opacity: .3;
     }
 }

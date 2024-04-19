@@ -1,0 +1,44 @@
+.Reports_EOB-facts {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    list-style: none;
+    padding: 0 !important;
+    gap: 40px;
+    .EOB-fact {
+        flex: 1 0 280px !important;
+        .fact-title-container {
+            min-height: 5em;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid #999 !important;
+            margin-bottom: 0.5rem;
+            .fact-icon {
+                width: 62px;
+                height: 62px;
+                flex-shrink: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+            .fact-title {
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 120%;
+                padding: 0.5rem;
+            }
+        }
+        .fact-text,
+        p {
+            display: block;
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+

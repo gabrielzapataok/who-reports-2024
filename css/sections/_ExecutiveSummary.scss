@@ -53,48 +53,48 @@
 }
 
 // Achievements
-.highlighted-achievements {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    .achievement {
-        flex: 1 0 280px;
-        .achievement-header {
-            min-height: 5em;
-            display: flex;
-            align-items: center;
-            border-bottom: 4px solid var(--billion);
-            margin-bottom: .5rem;
-            .img-wrapper {
-                width: 62px;
-                height: 62px;
-                flex-shrink: 0;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            .achievement-title {
-                font-weight: 600;
-                font-size: 1rem;
-                line-height: 120%;
-                padding: .5rem;
-                min-height: 112px; // 5lines + padding
-            }
-        }
-        .text-collapsed {
-            display: block;
-            overflow: hidden;
-            max-height: 3em;
-            text-overflow: ellipsis;
-        }
-        button {
-            font-weight: 600;
-            color: var(--billion);
-        }
-    }
-}
+// .highlighted-achievements {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 40px;
+//     .achievement {
+//         flex: 1 0 280px;
+//         .achievement-header {
+//             min-height: 5em;
+//             display: flex;
+//             align-items: center;
+//             border-bottom: 4px solid var(--billion);
+//             margin-bottom: .5rem;
+//             .img-wrapper {
+//                 width: 62px;
+//                 height: 62px;
+//                 flex-shrink: 0;
+//             }
+//             img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: contain;
+//             }
+//             .achievement-title {
+//                 font-weight: 600;
+//                 font-size: 1rem;
+//                 line-height: 120%;
+//                 padding: .5rem;
+//                 min-height: 112px; // 5lines + padding
+//             }
+//         }
+//         .text-collapsed {
+//             display: block;
+//             overflow: hidden;
+//             max-height: 3em;
+//             text-overflow: ellipsis;
+//         }
+//         button {
+//             font-weight: 600;
+//             color: var(--billion);
+//         }
+//     }
+// }
 
 
 

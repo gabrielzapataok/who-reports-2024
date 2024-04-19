@@ -633,10 +633,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .home-executive-summary .arrow {
   z-index: 0;
   position: absolute;
-  top: unset;
-  right: 0;
-  bottom: -200px;
-  left: 0;
   pointer-events: none;
   width: 100%;
 }
@@ -649,11 +645,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .home-budget-summary .arrow {
   z-index: 0;
   position: absolute;
-  top: unset;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateY(15%);
   opacity: 0.3;
 }
 .result-report-2024 .tickers {
@@ -817,49 +808,6 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   position: relative;
   transform: translateY(-50%);
   margin: auto;
-}
-.result-report-2024 .highlighted-achievements {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.result-report-2024 .highlighted-achievements .achievement {
-  flex: 1 0 280px;
-}
-.result-report-2024 .highlighted-achievements .achievement .achievement-header {
-  min-height: 5em;
-  display: flex;
-  align-items: center;
-  border-bottom: 4px solid var(--billion);
-  margin-bottom: 0.5rem;
-}
-.result-report-2024 .highlighted-achievements .achievement .achievement-header .img-wrapper {
-  width: 62px;
-  height: 62px;
-  flex-shrink: 0;
-}
-.result-report-2024 .highlighted-achievements .achievement .achievement-header img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.result-report-2024 .highlighted-achievements .achievement .achievement-header .achievement-title {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 120%;
-  padding: 0.5rem;
-  min-height: 112px;
-}
-.result-report-2024 .highlighted-achievements .achievement .text-collapsed {
-  display: block;
-  overflow: hidden;
-  max-height: 3em;
-  text-overflow: ellipsis;
-}
-.result-report-2024 .highlighted-achievements .achievement button {
-  font-weight: 600;
-  color: var(--billion);
 }
 .result-report-2024 .chart-billion {
   width: 80%;
@@ -1030,6 +978,61 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   .result-report-2024 .country-content-body > :not(.references, .key-contributions) {
     padding: 0 20px;
   }
+}
+.result-report-2024 .temporary-absolute-position {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.result-report-2024 .all-dashboards > * {
+  background: #efefef;
+}
+.result-report-2024 .all-dashboards > * h3 {
+  margin: 30px 0 10px 0;
+  font-size: calc(15.4px + (6.6) * (100vw - 300px) / 1300);
+  line-height: 1.2;
+}
+.result-report-2024 #chart_budget_tickers_base_chart,
+.result-report-2024 #chart_budget_tickers_overview_chart,
+.result-report-2024 #chart_budget_tickers_emergencies_chart,
+.result-report-2024 #chart_budget_tickers_polio_chart,
+.result-report-2024 #chart_budget_tickers_special_chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+.result-report-2024 .pb-chart-container .ticker {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 16px;
+}
+.result-report-2024 .pb-chart-container .ticker h1 {
+  font-size: calc(49px + (21) * (100vw - 300px) / 1300);
+}
+.result-report-2024 .pb-chart-container .ticker p {
+  max-width: 200px;
+}
+.result-report-2024 .pb-chart-container .ticker.ticker:nth-child(1) {
+  color: #0093D5;
+}
+.result-report-2024 .pb-chart-container .ticker.ticker:nth-child(2) {
+  color: #F4A81D;
+}
+.result-report-2024 .pb-chart-container .ticker.ticker:nth-child(3) {
+  color: #80BC00;
+}
+.result-report-2024 .pb-chart-container .ticker.ticker:nth-child(4) {
+  color: #bc00a9;
 }
 .result-report-2024 .header-video {
   height: 700px;
@@ -2331,6 +2334,48 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .breadcrumbs .back-to-regions {
   text-decoration: underline;
   cursor: pointer;
+}
+.result-report-2024 .asia .grid-regions-container-level-2 .countries-container .country {
+  flex: 1 0 150px;
+}
+.result-report-2024 .Reports_EOB-facts {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  list-style: none;
+  padding: 0 !important;
+  gap: 40px;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact {
+  flex: 1 0 280px !important;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact .fact-title-container {
+  min-height: 5em;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #999 !important;
+  margin-bottom: 0.5rem;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact .fact-title-container .fact-icon {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact .fact-title-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact .fact-title-container .fact-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 0.5rem;
+}
+.result-report-2024 .Reports_EOB-facts .EOB-fact .fact-text,
+.result-report-2024 .Reports_EOB-facts .EOB-fact p {
+  display: block;
+  text-align: left;
 }
 .result-report-2024 .legend-item {
   display: flex;
