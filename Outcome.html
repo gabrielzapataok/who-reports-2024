@@ -73,68 +73,58 @@
                 </div>
             </div>
         </div>
+        
+        <!-- menu -->
+
+
+
+
 
         <!-- Menú -->
 
         <div class="menu relative">
             <ul class="items list-style-none d-flex my-0 text-white px-0">
-                <div class="close-menu"><i class="fas fa-times px-20 py-20"></i></div>
-                <li>
-                    <a href="" class="item_link flex align-items-center"><i class="mr-10 fas fa-home"></i>Home</a>
+                <div class="close-menu"><em class="fas fa-times px-20 py-20"></em></div>
+                <li><a href="/about/accountability/results/who-results-report-2022-2023" class="item_link flex align-items-center" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1BAE3350-D03C-4AE2-B7A5-FD5A9770193D" data-sf-ec-immutable=""><em class="mr-10 fas fa-home"></em>Home</a>
                 </li>
-                <li>
-                    <a class="item_link" href="">Overview</a>
+                <li><a href="/about/accountability/results/who-results-report-2022-2023/executive-summary" class="item_link" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]3977D169-0CFC-4381-9931-8554C5C43D49" data-sf-ec-immutable="">Overview</a>
                 </li>
-                <li id="menu-working-togheter" class="active">
-                    <span class="item_link flex align-items-center">working togheter <i class="ml-10 fas fa-angle-down"></i></span>
-                    <div class="mega-menu-outcomes d-flex flex-column  py-20 d-none">
+                <li id="menu-working-togheter" class="active"><span class="item_link flex align-items-center">working together <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column py-20">
                         <div class="container">
-                            <div class="mx-auto dropdown-items">
-                                <div><a href="#"><b>Outcome 01</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 02</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 03</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 04</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 05</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 06</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 07</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 08</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 09</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 10</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 11</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
-                                <div><a href="#"><b>Outcome 12</b>Improved access to quality essentitial health services irresspective of gender, age or disability status</a></div>
+                            <div class="mx-auto dropdown-items"><!-- outcomes -->
                             </div>
                         </div>
                     </div>
                 </li>
-                <li id="menu-countries" class="active">
-                    <span class="item_link flex align-items-center">Countries <i class="ml-10 fas fa-angle-down"></i></span>
-                    <div class="mega-menu-outcomes d-flex flex-column  py-20 d-none">
-                        <div class="container">
-                            <div class="filters-countries">
-                                <input type="text">
-                                <button>button</button>
+                <li id="menu-countries" class="active"><span class="item_link flex align-items-center">Countries <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column  py-0">
+                        <div class="w-100">
+                            <div class="filters-countries py-0 d-flex flex-wrap align-items-end">
+                                <div class="py-10 mr-10">Region:
+                                    <select class="form-control form-inline" name="regionFilter" id="regionFilter">
+                                        <option value="">All</option>
+                                        <option value="AFRO">African region</option>
+                                        <option value="AMRO">Region of the americas</option>
+                                        <option value="EMRO">Eastern mediterranean region</option>
+                                        <option value="EURO">European region</option>
+                                        <option value="SEARO">South-east asia sregion</option>
+                                        <option value="WPRO">Western pacific region</option>
+                                    </select>
+                                </div>
+                                <div class="py-10 mr-10">Country:
+                                    <input class="form-control form-inline" type="text" name="countryFilter" id="countryFilter" />
+                                </div>
+                                <div style="padding: calc(0.375rem + 10px) 0;">Filter search results</div>
                             </div>
-                            <div class="mx-auto dropdown-items">
-                                <div><a href="#">Country 01</a></div>
-                                <div><a href="#">Country 02</a></div>
-                                <div><a href="#">Country 03</a></div>
-                                <div><a href="#">Country 04</a></div>
-                                <div><a href="#">Country 05</a></div>
-                                <div><a href="#">Country 06</a></div>
-                                <div><a href="#">Country 07</a></div>
-                                <div><a href="#">Country 08</a></div>
-                                <div><a href="#">Country 09</a></div>
-                                <div><a href="#">Country 10</a></div>
-                                <div><a href="#">Country 11</a></div>
-                                <div><a href="#">Country 12</a></div>
+                            <div id="countrySelector" class="mx-auto dropdown-items"><!-- countries -->
                             </div>
                         </div>
                     </div>
                 </li>
-            </ul>
-            <span class="button-menu my-0 py-20 px-20 text-white"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </ul><span class="button-menu my-0 py-0 px-20 text-white"><em class="fa fa-bars" aria-hidden="true"></em></span>
         </div>
-
+        <script src="./javascript/menu countries.js"></script>
 
         <!-- Intro -->
 
@@ -266,31 +256,17 @@
         
                             <!-- Looking Forward -->
         
-                            <div class="container text-grey page-section-looking-forward">
-                                <h2 class=" text-center title-section mb-20">Looking forward</h2>
-                                <ul class="">
-                                    <li>
-                                        <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
-                                            revising the approved base programmes </p>
-                                    </li>
-                                    <li>
-                                        <p>Programme budget 2022-2023 to a total of US$ 6.726 billion. </p>
-                                    </li>
-                                    <li>
-                                        <p>By the end of the first year, the total Programme budget has a good level of
-                                            financing (US$ 8.3 billion). </p>
-                                    </li>
-                                    <li>
-                                        <p>The good level of financing is explained by two event-driven budget segments:
-                                            emergency operations and appeals, and polio eradication,</p>
-                                    </li>
-                                    <li>
-                                        <p>The financing for which has needed to exceed the amounts established in the Programme
-                                            budget in order to keep step.</p>
-                                    </li>
-                                </ul>
+                            <div class="pt-40 pb-70 section-lightblue">
+                                <div class="container">
+                                    <h2 class=" text-center title-section mb-20">LOOKING FORWARD</h2>
+                                    <div class="narrative-looking-forward-text" style="white-space:pre-wrap;">
+                                        •	Enhancing and scaling up a fit-for-purpose, fit-to-practice health workforce is needed.
+                                        •	A roll out of WISN for human resource management and application of the results is required.
+                                        •	The operationalization and implementation of NHWA for better interoperability and exchange of health workforce data at both national and international level needs to be supported.
+                                        •	Supporting the implementation of the regional family medicine diploma is recommended. 
+                                    </div>
+                                </div>
                             </div>
-                        
                         </div>
                         <div class="container-tab bottom">
                             <div class="tab tabs-outputs"></div>
@@ -330,6 +306,49 @@
             </div>
         </div>
     </main>
+
+    <div class="hidden">
+        <div class="outcome-list-container">
+            <ul class="outcome-list">
+                    <li data-outcome-code="1.1" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/improved-access-to-quality-essential-health-services-irrespective-of-gender--age-or-disability-status" data-outcome-image="">
+                        Improved access to quality essential health services irrespective of gender, age or disability status
+                    </li>
+                    <li data-outcome-code="1.2" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/reduced-number-of-people-suffering-financial-hardship" data-outcome-image="">
+                        Reduced number of people suffering financial hardship
+                    </li>
+                    <li data-outcome-code="1.3" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/improved-access-to-essential-medicines--vaccines--diagnostics-and-devices-for-primary-health-care" data-outcome-image="">
+                        Improved access to essential medicines, vaccines, diagnostics and devices for primary health care
+                    </li>
+                    <li data-outcome-code="2.1" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/countries-prepared-for-health-emergencies" data-outcome-image="">
+                        Countries prepared for health emergencies
+                    </li>
+                    <li data-outcome-code="2.2" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/epidemics-and-pandemics-prevented" data-outcome-image="">
+                        Epidemics and pandemics prevented
+                    </li>
+                    <li data-outcome-code="2.3" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/health-emergencies-rapidly-detected-and-responded-to" data-outcome-image="">
+                        Health emergencies rapidly detected and responded to
+                    </li>
+                    <li data-outcome-code="3.1" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/safe-and-equitable-societies-through-addressing-health-determinants" data-outcome-image="">
+                        Safe and equitable societies through addressing health determinants
+                    </li>
+                    <li data-outcome-code="3.2" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/supportive-and-empowering-societies-through-addressing-health-risk-factors" data-outcome-image="">
+                        Supportive and empowering societies through addressing health risk factors
+                    </li>
+                    <li data-outcome-code="3.3" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/healthy-environments-to-promote-health-and-sustainable-societies" data-outcome-image="">
+                        Healthy environments to promote health and sustainable societies
+                    </li>
+                    <li data-outcome-code="4.1" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/strengthened-country-capacity-in-data-and-innovation" data-outcome-image="">
+                        Strengthened country capacity in data and innovation
+                    </li>
+                    <li data-outcome-code="4.2" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/strengthened-leadership--governance-and-advocacy-for-health" data-outcome-image="">
+                        Strengthened leadership, governance and advocacy for health
+                    </li>
+                    <li data-outcome-code="4.3" data-outcome-url="https://cms.who.int/about/accountability/results/who-results-report-2022-mtr/outcome/2023/financial--human--and-administrative-resources-managed-in-an-efficient--effective--results-oriented-and-transparent-manner" data-outcome-image="">
+                        Financial, human, and administrative resources managed in an efficient, effective, results-oriented and transparent manner
+                    </li>
+            </ul>
+        </div>
+    </div>
 
 
     <script>

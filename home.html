@@ -57,41 +57,53 @@
 
         <!-- Menú -->
 
-        <div class="menu relative">
-            <ul class="items list-style-none flex flex-wrap my-0 text-white">
-                <li>
-                    <a href="" class="item_link flex align-items-center"><i class="mr-10 fas fa-home"></i>Home</a>
-                </li>
-                <li>
-                    <a class="item_link" href="">Overview</a>
-                </li>
-                <li id="menu-working-togheter" class="active">
-                    <span class="item_link flex align-items-center">working togheter <i
-                            class="ml-10 fas fa-angle-down"></i></span>
-                </li>
-                <li class="">
-                    <a href="" class="item_link flex align-items-center">Countries <i
-                            class="ml-10 fas fa-angle-down"></i></a>
-                </li>
-            </ul>
-        </div>
+        <!-- Menú -->
 
-        <div class="mega-menu-outcomes" style="display: none;">
-            <ul class="container py-20">
-                <li><a href="#">Outcome 01</a></li>
-                <li><a href="#">Outcome 02</a></li>
-                <li><a href="#">Outcome 03</a></li>
-                <li><a href="#">Outcome 04</a></li>
-                <li><a href="#">Outcome 05</a></li>
-                <li><a href="#">Outcome 06</a></li>
-                <li><a href="#">Outcome 07</a></li>
-                <li><a href="#">Outcome 08</a></li>
-                <li><a href="#">Outcome 09</a></li>
-                <li><a href="#">Outcome 10</a></li>
-                <li><a href="#">Outcome 11</a></li>
-                <li><a href="#">Outcome 12</a></li>
-            </ul>
+        <div class="menu relative">
+            <ul class="items list-style-none d-flex my-0 text-white px-0">
+                <div class="close-menu"><em class="fas fa-times px-20 py-20"></em></div>
+                <li><a class="item_link flex align-items-center" href="/about/accountability/results/who-results-report-2022-2023" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1BAE3350-D03C-4AE2-B7A5-FD5A9770193D" data-sf-ec-immutable=""><em class="mr-10 fas fa-home"></em>Home</a>
+                </li>
+                <li><a class="item_link" href="/about/accountability/results/who-results-report-2022-2023/executive-summary" sfref="[f669d9a7-009d-4d83-ddaa-000000000002%7Clng%3Aen]3977D169-0CFC-4381-9931-8554C5C43D49" data-sf-ec-immutable="">Executive overview</a>
+                </li>
+                <li id="menu-working-togheter"><span class="item_link flex align-items-center">Working together<em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column">
+                        <div class="container">
+                            <div class="mx-auto dropdown-items"><!-- outcomes -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="menu-countries"><span class="item_link flex align-items-center">Impact in countries <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column">
+                        <div class="w-100">
+                            <div class="filters-countries py-0 d-flex flex-wrap align-items-end">
+                                <div class="py-10 mr-10">Region:
+                                    <select class="form-control form-inline" name="regionFilter" id="regionFilter">
+                                        <option value="" selected="selected">Select Region</option>
+                                        <option value="AFRO">African Region</option>
+                                        <option value="AMRO">Region of the Americas</option>
+                                        <option value="EMRO">Eastern Mediterranean Region</option>
+                                        <option value="EURO">European Region</option>
+                                        <option value="SEARO">South-East Asia Region</option>
+                                        <option value="WPRO">Western Pacific Region</option>
+                                    </select>
+                                </div>
+                                <div class="py-10 mr-10">Country:
+                                    <input class="form-control form-inline" type="text" name="countryFilter" id="countryFilter" placeholder="Search Country" />
+                                </div>
+                                <div style="padding:calc(0.375rem + 10px) 0;">Filter search results</div>
+                            </div>
+                            <div id="countrySelector" class="mx-auto dropdown-items"><!-- countries -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul><span class="button-menu my-0 py-0 px-20 text-white"><em class="fa fa-bars" aria-hidden="true"></em></span>
         </div>
+        <script src="./javascript/menu countries.js"></script>
+
+       
 
         <script src="./javascript/menu.js"></script>
 

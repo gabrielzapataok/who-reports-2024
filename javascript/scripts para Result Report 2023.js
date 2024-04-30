@@ -480,7 +480,7 @@ $('.EOB-outcome-achievement').each(function (i, e) {
     text: $(e).find('.outcome-title').text(),
     href: $(e).attr("src")
   });
-  $('.mega-menu-outcomes .container').append(linkOutcome)
+  $('#menu-working-togheter .mega-menu .container').append(linkOutcome)
 })
 
 

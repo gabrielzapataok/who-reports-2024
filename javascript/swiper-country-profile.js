@@ -1,42 +1,52 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    effect: 'coverflow',
-    autoplay: false,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+function initializeCardCarrousel() {
+  var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 1.4,
-    centeredSlides: true,
-    coverflowEffect: {
-        depth: 1000,
-        modifier: 1,
-        rotate: 0,
-        scale: .8,
-        slideShadows: false,
-        stretch: 300,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    on: {
-        init: function () {
-            var slides = document.querySelectorAll('.swiper-slide .card-result');
-            var maxHeight = 0;
-            var normalice = false;
-            setTimeout(() => {
-                slides.forEach(function (slide) {
-                    var slideHeight = slide.clientHeight;
-                    if (slideHeight > maxHeight) {
-                        maxHeight = slideHeight;
-                    }
-                    
-                });
-                slides.forEach(function (slide) {
-                    slide.style.height = maxHeight + 'px';
-                });
-            }, 500);
-        }
-    }
-})
+  });
+
+}
+
+ initializeCardCarrousel()
+// function initializeCardCarrousel() {
+//   const swiper = new Swiper('.swiper', {
+//     loop: true,
+//     effect: 'coverflow',
+//     autoplay: false,
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//     slidesPerView: 2,
+//     centeredSlides: true,
+//     centerInsufficientSlides: true,
+//     coverflowEffect: {
+//       depth: 100,
+//       modifier: 1,
+//       rotate: 50,
+//       scale: 1,
+//       slideShadows: true,
+//       stretch: 0,
+//     },
+//   })
+// }

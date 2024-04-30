@@ -51,68 +51,109 @@ $(document).ready(function () {
     var currentRegion = "";
 
     $(document).ready(() => {
+
+        var urlBase = () => {
+            currentURL = window.location.href
+            var index = currentURL.indexOf("/who-results-report-2022-2023");
+            return currentURL.substring(0, index + "/who-results-report-2022-2023".length);
+        }
+
         let regions = Object.keys(countryList).sort();
         let regionsContainer = $(".grid-regions-container-level-1");
-        regionsContainer.empty();
-        let lefts = ['0', 'calc(100% / 3)', 'calc(200% / 3)'];
-        let tops = ['0', '50%'];
-        regions.forEach((regionKey, rIndex) => {
-            let regionElement = $("<div></div>");
-            let regionName = regionList.find(region => region.code == regionKey).name;
-            let regionClass = regionList.find(region => region.code == regionKey).class;
-            let regionImage = $('#'+regionClass).attr('src');
-            
-            regionElement.addClass("region " + regionClass);
-            regionElement.css({
-                "left": lefts[rIndex % 3],
-                "top": tops[Math.round(rIndex / 3 - 0.5)],
-                "background-image": "url(" + regionImage + ")",
-            })
-            regionElement.html(`<h3 data-region-code="${regionKey}">${regionName}</h3>`);
-            let countryContainer = $("<div class='grid-regions-container-level-2'></div>");
-            let countriesContainer = $("<div class='countries-container'></div>");
-            countryContainer.append(countriesContainer);
-            regionElement.append(countryContainer);
-            countryContainer.hide();
-            countryList[regionKey].countries.forEach((country, cIndex) => {
-                let countryElement = $("<div data-country-code='" + country.iso3code + "'></div>");
-                countryElement.html(country.name);
-                countryElement.addClass("country");
-                countriesContainer.append(countryElement);
-            })
-            regionsContainer.append(regionElement);
-        })
-
-        $(".region").click((e) => {
-
-            let currentRegion = $(e.currentTarget);
-            $(".region").removeClass("selected");
-            currentRegion.addClass("selected");
-            currentRegion.find("h3").fadeOut(function () {
-                currentRegion.find(".grid-regions-container-level-2").fadeIn(function () {
-                    currentRegion.find(".countries-container").fadeIn();
-                });
-            });
-            currentRegion.show();
-            $(".current-region").html('/ ' + currentRegion.find("h3").html());
-            //          alert($(e.target).find(".country").length);
-        })
-
-        $(".country").click((e) => {
-            let currentCountry = $(e.currentTarget);
-            alert(currentCountry.attr("data-country-code"));
-        })
-
-        $(".back-to-regions").click(function () {
-            $(".current-region").html("");
-            $('.grid-regions-container-level-1 .region.selected').each(function (i, element) {
-                $(this).find('.countries-container').fadeOut(function () {
-                    $(this).parent().fadeOut(function () {
-                        $(this).siblings('h3').fadeIn();
+        let lefts
+        let tops
+        function appendRegions() {
+            regionsContainer.empty();
+            if ($(window).width() > 720) {
+                lefts = [
+                    '0',
+                    'calc(100% / 3)',
+                    'calc(200% / 3)',
+                ]
+                tops = [
+                    '0',
+                    '50%',
+                ]
+            } else {
+                lefts = [
+                    '0',
+                    '0',
+                    '0',
+                    '0',
+                    '0',
+                    '0',
+                ]
+                tops = [
+                    'calc( (100% / 6) * 0 )',
+                    'calc( (100% / 6) * 1 )',
+                    'calc( (100% / 6) * 2 )',
+                    'calc( (100% / 6) * 3 )',
+                    'calc( (100% / 6) * 4 )',
+                    'calc( (100% / 6) * 5 )',
+                ]
+            }
+            regions.forEach((regionKey, rIndex) => {
+                let regionElement = $("<div></div>");
+                let regionName = regionList.find(region => region.code == regionKey).name;
+                let regionClass = regionList.find(region => region.code == regionKey).class;
+                let regionImage = $('#'+regionClass).attr('src');
+                regionElement.addClass("region " + regionClass);
+                if ($(window).width() > 720) {
+                    regionElement.css({
+                        "left": lefts[rIndex % 3],
+                        "top": tops[Math.round(rIndex / 3 - 0.5)],
+                        "background-image": "url(" + regionImage + ")",
                     })
-                    $(element).removeClass('selected')
+                } else {
+                    regionElement.css({
+                        "left": lefts[rIndex],
+                        "top": tops[rIndex],
+                        "background-image": "url(" + regionImage + ")",
+                    })
+                }
+                regionElement.html(`<h3 data-region-code="${regionKey}">${regionName}</h3>`);
+                let countryContainer = $("<div class='grid-regions-container-level-2'></div>");
+                let countriesContainer = $("<div class='countries-container'></div>");
+                countryContainer.append(countriesContainer);
+                regionElement.append(countryContainer);
+                countryContainer.hide();
+                countryList[regionKey].countries.forEach((country, cIndex) => {
+                    let countryElement = $(`
+                    <a href="${urlBase()}/country-profile/${country.iso3code}" data-country-code="${country.iso3code}"></a>
+                    `);
+                    countryElement.html(country.name);
+                    countryElement.addClass("country");
+                    countriesContainer.append(countryElement);
+                })
+                regionsContainer.append(regionElement);
+            })
+            $(".region").click((e) => {
+    
+                let currentRegion = $(e.currentTarget);
+                $(".region").removeClass("selected");
+                currentRegion.addClass("selected");
+                currentRegion.find("h3").fadeOut(function () {
+                    currentRegion.find(".grid-regions-container-level-2").fadeIn(function () {
+                        currentRegion.find(".countries-container").fadeIn();
+                    });
+                });
+                currentRegion.show();
+                $(".current-region").html('/ ' + currentRegion.find("h3").html());
+            })
+            $(".back-to-regions").click(function () {
+                $(".current-region").html("");
+                $('.grid-regions-container-level-1 .region.selected').each(function (i, element) {
+                    $(this).find('.countries-container').fadeOut(function () {
+                        $(this).parent().fadeOut(function () {
+                            $(this).siblings('h3').fadeIn();
+                        })
+                        $(element).removeClass('selected')
+                    })
                 })
             })
-        })
+        }
+        appendRegions()
+        $(window).resize(function () { appendRegions() })
+
     });
 })

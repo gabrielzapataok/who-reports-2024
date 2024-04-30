@@ -6,12 +6,15 @@
     left: 0;
     bottom: 0;
 }
-.all-dashboards > * {
-    background: #efefef;
-    h3 {
-        margin: 30px 0 10px 0;
-        @include size(22);
-        line-height: $lh20;
+.all-dashboards {
+    overflow: hidden;
+    & > * {
+        background: #efefef;
+        h3 {
+            margin: 30px 0 10px 0;
+            @include size(22);
+            line-height: $lh20;
+        }
     }
 }
 

@@ -1,7 +1,6 @@
 .selector {
   position: relative;
   width: 100%;
-  @include size(17);
 }
 
 .selector-header {
@@ -45,12 +44,6 @@
   }
 }
 
-.selector-outcome-indicator {
-  background-color: white;
-  .selector-header,.selector-options{
-    border-color: black !important;
-  }
-}
 
 .selector.active {
   .selector-header {
@@ -62,5 +55,22 @@
   .selector-options {
     max-height: 300px; 
     border: 1px solid;
+  }
+}
+
+
+.selector-outcome-indicator {
+  background-color: white;
+  .selector-header,.selector-options{
+    border-color: black !important;
+  }
+}
+
+.selector-output-indicator {
+  .selector-header {
+    border-color: black
+  }
+  .selector-option:hover {
+    background-color: #e3f8ff;
   }
 }

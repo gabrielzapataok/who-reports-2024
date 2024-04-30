@@ -1,3 +1,24 @@
+.b-1{
+    --billion: #{$billion-1};
+    --billion-gradient-start: #{$billion-1}29;
+    --billion-gradient-end: #{$billion-1}cc;
+}
+.b-2{
+    --billion: #{$billion-2};
+    --billion-gradient-start: #{$billion-2}29;
+    --billion-gradient-end: #{$billion-2}cc;
+}
+.b-3{
+    --billion: #{$billion-3};
+    --billion-gradient-start: #{$billion-3}29;
+    --billion-gradient-end: #{$billion-3}cc;
+}
+.b-4{
+    --billion: #{$billion-4};
+    --billion-gradient-start: #{$billion-4}29;
+    --billion-gradient-end: #{$billion-4}cc;
+}
+
 .Reports_EOB-facts {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -10,7 +31,7 @@
             min-height: 5em;
             display: flex;
             align-items: center;
-            border-bottom: 4px solid #999 !important;
+            border-bottom: 4px solid var(--billion);
             margin-bottom: 0.5rem;
             .fact-icon {
                 width: 62px;
@@ -34,9 +55,22 @@
         p {
             display: block;
             text-align: left;
+        } 
+        .content:not(.text-expanded) {
+            display: block;
+            overflow: hidden;
+            max-height: 3em;
+            text-overflow: ellipsis;
+        }
+        button {
+            font-weight: 600;
+            color: var(--billion);
+            cursor: pointer;
         }
     }
 }
+
+
 
 
 

@@ -72,6 +72,9 @@ $types: (
 .align-items-center{
     align-items: center
 }
+.align-items-end{
+    align-items: end;
+}
 .flex-wrap{
     display: flex;
     flex-wrap: wrap !important;
@@ -108,6 +111,10 @@ $types: (
     position: relative;
 }
 
+
+.w-100 {
+    width: 100% !important
+}
 // fuentes
 .h1{
     @include size(60);
@@ -185,11 +192,17 @@ small{
     background: black;
 }
 
+.section-lightblue{
+    background: #e0f1ff;
+}
+
 .quote{
     display: block;
     text-align: center;
 }
-
+.d-none {
+    display: none !important;
+}
 .d-block{
     display: block !important;
 }
@@ -252,4 +265,22 @@ small{
 }
 .z-index-2 {
     z-index: 2 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }

@@ -3,9 +3,7 @@
     position: relative;
     background: #031C4C;
     justify-content: flex-end;
-    &.menu-responsive .items {  
-        
-    }
+    z-index: 2;
     .items {
         background: #031C4C;
         flex-grow: 1;
@@ -13,7 +11,7 @@
         margin-top: 0;
         transition: .3s;
         transform: translateX(0%);
-        .close-menu{
+        .close-menu {
             display: none;
             @include max(800) {
                 display: flex;
@@ -31,7 +29,7 @@
             height: 100vh;
             width: 400px;
             z-index: 1000;
-            .close-menu{
+            .close-menu {
                 display: flex;
                 position: absolute;
                 right: 0;
@@ -41,7 +39,7 @@
             }
         }
     }
-    li{
+    li {
         margin: 0;
     }
     .item_link {
@@ -53,28 +51,67 @@
         color: $white;
         display: flex;
         padding: 16px 18px;
-        i {
+        cursor: pointer;
+        i,
+        em {
             transition: .5s;
+            cursor: pointer;
         }
-        &.active i {
+        &.active i,
+        &.active em {
             transform: rotate(180deg);
         }
-        &:active, 
+        &:active,
         &:hover,
-        &.active{
+        &.active {
             background-color: #0078d4 !important;
             color: white !important;
         }
     }
-    .button-menu{
+    .button-menu {
         display: none;
         cursor: pointer;
+        .fa {
+            padding: 16px 18px;
+            @include size(18);
+        }
         @include max(800) {
             display: flex;
         }
     }
+    .mega-menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #0078d4;
+        display: none;
+        overflow: auto;
+        @include max(800) {
+            position: relative;
+        }
+        .dropdown-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(316px, 100%), 1fr));
+            &::before,
+            &::after {
+                content: unset
+            }
+            a {
+                color: white;
+                padding: 0.5rem 1rem;
+                display: flex;
+                cursor: pointer;
+                &:hover {
+                    background: #1189e5 !important;
+                }
+            }
+        }
+    }
 }
-.row.sticky{
+
+
+// Sticky
+.row.sticky {
     position: sticky;
     z-index: 2;
     top: 0;
@@ -84,40 +121,65 @@
 }
 
 
-
-a#menu_home {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+// Outcomes
+#menu-working-togheter {
+    @include max(800) {
+        &.active {
+            flex: 1 0 150px;
+            overflow: auto;
+        }
+    }
+    .dropdown-items a {
+        flex-direction: column;
+        border-bottom: 1px solid #ffffff42;
+        padding: .8rem;
+    }
 }
 
-.mega-menu-outcomes {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: #0078d4;
-    overflow: auto;
-    @include max(800){position: relative;}
+// Countries
+#menu-countries {
+    @include max(800) {
+        &.active {
+            flex: 1 0 150px;
+            overflow: auto;
+        }
+    }
     .filters-countries {
         padding: .5rem 1rem;
     }
+    .dropdown-items.countries-empty {
+        display: flex;
+        justify-content: center;
+        li {
+            text-align: center;
+            padding: 1rem 1rem calc(1rem + 10px) 1rem;
+            color: #a5d8ff;
+            font-size: 1.2rem;
+        }
+    }
     .dropdown-items {
-        &::before,&::after{content:unset}
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(316px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
         a {
-            color: white;
-            padding: .5rem 1rem;
-            display: flex;
-            flex-direction: column;
-            &:hover {
-                background: #1189e5;
+            gap: .5rem;
+            .flag {
+                width: 30px;
+                height: 20px;
+                background-size: cover;
+                background-position-x: center;
+                flex-shrink: 0;
+            }
+            .country-name {
+                font-weight: 600;
+                line-height: 1;
+                font-size: 14px;
+            }
+            .region-name {
+                font-weight: 300;
+                letter-spacing: .1em;
+                font-size: .85rem;
+                font-size: 13px;
+                line-height: 1;
             }
         }
     }
-}
-
-#menu-working-togheter {
-    flex-shrink: 1;
-    overflow: auto;
 }
