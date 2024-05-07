@@ -191,6 +191,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 iframe {
   display: block;
 }
+.result-report-2024 .content-block {
+  display: contents;
+}
 .result-report-2024 .ml-0 {
   margin-left: 0 !important;
 }
@@ -789,6 +792,22 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   height: 480px;
   display: block;
 }
+@media (max-width: 480px) {
+  .result-report-2024 .home-embed-video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+.result-report-2024 .home-tedros-video p {
+  display: none;
+}
+.result-report-2024 .home-tedros-video video {
+  width: 100%;
+  max-height: 100vh;
+  max-height: 100dvh;
+  background-color: black;
+  display: flex;
+}
 .result-report-2024 .b-1 {
   --billion: #0093D5;
   --billion-gradient-start: #0093D529;
@@ -842,9 +861,40 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.result-report-2024 .billion-legend {
+  display: none;
+  margin-bottom: 40px;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.result-report-2024 .billion-legend span {
+  padding: 10px;
+}
+.result-report-2024 .billion-legend .cant {
+  color: white;
+  background-color: var(--billion);
+}
+.result-report-2024 .billion-legend .shortfall {
+  color: var(--billion);
+  border: 1px solid var(--billion);
+}
+.result-report-2024 .billion-legend .exceeded {
+  color: white;
+  background: blue;
+}
+@media (max-width: 800px) {
+  .result-report-2024 .chart-billion-bg svg text {
+    display: none;
+  }
+  .result-report-2024 .billion-legend {
+    display: flex;
+  }
+}
 .result-report-2024 .chart-billion-bg {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 50%);
-  margin: 40px auto 0 auto;
+  margin: -100px auto 0 auto;
 }
 .result-report-2024 .summary-looking-forward p {
   border-left: 6px solid #0c2b64;
@@ -863,11 +913,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   font-size: 10px;
   align-items: center;
 }
-.result-report-2024 .wrapper-radar-and-indicator .small-content .legend-item {
-  margin: 0 10px;
-}
-.result-report-2024 .wrapper-radar-and-indicator .small-content .legend-item,
-.result-report-2024 .wrapper-radar-and-indicator .small-content div {
+.result-report-2024 .wrapper-radar-and-indicator .small-content .legend-item, .result-report-2024 .wrapper-radar-and-indicator .small-content div {
   font-size: 13px;
 }
 .result-report-2024 .technical-products {
@@ -883,6 +929,11 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .technical-products li a {
   text-decoration: underline !important;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  .result-report-2024 .technical-products li a {
+    font-size: 13px;
+  }
 }
 .result-report-2024 .img-country-header {
   width: 20px;
@@ -902,6 +953,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   color: white;
   padding: 30px 0;
   position: relative;
+  z-index: 1;
 }
 .result-report-2024 .references > *, .result-report-2024 .references ul, .result-report-2024 .references ol {
   max-width: 1140px !important;
@@ -1045,7 +1097,7 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding: 30px;
 }
 .result-report-2024 .pb-chart-container .ticker {
-  width: 40%;
+  flex: 1 1 40%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1138,6 +1190,12 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .header-video #mic-btn.active::before {
   content: none;
 }
+@media (max-width: 480px) {
+  .result-report-2024 .header-video {
+    height: auto;
+    width: 100%;
+  }
+}
 .result-report-2024 .menu {
   display: flex;
   position: relative;
@@ -1172,7 +1230,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
     right: 0;
     transform: translateX(100%);
     height: 100vh;
+    height: 100dvh;
     width: 400px;
+    max-width: 100%;
     z-index: 1000;
   }
   .result-report-2024 .menu .items .close-menu {
@@ -1777,6 +1837,11 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 480px) {
+  .result-report-2024 .h-550 .report-custom-chart-container {
+    height: 620px;
+  }
+}
 .result-report-2024 .h-550 .report-custom-chart-container .k-chart {
   flex-grow: 1;
 }
@@ -1821,13 +1886,16 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .charts-light .report-custom-chart-container .chart-footer {
   background-color: #ebebeb;
 }
-.result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__link, .result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__link p, .result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__buttons .btn-chart {
+.result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__link,
+.result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__link p,
+.result-report-2024 .charts-light .report-custom-chart-container .chart-footer .chart-footer__buttons .btn-chart {
   color: #666666;
 }
 .result-report-2024 .charts-light > #chart_output_indicators {
   border: none !important;
 }
-.result-report-2024 .k-chart, .result-report-2024 .k-stockchart {
+.result-report-2024 .k-chart,
+.result-report-2024 .k-stockchart {
   height: 550px;
 }
 .result-report-2024 #chart_implementation_base_chart {
@@ -1843,7 +1911,8 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   width: 40%;
   min-width: 300px;
 }
-.result-report-2024 #chart_implementation_base_chart tr:nth-child(1), .result-report-2024 #chart_implementation_base_chart tr:nth-child(2) {
+.result-report-2024 #chart_implementation_base_chart tr:nth-child(1),
+.result-report-2024 #chart_implementation_base_chart tr:nth-child(2) {
   font-weight: 700;
 }
 .result-report-2024 #chart_implementation_base_chart tr td:not(:first-child) {
@@ -1854,7 +1923,8 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   font-weight: initial;
   border-bottom: solid 1px #aaa;
 }
-.result-report-2024 .major-office-filter {
+.result-report-2024 .major-office-filter,
+.result-report-2024 .pills-filter-container {
   padding-top: 15px !important;
   background: white;
   padding: 5px;
@@ -1863,7 +1933,10 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   gap: 5px;
   justify-content: center;
 }
-.result-report-2024 .major-office-filter .btn-region {
+.result-report-2024 .major-office-filter .btn-region,
+.result-report-2024 .major-office-filter .btn-pill,
+.result-report-2024 .pills-filter-container .btn-region,
+.result-report-2024 .pills-filter-container .btn-pill {
   background: #fff;
   cursor: pointer;
   border: none;
@@ -1874,12 +1947,25 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   padding: 5px 8px;
   color: #0FA0DF;
 }
-.result-report-2024 .major-office-filter .btn-region:not(.btn-selected):hover {
+.result-report-2024 .major-office-filter .btn-region:not(.btn-selected):hover,
+.result-report-2024 .major-office-filter .btn-pill:not(.btn-selected):hover,
+.result-report-2024 .pills-filter-container .btn-region:not(.btn-selected):hover,
+.result-report-2024 .pills-filter-container .btn-pill:not(.btn-selected):hover {
   background: rgba(15, 161, 223, 0.3450980392);
 }
-.result-report-2024 .major-office-filter .btn-region.btn-selected {
+.result-report-2024 .major-office-filter .btn-region.btn-selected,
+.result-report-2024 .major-office-filter .btn-pill.btn-selected,
+.result-report-2024 .pills-filter-container .btn-region.btn-selected,
+.result-report-2024 .pills-filter-container .btn-pill.btn-selected {
   background: #0FA0DF;
   color: white;
+}
+.result-report-2024 #chart_budget_expenditure_overview .chart-legends.major-office-filter {
+  display: flex;
+  gap: 10px;
+}
+.result-report-2024 #chart_budget_expenditure_overview .chart-legends.major-office-filter > div {
+  display: flex;
 }
 .result-report-2024 .pb-indicators {
   display: flex;
@@ -1892,6 +1978,24 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
+}
+.result-report-2024 .footer-chart-extra-legend {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  color: #592c82;
+}
+.result-report-2024 .footer-chart-extra-legend .line-reference {
+  width: 50px;
+  margin-top: 9px;
+  margin-right: 10px;
+  height: 10px;
+  border-top: dashed #592c82 4px;
 }
 .result-report-2024 .container-tab {
   justify-content: center;
@@ -2096,6 +2200,19 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 .result-report-2024 .bg-bottom-right {
   background-position: bottom right;
 }
+.result-report-2024 .coming-soon h1 {
+  font-size: 100px;
+}
+@media (max-width: 720px) {
+  .result-report-2024 .coming-soon h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 480px) {
+  .result-report-2024 .coming-soon h1 {
+    font-size: 42px;
+  }
+}
 .result-report-2024 .narratives {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -2103,12 +2220,22 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
   margin-right: 1rem;
   margin-bottom: 10px;
 }
+@media (max-width: 480px) {
+  .result-report-2024 .narratives {
+    margin: 0 0.5rem;
+  }
+}
 .result-report-2024 .narratives .narrative {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-radius: 4px;
   margin: 0 0.5rem;
   background: white;
+}
+@media (max-width: 480px) {
+  .result-report-2024 .narratives .narrative {
+    margin: 0 0.3rem;
+  }
 }
 .result-report-2024 .page-section-narrative-regions .narrative {
   border: 1px solid #031C4C;
@@ -2505,6 +2632,12 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
     font-size: 14px;
   }
 }
+@media (max-width: 480px) {
+  .result-report-2024 .grid-regions-container-level-2 .countries-container .country {
+    font-size: 12px;
+    padding: 0.1rem;
+  }
+}
 .result-report-2024 .grid-regions-container-level-2 .countries-container .country:hover {
   background-color: #ffffff;
 }
@@ -2599,6 +2732,9 @@ body:has(.result-report-2024) .k-chart-shared-tooltip {
 }
 .result-report-2024 .legend-item {
   text-align: center;
+}
+.result-report-2024 .legend-item:not(:last-child) {
+  margin: 0 10px;
 }
 .result-report-2024 .circle {
   width: 20px;

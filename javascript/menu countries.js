@@ -9,10 +9,10 @@ var countryProfileList = JSON.parse(`{
 
 var urlBase = () => {
     currentURL = window.location.href
-    var index = currentURL.indexOf("/who-results-report-2022-2023/");
+    var index = currentURL.indexOf("/who-results-report-2022-2023");
     return currentURL.substring(0, index + "/who-results-report-2022-2023/".length);
 }
-var countryURL = country => urlBase() + "country-profile/" + country;
+var countryURL = country => urlBase() + "/country-profile/" + country;
 
 $(function () {
 
@@ -42,7 +42,7 @@ function filterCountryProfiles() {
     if (filteredList.length > 0) {
         if ((countryProfileFilter.region == '') && (countryProfileFilter.name == '')) {
             $ul.addClass('countries-empty')
-            $ul.append(`<li>Search for country in textbox</li>`);
+            /*$ul.append(`<li>Search for country in textbox</li>`);*/
         } else {
             $.each(filteredList.slice(0, 47), function (i, countryProfile) {
                 $ul.append(`

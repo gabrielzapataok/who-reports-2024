@@ -96,19 +96,19 @@ $(document).ready(function () {
                 let regionElement = $("<div></div>");
                 let regionName = regionList.find(region => region.code == regionKey).name;
                 let regionClass = regionList.find(region => region.code == regionKey).class;
-                let regionImage = $('#'+regionClass).attr('src');
+                let regionImageUrl = $('#'+regionClass).attr('src');
                 regionElement.addClass("region " + regionClass);
                 if ($(window).width() > 720) {
                     regionElement.css({
                         "left": lefts[rIndex % 3],
                         "top": tops[Math.round(rIndex / 3 - 0.5)],
-                        "background-image": "url(" + regionImage + ")",
+                        "background-image": "url(" + regionImageUrl + ")",
                     })
                 } else {
                     regionElement.css({
                         "left": lefts[rIndex],
                         "top": tops[rIndex],
-                        "background-image": "url(" + regionImage + ")",
+                        "background-image": "url(" + regionImageUrl + ")",
                     })
                 }
                 regionElement.html(`<h3 data-region-code="${regionKey}">${regionName}</h3>`);

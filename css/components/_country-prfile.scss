@@ -1,5 +1,8 @@
 .legend-item {
     text-align: center;
+    &:not(:last-child) {
+        margin: 0 10px;
+    }
 }
 .circle {
     width: 20px;

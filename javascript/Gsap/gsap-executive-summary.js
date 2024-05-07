@@ -155,3 +155,31 @@ ScrollTrigger.create({
     });
   }
 });
+
+
+
+
+// Billion 1
+ScrollTrigger.create({
+  trigger: $('.b-1 .chart-billion-bg'),
+  start: "top 100%",
+  onEnter: () => {
+    renderB1Chart()
+  }
+});
+// Billion 2
+ScrollTrigger.create({
+  trigger: $('.b-2 .chart-billion-bg'),
+  start: "top 100%",
+  onEnter: () => {
+    renderB2Chart()
+  }
+});
+// Billion 3
+ScrollTrigger.create({
+  trigger: $('.b-3 .chart-billion-bg'),
+  start: "top 100%",
+  onEnter: () => {
+    renderB3Chart()
+  }
+});

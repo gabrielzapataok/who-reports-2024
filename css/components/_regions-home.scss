@@ -91,6 +91,10 @@
             @include max(992) {
                 font-size: 14px;
             }
+            @include max(480) {
+                font-size: 12px;
+                padding: .1rem;
+            }            
         }
         .country:hover {
             background-color: #ffffff;
