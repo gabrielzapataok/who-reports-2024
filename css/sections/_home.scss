@@ -1,14 +1,13 @@
 .home-intro {
+    background: $bgBlue;
+    padding-bottom: 200px;
+    position: relative;
     small{
         @include size(16);
     }
     span{
         @include size(26);
     }
-}
-
-.home-executive-summary {
-    background: $bgBlue;
     .container {
         z-index: 1;
     }
@@ -17,6 +16,111 @@
         position: absolute;
         pointer-events: none;
         width: 100%;
+        bottom: -15%;
+    }
+}
+
+
+
+
+.b1{
+    --billion: #{$billion-1};
+}
+.b2{
+    --billion: #{$billion-2};
+}
+.b3{
+    --billion: #{$billion-3};
+}
+.b4{
+    --billion: #{$billion-4};
+}
+
+
+.grid-accordions {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+    @include min(600) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .outcome-accordion {
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .outcome-accordion-header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: var(--billion);
+        color: white;
+        .fas {
+            transition: .5s;
+        }
+    }
+    .outcome-accordion-header span {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+    .outcome-accordion-body {
+        overflow: hidden;
+        background: white;
+        transition: .5s;
+        height: 0;
+        .links {
+            border-radius: 0 0 8px 8px;
+            border: 1px solid #ccc;
+        }
+        a {
+            color: $text;
+            padding: 6px;
+            display: block;
+        }
+        a:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+        a:hover {
+           background-color: #e7e9f054;
+           color: #0093D5;
+        }
+    }
+}
+
+.grid-regions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    .title-region {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: linear-gradient(var(--region-gradient-start),var(--region-gradient-end));
+    }
+    .card-region {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
     }
 }
 

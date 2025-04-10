@@ -47,3 +47,60 @@ $billion-4: #56BC4D;
 $billion-3: #E0A345;
 $billion-2: #5D2E87;
 $billion-1: #0093D5;
+
+
+
+
+.r-est {
+    $color: #00888C;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+.r-afr {
+    $color: #661111;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+.r-amr {
+    $color: #2B487E;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+.r-sea {
+    $color: #4A2D61;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+.r-eur {
+    $color: #3C6611;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+.r-wes {
+    $color: #8C4B00;
+    --region-gradient-start: #{$color}00;
+    --region-gradient-end: #{$color};
+}
+
+
+
+.b-1{
+    --billion: #{$billion-1};
+    --billion-gradient-start: #{$billion-1};
+    --billion-gradient-end: #{$billion-1}00;
+}
+.b-2{
+    --billion: #{$billion-2};
+    --billion-gradient-start: #{$billion-2};
+    --billion-gradient-end: #{$billion-2}00;
+}
+.b-3{
+    --billion: #{$billion-3};
+    --billion-gradient-start: #{$billion-3};
+    --billion-gradient-end: #{$billion-3}00;
+}
+.b-4{
+    --billion: #{$billion-4};
+    --billion-gradient-start: #{$billion-4};
+    --billion-gradient-end: #{$billion-4}00;
+}

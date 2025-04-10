@@ -82,20 +82,20 @@
         font-weight: 700;
         @include size(22);
     }
-    .report-version {
-        background: repeating-linear-gradient(45deg, #008dc9, #41c6ff 100%);
-        color: white;
-        font-size: 13px;
-        font-weight: 600;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: .7rem 1.1rem;
-        text-align: center;
-        line-height: 160%;
-        letter-spacing: .1em;
-        border-radius:  0 8px 0 0;
-    }
+}
+.report-version {
+    background: repeating-linear-gradient(45deg, #008dc9, #41c6ff 100%);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .7rem 1.1rem;
+    text-align: center;
+    line-height: 160%;
+    letter-spacing: .1em;
+    border-radius:  0 8px 0 0;
 }
 
 
