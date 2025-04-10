@@ -187,14 +187,20 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
 .result-report-2025 q::before, .result-report-2025 q::after {
   font-size: calc(21px + (9) * (100vw - 300px) / 1300);
 }
+.result-report-2025 .table-with-scroll {
+  overflow: scroll;
+  max-height: 80vw;
+  border: 1px solid #ccc;
+}
 .result-report-2025 table {
-  font-size: 16px;
-  outline: 1px solid #ccc;
   border-spacing: inherit;
   border-collapse: collapse;
   width: 100% !important;
 }
 .result-report-2025 table td {
+  border: 1px solid #ccc;
+}
+.result-report-2025 table th {
   border: 1px solid #ccc;
 }
 .result-report-2025 th, .result-report-2025 td {
@@ -958,6 +964,58 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
   background-color: black;
   display: flex;
 }
+.result-report-2025 .table-priorization {
+  max-width: calc(100% - 40px);
+  margin: auto;
+}
+.result-report-2025 .table-priorization table th {
+  white-space: nowrap;
+}
+.result-report-2025 .table-priorization table td:nth-child(1),
+.result-report-2025 .table-priorization table td:nth-child(2) {
+  min-width: 300px;
+}
+.result-report-2025 .table-priorization table td:nth-child(3),
+.result-report-2025 .table-priorization table td:nth-child(4),
+.result-report-2025 .table-priorization table th:nth-child(3),
+.result-report-2025 .table-priorization table th:nth-child(4) {
+  background: #FEF7F7;
+}
+.result-report-2025 .table-priorization table td:nth-child(4),
+.result-report-2025 .table-priorization table td:nth-child(5),
+.result-report-2025 .table-priorization table td:nth-child(6),
+.result-report-2025 .table-priorization table th:nth-child(4),
+.result-report-2025 .table-priorization table th:nth-child(5),
+.result-report-2025 .table-priorization table th:nth-child(6) {
+  background: #F7FEF7;
+}
+.result-report-2025 .table-priorization table td:nth-child(7),
+.result-report-2025 .table-priorization table td:nth-child(8),
+.result-report-2025 .table-priorization table td:nth-child(9),
+.result-report-2025 .table-priorization table th:nth-child(7),
+.result-report-2025 .table-priorization table th:nth-child(8),
+.result-report-2025 .table-priorization table th:nth-child(9) {
+  background: #F7F6FE;
+}
+.result-report-2025 .reporting-links {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(min(316px, 100%), 1fr));
+}
+.result-report-2025 .legend-billions {
+  text-align: center;
+}
+.result-report-2025 li {
+  display: inline;
+  text-align: center;
+}
+.result-report-2025 li .quad {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  background: var(--billion);
+}
 .result-report-2025 .b-1 {
   --billion: #0093D5;
   --billion-gradient-start: #0093D529;
@@ -1046,7 +1104,8 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, #FFFFFF 50%);
   margin: -100px auto 0 auto;
 }
-.result-report-2025 .summary-looking-forward p {
+.result-report-2025 .summary-looking-forward p,
+.result-report-2025 .lessons-learned {
   border-left: 6px solid #0c2b64;
   background: #f5f5f5;
   padding: 1rem;

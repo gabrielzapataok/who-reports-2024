@@ -15,14 +15,20 @@ q::before, q::after {
 
 /* tables */
 
+.table-with-scroll {
+    overflow: scroll;
+    max-height: 80vw;
+    border: 1px solid #ccc;
+}
 table {
-    font-size: 16px;
-    outline: 1px solid #ccc;
     border-spacing: inherit;
     border-collapse: collapse;
     width: 100% !important;
 }
 table td {
+    border: 1px solid #ccc;
+}
+table th {
     border: 1px solid #ccc;
 }
 th, td {
