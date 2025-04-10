@@ -24,6 +24,7 @@ $(document).ready(function () {
     
     // Dropdown working together
     $('#menu-working-togheter .item_link').click(function () {
+        console.log("click")
         $('#menu-working-togheter').toggleClass('active')
         $('#menu-countries').removeClass('active')
         $('#menu-countries .mega-menu').removeClass('d-flex');

@@ -338,15 +338,15 @@
 
 .legend-billions {
     text-align: center;
-}
-li {
-    display: inline;
-    text-align: center;
-    .quad {
-        display: inline-block;
-        width: 1rem;
-        height: 1rem;
-        border-radius: 4px;
-        background: var(--billion);
+    li {
+        display: inline;
+        text-align: center;
+        .quad {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 4px;
+            background: var(--billion);
+        }
     }
 }

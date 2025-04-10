@@ -8,6 +8,9 @@
         @include center();
         flex-wrap: nowrap;
     }
+    .gradient {
+        background: linear-gradient(180deg, var(--billion-gradient-start), var(--billion-gradient-end));
+    }
 
     .img-country-header{
         width: 30px;

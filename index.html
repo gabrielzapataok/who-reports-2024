@@ -34,7 +34,7 @@
 
         <!-- Video -->
 
-        <header class="header-video">
+        <div class="header-video">
             <video src="./assets/The-World-Health Organization-at-75.mp4" muted autoplay loop></video>
             <div class="overlay flex flex-direction-column text-white text-center">
                 <span class="mid-term">MID TERM</span>
@@ -45,7 +45,7 @@
             <div class="report-version">
                 END OF BIENNIUM RESULTS <br> REPORT 2022 - 2023
             </div>
-        </header>
+        </div>
 
         <!-- Menú -->
 
@@ -64,24 +64,54 @@
         </section> -->
 
 
+        <!-- Menú -->
+
         <div class="menu relative">
-            <ul class="items list-style-none flex flex-wrap my-0 text-white">
-                <li>
-                    <a href="" class="item_link flex align-items-center"><i class="mr-10 fas fa-home"></i>Home</a>
+            <ul class="items list-style-none d-flex my-0 text-white px-0">
+                <div class="close-menu"><em class="fas fa-times px-20 py-20"></em></div>
+                <li><a href="./index.html" class="item_link flex align-items-center" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1BAE3350-D03C-4AE2-B7A5-FD5A9770193D" data-sf-ec-immutable=""><em class="mr-10 fas fa-home"></em>Home</a>
                 </li>
-                <li>
-                    <a class="item_link" href="">Overview</a>
+                <li><a href="./overview.html" class="item_link" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]3977D169-0CFC-4381-9931-8554C5C43D49" data-sf-ec-immutable="">Overview</a>
                 </li>
-                <li id="menu-working-togheter" class="active">
-                    <span class="item_link flex align-items-center">working togheter <i
-                            class="ml-10 fas fa-angle-down"></i></span>
+                <!-- <li id="menu-working-togheter" class="active"><span class="item_link flex align-items-center">working together <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column py-20">
+                        <div class="container">
+                            <div class="mx-auto dropdown-items">
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <li id="menu-countries" class="active"><span class="item_link flex align-items-center">Countries <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column  py-0">
+                        <div class="w-100">
+                            <div class="filters-countries py-0 d-flex flex-wrap align-items-end">
+                                <div class="py-10 mr-10">Region:
+                                    <select class="form-control form-inline" name="regionFilter" id="regionFilter">
+                                        <option value="">All</option>
+                                        <option value="AFRO">African region</option>
+                                        <option value="AMRO">Region of the americas</option>
+                                        <option value="EMRO">Eastern mediterranean region</option>
+                                        <option value="EURO">European region</option>
+                                        <option value="SEARO">South-east asia sregion</option>
+                                        <option value="WPRO">Western pacific region</option>
+                                    </select>
+                                </div>
+                                <div class="py-10 mr-10">Country:
+                                    <input class="form-control form-inline" type="text" name="countryFilter" id="countryFilter" />
+                                </div>
+                                <div style="padding: calc(0.375rem + 10px) 0;">Filter search results</div>
+                            </div>
+                            <div id="countrySelector" class="mx-auto dropdown-items"><!-- countries -->
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="">
-                    <a href="" class="item_link flex align-items-center">Countries<i
-                            class="ml-10 fas fa-angle-down"></i></a>
-                </li>
-            </ul>
+            </ul><span class="button-menu my-0 py-0 px-20 text-white"><em class="fa fa-bars" aria-hidden="true"></em></span>
         </div>
+
+
+        <script src="./javascript/menu countries.js"></script>
+        <script src="./javascript/menu.js"></script>
 
 
         <!-- Intro -->
@@ -99,7 +129,8 @@
                         increased 11 times, to more than 3.3 million.<br>A year ago, vaccines were still a distant hope;
                         now they are giving us real hope of bringing the pandemic under control. Even so, the shocking
                         disparity in the global distribution of vaccines is another painful reminder of the inequities
-                        that blight our world and lie at the root of so many of its problems.</p>
+                        that blight our world and lie at the root of so many of its problems.
+                    </p>
                     <div class="button mt-10 mb-0">Watch video</div>
                 </div>
                 <img class="arrow" src="./assets/arrow-75-anniversary.png" alt="">
@@ -146,6 +177,20 @@
                     <h2 class="text-center title-section mb-10">Working together</h2>
                     <h3 class="text-center subtitle-section mb-40">Explore the progress</h3>
                 </div>
+                <ul class="legend-billions mb-20">
+                    <li>
+                        <div class="quad b-1"></div>&nbsp;Billion 1
+                    </li>
+                    <li>
+                        <div class="quad b-2"></div>&nbsp;Billion 2
+                    </li>
+                    <li>
+                        <div class="quad b-3"></div>&nbsp;Billion 3
+                    </li>
+                    <li>
+                        <div class="quad b-4"></div>&nbsp;Billion 4
+                    </li>
+                </ul>
                 <div class="grid-accordions">
                     <div class="outcome-accordion">
                         <div class="outcome-accordion-header px-10 py-10 b1">

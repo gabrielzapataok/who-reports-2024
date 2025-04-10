@@ -1005,11 +1005,11 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
 .result-report-2025 .legend-billions {
   text-align: center;
 }
-.result-report-2025 li {
+.result-report-2025 .legend-billions li {
   display: inline;
   text-align: center;
 }
-.result-report-2025 li .quad {
+.result-report-2025 .legend-billions li .quad {
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -1830,6 +1830,9 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+.result-report-2025 .header-section .gradient {
+  background: linear-gradient(180deg, var(--billion-gradient-start), var(--billion-gradient-end));
 }
 .result-report-2025 .header-section .img-country-header {
   width: 30px;
