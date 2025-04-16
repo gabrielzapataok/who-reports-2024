@@ -1493,6 +1493,7 @@ body:has(.result-report-2025) .k-chart-shared-tooltip {
 .result-report-2025 .result-detail-preview {
   font-family: "Poppins", sans-serif;
   line-height: 150%;
+  font-size: 14px;
   color: #000;
 }
 .result-report-2025 .result-detail-preview h1, .result-report-2025 .result-detail-preview h2, .result-report-2025 .result-detail-preview h3, .result-report-2025 .result-detail-preview h4, .result-report-2025 .result-detail-preview h5, .result-report-2025 .result-detail-preview h6 {
