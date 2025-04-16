@@ -45,7 +45,7 @@
 
         <!-- Header cpuntry profile -->
 
-        <header class="header-section">
+        <div class="header-section">
             <div class="img-wrapper">
                 <img class="header-section-image" src="./assets/header-country-prodile.png" data-sf-ec-immutable="" />
             </div>
@@ -75,7 +75,7 @@
                         class="fas fa-minus hidden"></i>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!-- Modal -->
 
@@ -187,479 +187,236 @@
 
         <!-- Menú -->
 
-        <nav class="menu">
-            <ul class="items list-style-none flex flex-wrap m-0 text-white">
-                <li><a href="" class="active"><i class="fas fa-home"></i>Home</a></li>
-                <li><a href="">Overview</a></li>
-                <li><a href="">working togheter</a></li>
-                <li><a href="">Our contributions</a></li>
-                <li><a href="">Our resources</a></li>
-            </ul>
-        </nav>
-
-        <!-- Section impact story -->
-
-        <div class="bg-top-right">
-            <div class="container highlight px-0 py-70">
-                <div class="highlight-image"><img
-                        src="https://cdn-auth-cms.who.int/media/images/default-source/results-report/2022-midterm/country-stories/afghanistan/afghanistan-2.jpg?sfvrsn=554e6455_3">
-                </div>
-                <div class="highlight-content">
-                    <h2 class="title-section text-grey mb-20">Impact story</h2>
-                    <h1 class="mb-20 impact-story-title">Afghanistan influenza surveillance system stands solid</h1><a
-                        href="./CountryStory.html" class="button my-0" data-sf-ec-immutable="">Read more</a>
-                </div>
-            </div>
+        <div class="menu relative">
+            <ul class="items list-style-none d-flex my-0 text-white px-0">
+                <div class="close-menu"><em class="fas fa-times px-20 py-20"></em></div>
+                <li><a href="./index.html" class="item_link flex align-items-center" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]1BAE3350-D03C-4AE2-B7A5-FD5A9770193D" data-sf-ec-immutable=""><em class="mr-10 fas fa-home"></em>Home</a>
+                </li>
+                <li><a href="./overview.html" class="item_link" sfref="[f669d9a7-009d-4d83-ddaa-000000000002]3977D169-0CFC-4381-9931-8554C5C43D49" data-sf-ec-immutable="">Overview</a>
+                </li>
+                <!-- <li id="menu-working-togheter" class="active"><span class="item_link flex align-items-center">working together <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column py-20">
+                        <div class="container">
+                            <div class="mx-auto dropdown-items">
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                <li id="menu-countries" class="active"><span class="item_link flex align-items-center">Countries <em class="ml-10 fas fa-angle-down"></em></span>
+                    <div class="mega-menu flex-column  py-0">
+                        <div class="w-100">
+                            <div class="filters-countries py-0 d-flex flex-wrap align-items-end">
+                                <div class="py-10 mr-10">Region:
+                                    <select class="form-control form-inline" name="regionFilter" id="regionFilter">
+                                        <option value="">All</option>
+                                        <option value="AFRO">African region</option>
+                                        <option value="AMRO">Region of the americas</option>
+                                        <option value="EMRO">Eastern mediterranean region</option>
+                                        <option value="EURO">European region</option>
+                                        <option value="SEARO">South-east asia sregion</option>
+                                        <option value="WPRO">Western pacific region</option>
+                                    </select>
+                                </div>
+                                <div class="py-10 mr-10">Country:
+                                    <input class="form-control form-inline" type="text" name="countryFilter" id="countryFilter" />
+                                </div>
+                                <div style="padding: calc(0.375rem + 10px) 0;">Filter search results</div>
+                            </div>
+                            <div id="countrySelector" class="mx-auto dropdown-items"><!-- countries -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul><span class="button-menu my-0 py-0 px-20 text-white"><em class="fa fa-bars" aria-hidden="true"></em></span>
         </div>
+
+
+
+        <script src="./javascript/menu countries.js"></script>
+        <script src="./javascript/menu.js"></script>
 
         <!-- Section contribution -->
 
-        <div class="section-blue pt-40 pb-70 text-white bg-top-left">
-
-            <h2 class="title-section text-center">WHO'S CONTRIBUTION TOWARDS HEALTH OUTCOMES</h2>
-            <h3 class="subtitle-section text-center mb-20">The output scorecard</h3>
-            <div class="container">
-            <p class="text-center mb-20">An assessment of the delivery of outputs as agreed with Member States in the programme budget, by:</p>
-                <table class="text-center">
-                    <tr>
-                        <th>TECHNICAL OUTPUTS</th>
-                        <th>ENABLING OUTPUTS</th>
-                    </tr>
-                    <tr>
-                        <td>Effective delivery of technical support in countries</td>
-                        <td>Effective strategic direction and leadership</td>
-                    </tr>
-                    <tr>
-                        <td>Effective delivery of leadership in health</td>
-                        <td>Accountability</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Client service delivery</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Impactful integration of gender, equity, human rights and disability</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Delivering value for money</td>
-                    </tr>
-                </table>
-
-                
-                <div class="selector mb-40">
-                    <div class="selector-header">
-                        <div class="selector-title"></div>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-                    <div class="selector-options section-blue"></div>
-                </div>
-            </div>
-
-
-            <div class="charts-technical-dimension">
-
-                <div class="charts-contribution">
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
-                        primary health
-                        care strategies and comprehensive essential service packages
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
-                        disease-specific
-                        service coverage results
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
-                        health needs
-                        and barriers to equity across the life course
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
-                        accountability,
-                        responsiveness and empowerment of communities
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
-                    </div>
-                </div>
-
-                <b class="d-block mb-10 text-center">Technical dimensions</b>
-                <div class="d-flex mb-20 flex-wrap justify-content-center">
-                    <span class="legend-item"><span class="circle"></span>Technical support</span>
-                    <span class="legend-item"><span class="circle"></span>LeaderShip</span>
-                    <span class="legend-item"><span class="circle"></span>Global Goods / TPs</span>
-                    <span class="legend-item"><span class="circle"></span>Gender, Equity, Human Rights and
-                        Disability</span>
-                    <span class="legend-item"><span class="circle"></span>Value for money</span>
-                </div>
-            </div>
-
-
-            <div class="charts-enabled-dimensions">
-
-                <div class="charts-contribution">
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.1</b> Countries enabled to provide high-quality, people-centred health services, based on
-                        primary health
-                        care strategies and comprehensive essential service packages
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.2</b> Countries enabled to strengthen their health systems to deliver on condition- and
-                        disease-specific
-                        service coverage results
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.3</b> Countries enabled to strengthen their health systems to address population-specific
-                        health needs
-                        and barriers to equity across the life course
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.4</b> Countries’ health governance capacity strengthened for improved transparency,
-                        accountability,
-                        responsiveness and empowerment of communities
-                    </div>
-                    <div class="chart-contribution mb-10">
-                        <div class="chart">
-                            chart
-                        </div>
-                        <b>1.1.5</b> Countries enabled to strengthen their health and care workforce
-                    </div>
-                </div>
-
-                <b class="d-block mb-10 text-center">Enabled dimensions</b>
-                <div class="d-flex mb-20 flex-wrap justify-content-center">
-                    <span class="legend-item"><span class="circle"></span>Strategy and Leadership</span>
-                    <span class="legend-item"><span class="circle"></span>Accountability</span>
-                    <span class="legend-item"><span class="circle"></span>Client service delivery</span>
-                    <span class="legend-item"><span class="circle"></span>Gender, Equity, Human Rights and
-                        Disability</span>
-                    <span class="legend-item"><span class="circle"></span>Value for Money</span>
-                </div>
-            </div>
-
-
-            <div class="container">
-                <b class="d-block mb-10 text-center">Scoring scale</b>
-                <div class="d-flex mb-20 flex-wrap justify-content-center">
-                    <span class="legend-item"><span class="circle">1</span>Emergent</span>
-                    <span class="legend-item"><span class="circle">2</span>Developing</span>
-                    <span class="legend-item"><span class="circle">3</span>Satisfactory</span>
-                    <span class="legend-item"><span class="circle">4</span>Strong</span>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center w-100">
-                <a class="button">View budget details</a>
-            </div>
+        <div class="pt-40 pb-70 bg-top-left">
+            <h2 class="title-section text-center">Regional Aggregation</h2>
+            <p class="text-center mb-20">The COVID-19 pandemic has caused severe disruption to health systems, economies and societies the world over, and to much of WHO’s work to support countries advance towards the “triple billion” targets of the 13th General Programme of Work, and the health targets of the Sustainademic, WHO was able to achieve most of what we set out to do.</p>
         </div>
+
+
+        <div class="pt-40 pb-70 container-fluid">
+            <h2 class="title-section text-center">Output priorization</h2>
+            <p class="text-center mb-40">WHO contributions towards health outcomes</p>
+            <div class="output-indicator-accordion mb-20">
+                <div class="output-indicator-accordion-header px-10 py-10 b1">
+                    <span><b class="mr-10">1.1</b>Reduced number of people suffering financial hardship</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="output-indicator-accordion-body">
+                    <div class="wrapper-output-indicator">
+                        <div class="table-with-scroll table-priorization-accordion">
+                            <table>
+                                <thead class="text-center">
+                                    <tr>
+                                        <th>N°</th>
+                                        <th>Output</th>
+                                        <th>Priority level</th>
+                                        <th>Planned cost</th>
+                                        <th>Available funds</th>
+                                        <th>Utilization</th>
+                                        <th>Financing<br>% of planned<br>cost</th>
+                                        <th>Utilization<br>against this<br>planned cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.1.2</td>
+                                        <td>Countries enabled to strengthen their health and care workforce</td>
+                                        <td class="text-center"><div class="pill text-white low mx-auto">LOW</div></td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">80.56%</td>
+                                        <td class="text-center">80.56%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.1.1</td>
+                                        <td>Countries enabled to provide high-quality, people centred health services, based on primary health care strategies and comprehensive essential service packages</td>
+                                        <td class="text-center"><div class="pill text-white medium mx-auto">MEDIUM</div></td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">80.56%</td>
+                                        <td class="text-center">80.56%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.1.2</td>
+                                        <td>Countries enabled to strengthen their health and care workforce</td>
+                                        <td class="text-center"><div class="pill text-white low mx-auto">LOW</div></td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">80.56%</td>
+                                        <td class="text-center">80.56%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.1.1</td>
+                                        <td>Countries enabled to provide high-quality, people centred health services, based on primary health care strategies and comprehensive essential service packages</td>
+                                        <td class="text-center"><div class="pill text-white high mx-auto">HIGH</div></td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">$86.134.035</td>
+                                        <td class="text-center">80.56%</td>
+                                        <td class="text-center">80.56%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./javascript/accordions.js"></script>
+        </div>
+
+        
+
 
         <!-- narrative -->
-
-        <div class="text-grey section-grey pt-40 pb-70 bg-top-right">
-            <h2 class="title-section text-center mb-20">How WHO is driving impact on the ground</h2>
-            <div class="narratives section-white">
-                <div class="container-tab top">
-                    <ul class="tab">
-                        <li class="menu-item selected">Service delivery</li>
-                        <li class="menu-item">Health workforce</li>
-                        <li class="menu-item">Governance</li>
-                        <li class="menu-item">Health information systems</li>
-                        <li class="menu-item">Emergency preparedness</li>
-                        <div class="line"></div>
-                    </ul>
-                </div>
-
-                <div class="py-70 narrative">
-
-                    <!-- Overview of investment -->
-
-                    <div class="container text-grey">
-                        <h3 class="text-center title-section mb-20">Overview of investment</h3>
-                        <p class="text-center">The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May
-                            2022, revising the approved base programmes segment of the Programme budget 2022-2023 to a
-                            total of US$ 6.726 billion. By the end of the first year, the total Programme budget has a
-                            good level of financing (US$ 8.3 billion), including projections, which exceeded the total
-                            approved. The good level of financing is explained by two event-driven budget segments:
-                            emergency operations and appeals, and polio eradication, the financing for which has needed
-                            to exceed the amounts established in the Programme budget in order to keep step with
-                            operational needs. , the financing for which has needed to exceed the amounts established in
-                            the Programme budget in order to keep step with oping for which has needed to exceed the
-                            amounts established in the Programme budget in order to keep step with operational needs.
-                        </p>
+        <div class="pt-40 pb-70">
+            <h2 class="title-section text-center">Key results</h2>
+            <p class="text-center mb-40">How WHO is driving impact on the ground</p>
+            <div class="result-detail-preview">
+                <h1>Ukraine’s national health system maintains financing and service provision during times of war</h1>
+                <h3>Fortification of health services in Ukraine</h3>
+                <p>The war in Ukraine has had a devastating impact on the health system in the country, following several years of advancing important health financing reforms. Thousands of civilian war casualties, and millions of internally displaced people (IDPs) moving throughout the country, have heavily impacted the need for health services. Health facilities have also been destroyed, WHO has reported 859 attacks on healthcare facilities in Ukraine, as of March 2023 [1]. In this context, the NHSU has also faced cuts to the health budget due to an economic crisis caused by the conflict. To help manage this, the World Health Organization’s (WHO) health financing experts from the country, regional and headquarters supported initiatives and outreach at all levels of the national health service of Ukraine (NHSU). This has included high-level policy forums and trainings involving policy makers and international partners, regular support and capacity-building activities for NHSU managers and staff, and support for primary health care (PHC) service providers, allowing these frontline health practitioners to better understand their facility costs and resources. These health financing skills, at all levels of the NHSU, have proven to be a key factor in maintaining the health system in the face of adversity.</p>
+                <div class="editorial-box box-left">
+                    <figure>
+                        <img src="./assets/img-left.png" alt="descripción de la imagen">
+                        <figcaption>
+                            <cite>Creditos de la imagen</cite>
+                            <p>Epígrafe de la imagen</p>
+                        </figcaption>
+                    </figure>
+                    <div class="editorial-box-content">
+                        <h2>Addressing social isolation and loneliness</h2>
+                        <p>A new WHO advocacy brief on social isolation and loneliness among older people and the development of evidence gap maps aims to support evidence-based decision making in this area, and responds to the increasing global awareness of social isolation and loneliness following the COVID-19 pandemic. The brief is targeted at low and middle income countries, that are not sometimes perceived as being concerned, as well as high income countries as prevalence is high in both.</p>
+                        <br>
+                        <p>By adopting a systematic approach to compiling evidence, the Secretariat was able to identify a large number of interventions with potential to scale up action. Following an initial focus on older people, there has been increasing recognition that this </p>
                     </div>
-
-                    <!-- Results -->
-
-                    <div class="text-grey results mt-40 mb-70">
-                        <h2 class="text-center title-section mb-20">Results</h2>
-                        <div class="swiper">
-                            <div class="swiper-wrapper pb-40">
-                                <div class="swiper-slide">
-                                    <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
-                                            WHA75.5</div>
-                                        <div class="card-content-wrapper">
-                                            <div class="img-container">
-                                                <img src="./assets/billions3.jpg" alt="">
-                                                <div class="figcaption">
-                                                    <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
-                                                        nesciunt ipsa.</div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
-                                                resolution WHA75.5 in May 2022, revising the approved base programmes
-                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
-                                                billion. By the end of the first year, the total Programme budget has a
-                                                good level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event The Seventy-fifth World Health Assembly adopted resolution
-                                                WHA75.5 in May 2022, the approved base programmes segment of the
-                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
-                                                first year, total Programme has a good of financing (US$ 8.3 ),
-                                                including projections, which exceeded the total approved. The good level
-                                                of financing is explained two event May 2022, revising the approved base
-                                                programmes segment of the Programme budget 2022-2023 to a total of US$
-                                                6.726 billion. By the end of the first year, the total Programme has a
-                                                level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card-result">
-                                        <div class="title">Example 1-BUSOGA
-                                            The baseline survey done for the WHO/KOICA RMNCAH health systems strengthening in February 2021 which included the targeted 5 districts of Bugiri, Buyende, Iganga, Kamuli and Mayuge, showed that overall, the skills, equipment and medicines required for implementation of MCH interventions in the five districts were lacking. All the five districts of Busoga region have documented relatively poor reproductive health indicators such as low contraceptive use by married women at 31.5%, high unmet need for family planning at 36.5%, low 4th antenatal visit attendance and delivery at 66% including low childhood immunization coverage at 44.9% amongst others.
-                                            Therefore, WHO set out to improve the skills and knowledge of health workers, improve referral, infrastructure, and equipment. Currently a critical mass of health workers has been trained in various skills areas of Reproductive and Maternal health service delivery. This includes PAC-158, CEmONC- 359, BEmONC – 159, Management of Pregnancy, delivery, and post-natal care – 359, Family Planning-159 and Kangaroo Mother Care – 333 health workers. Seven ambulances are being supported for improved referral of mothers and newborns with obstetric and newborn complications. 
-                                            
-                                            The project has also targeted the vulnerable adolescents in the Region. Data available for Uganda indicates that Busoga region ranks highest regarding teenage pregnancy rates in the country. WHO supported the training of 1939 teachers in SRHR information and oriented 7256 students in life skills and SRHR information and availability of services: covering a total of over 100 schools in 5 districts in the Busoga region. Relevant IEC materials covering various SRHR topics have been procured and distributed to all these schools, learners and teachers.
-                                            
-                                            PHOTO PROPOSED -Ambulance in Busoga with a woman being transported for higher care
-                                            Cathy statement: 
-                                            “Our mothers and babies have been saved from trucks and boda bodas” -Voices of beneficiaries of WHO support in Busoga district where ambulances were supplied:
-                                              
-                                            But it isn’t just the availability of an ambulance that is making a difference. “Our health workers now know when to re-fer a patient to the next level. This has reduced delays at centres where patients would not be able to receive adequate care for their condition, 
-                                            The ambulance doesn’t simply pick patients from general hospitals to regional ones. “We pick patients from lower-level health centres and evacuate them to the facility that can handle them,” says Abel Kauzi, the 35-year-old emergency nurse working with the ambulance service team. “Most of our lower -level facilities don’t have neonatal intensive care units, so we bring a lot of babies to the hospital here,” he adds.
-                                            
-                                            LESSONS LEARNT
-                                            •	WCO local mobilisation of resources enabled achievement of planned activities
-                                            •	Being able to convince Ministry of health to adopt the WHO evidence-based norms and standards, tools and guidelines for use in their day-to-day programs, care and service delivery, has raised the profile and visibility of WHO in the country
-                                            •	Timely provision of technical guidance in emergency situations even in draft form is critical to maintain WHO’s role as a trusted and reliable source of evidence based guidance as was done in the development of the Continuity of Services during the both the COVID and Ebola responses</div>
-                                        <div class="card-content-wrapper">
-                                            <div class="img-container">
-                                                <img src="./assets/fs2.jpg" alt="">
-                                                <div class="figcaption">
-                                                    <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
-                                                        nesciunt ipsa.</div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
-                                                resolution WHA75.5 in May 2022, revising the approved base programmes
-                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
-                                                billion. By the end of the first year, the total Programme budget has a
-                                                good level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event The Seventy-fifth World Health Assembly adopted resolution
-                                                WHA75.5 in May 2022, the approved base programmes segment of the
-                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
-                                                first year, total Programme has a good of financing (US$ 8.3 ),
-                                                including projections, which exceeded the total approved. The good level
-                                                of financing is explained two event May 2022, revising the approved base
-                                                programmes segment of the Programme budget 2022-2023 to a total of US$
-                                                6.726 billion. By the end of the first year, the total Programme has a
-                                                level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
-                                            WHA75.5</div>
-                                        <div class="card-content-wrapper">
-                                            <div class="img-container">
-                                                <img src="./assets/billions4.jpg" alt="">
-                                                <div class="figcaption">
-                                                    <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
-                                                        nesciunt ipsa.</div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
-                                                resolution WHA75.5 in May 2022, revising the approved base programmes
-                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
-                                                billion. By the end of the first year, the total Programme budget has a
-                                                good level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event The Seventy-fifth World Health Assembly adopted resolution
-                                                WHA75.5 in May 2022, the approved base programmes segment of the
-                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
-                                                first year, total Programme has a good of financing (US$ 8.3 ),
-                                                including projections, which exceeded the total approved. The good level
-                                                of financing is explained two event May 2022, revising the approved base
-                                                programmes segment of the Programme budget 2022-2023 to a total of US$
-                                                6.726 billion. By the end of the first year, the total Programme has a
-                                                level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card-result">
-                                        <div class="title">The Seventy-fifth World Health Assembly adopted resolution
-                                            WHA75.5</div>
-                                        <div class="card-content-wrapper">
-                                            <div class="img-container">
-                                                <img src="./assets/billions2.jpg" alt="">
-                                                <div class="figcaption">
-                                                    <div class="author"><b>Author: </b>WHO</div>
-                                                    <div class="epigraph"><b>Epigraph:</b> Lorem ipsum dolor sit, amet
-                                                        consectetur adipisicing elit. Fuga voluptatum molestias, quae
-                                                        nesciunt ipsa.</div>
-                                                </div>
-                                            </div>
-                                            <p class="card-text">The Seventy-fifth World Health Assembly adopted
-                                                resolution WHA75.5 in May 2022, revising the approved base programmes
-                                                segment of the Programme budget 2022-2023 to a total of US$ 6.726
-                                                billion. By the end of the first year, the total Programme budget has a
-                                                good level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event The Seventy-fifth World Health Assembly adopted resolution
-                                                WHA75.5 in May 2022, the approved base programmes segment of the
-                                                Programme budget 2022-2023 to a of US$ 6.726 billion. By the end of the
-                                                first year, total Programme has a good of financing (US$ 8.3 ),
-                                                including projections, which exceeded the total approved. The good level
-                                                of financing is explained two event May 2022, revising the approved base
-                                                programmes segment of the Programme budget 2022-2023 to a total of US$
-                                                6.726 billion. By the end of the first year, the total Programme has a
-                                                level of financing (US$ 8.3 billion), including projections, which
-                                                exceeded the total approved. The good level of financing is explained by
-                                                two event</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                    </div>
-
-                    <!-- Looking Forward -->
-
-                    <div class="container text-grey">
-                        <h2 class=" text-center title-section mb-20">Looking forward</h2>
-                        <ul class="">
-                            <li>
-                                <p>The Seventy-fifth World Health Assembly adopted resolution WHA75.5 in May 2022,
-                                    revising the approved base programmes </p>
-                            </li>
-                            <li>
-                                <p>Programme budget 2022-2023 to a total of US$ 6.726 billion. </p>
-                            </li>
-                            <li>
-                                <p>By the end of the first year, the total Programme budget has a good level of
-                                    financing (US$ 8.3 billion). </p>
-                            </li>
-                            <li>
-                                <p>The good level of financing is explained by two event-driven budget segments:
-                                    emergency operations and appeals, and polio eradication,</p>
-                            </li>
-                            <li>
-                                <p>The financing for which has needed to exceed the amounts established in the Programme
-                                    budget in order to keep step.</p>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
-
-                <div class="container-tab bottom">
-                    <ul class="tab">
-                        <li class="menu-item selected">Service delivery</li>
-                        <li class="menu-item">Health workforce</li>
-                        <li class="menu-item">Governance</li>
-                        <li class="menu-item">Health information systems</li>
-                        <li class="menu-item">Emergency preparedness</li>
-                        <div class="line"></div>
-                    </ul>
+                <h2>How did Ukraine, with the support of the WHO secretariat, achieve this?</h2>
+                <p>WHO's support to the NHSU has been extensive in 2022, covering policies, operational implementation, and on-the-ground activities performed by health care providers. Soon after the invasion of Ukraine by the Russian Federation in February 2022, forums were organised with Ukrainian policy makers to address specific questions regarding how to adapt the NHSU to the context of the war. Regular briefings were provided by WHO Ukraine to support contingent decision making by managers and administrators within the health system. In addition, family doctors and other medical centres were equipped with health financing skills and knowledge to help them manage their practices amidst disruption.</p>
+                <div class="editorial-box box-right">
+                    <figure>
+                        <img src="./assets/img-left.png" alt="descripción de la imagen">
+                        <figcaption>
+                            <cite>Creditos de la imagen</cite>
+                            <p>Epígrafe de la imagen</p>
+                        </figcaption>
+                    </figure>
+                    <div class="editorial-box-content">
+                        <h2>Addressing social isolation and loneliness</h2>
+                        <p>A new WHO advocacy brief on social isolation and loneliness among older people and the development of evidence gap maps aims to support evidence-based decision making in this area, and responds to the increasing global awareness of social isolation and loneliness following the COVID-19 pandemic. The brief is targeted at low and middle income countries, that are not sometimes perceived as being concerned, as well as high income countries as prevalence is high in both.</p>
+                        <br>
+                        <p>By adopting a systematic approach to compiling evidence, the Secretariat was able to identify a large number of interventions with potential to scale up action. Following an initial focus on older people, there has been increasing recognition that this </p>
+                    </div>
                 </div>
-
+                <p>Specific health financing policy questions facing the NHSU were addressed across a range of WHO reports, backed by face-to-face engagement with NHSU personnel. These included how to update the NHSU contracting and payment system, how to adapt strategic purchasing of medical services, and how to maintain access to medicines. In published reports, WHO Ukraine recommended for partially resuming a case-based payment system, in which patients using health services across different oblasts could be better identified, with the funding made available according to health needs [2]. On strategic purchasing, WHO Ukraine argued that health financing strategies can stimulate new service models, such as the mental health mobile teams established in 2021. These community-based mental health teams provide services in across all oblasts. WHO Ukraine also published a report in 2022 on disruptions to access to medicines in Ukraine, for the period February–June, making key policy recommendations [3]. On a broader scale, WHO country and regional office  elaborated the principles to guide health systems recovery for Ukraine to feed into the policy forums with the national authorities, convening key partners such as the World Bank, EU and USAID for their insights. These actions further led to a separate joint paper on priorities for health system recovery in Ukraine, further elaborating the vision and plans for early recovery efforts.</p>
+                <br>
+                <p>NHSU operations have also been supported by WHO’s health financing teams, by engaging NHSU managers, administrators and decision makers in weekly calls and knowledge exchanges. WHO Ukraine has convened these ‘fika’ meetings since March 2022, named after the Swedish tradition of coming together over coffee during work hours. These sessions have provided a forum for feedback on the implementation of the NHSU’s goals, as well as for policy reflection. Topics covered include the provision of rehabilitation and mental health services in emergencies, the practicalities around contracting health care providers, and health financing monitoring and evaluation systems, as they currently operate in Ukraine, as well as within other health institutions across Europe.</p>
+                <br>
+                <ul>
+                    <li>World report on social determinants of health equity and related monitoring framework; </li>
+                    <li>Global status report on road safety 2023; </li>
+                    <li>parenting interventions to prevent maltreatment and enhance parent–child relationships with children aged 0–17 years; </li>
+                    <li>guidance on intergenerational interventions to prevent and reduce the impact of ageism; </li>
+                    <li>guidance for developing age-friendly cities and community programmes; </li>
+                    <li>strategic guide for urban health and related policy briefs; and,</li>
+                    <li>the capacity development programme for urban health. </li>
+                </ul>
+                <br>
+                <p>These meetings between the NHSU and WHO teams also involved international partner organizations, along with colleagues from neighbouring countries such as Estonia, Lithuania, Moldova, Poland, Slovakia, and the Czech Republic. The World Bank and USAID health financing experts have also taken part. The forums therefore ensure that NHSU administrators and managers are in regular contact with experts implementing the best practices from around the world. The policy options are discussed with NHSU personnel, along with colleagues from the Ministries of Health and of Finance, at health financing training events. For example, WHO Ukraine conducted a capacity-building camp in August 2022 for more than 30 participants from these bodies [4].</p>
+                <q>Holding these meetings with international partners is a sign that our work is ongoing, and we have felt supported in the process.</q>
+                <div class="editorial-box box-top">
+                    <figure>
+                        <img src="./assets/img-left.png" alt="descripción de la imagen">
+                        <figcaption>
+                            <cite>Creditos de la imagen</cite>
+                            <p>Epígrafe de la imagen</p>
+                        </figcaption>
+                    </figure>
+                    <div class="editorial-box-content">
+                        <h2>Addressing social isolation and loneliness</h2>
+                        <p>A new WHO advocacy brief on social isolation and loneliness among older people and the development of evidence gap maps aims to support evidence-based decision making in this area, and responds to the increasing global awareness of social isolation and loneliness following the COVID-19 pandemic. The brief is targeted at low and middle income countries, that are not sometimes perceived as being concerned, as well as high income countries as prevalence is high in both.</p>
+                        <br>
+                        <p>By adopting a systematic approach to compiling evidence, the Secretariat was able to identify a large number of interventions with potential to scale up action. Following an initial focus on older people, there has been increasing recognition that this </p>
+                    </div>
+                </div>
+                <p>WHO’s health financing team also acted as a reliable partner and consultant for preparation and development of Ukraine’s Programme of Medical Guarantees (PMG) for 2023. This is the programme through which Ukrainians access free and subsidized medical care.  On-the-ground NHSU health care providers have also received support from WHO technical teams to help build their health financing skills and knowledge. The PHC costing study provided training in health financing for PHC service providers [5]. The programme thereby helps to safeguard free access to PHC in Ukraine, by ensuring medical facilities are better able to optimise the resources available to them. This study is part of a broader effort to provide accurate data to the NHSU, to inform the development of the PHC payment system and to ensure that all the necessary costs of delivering PHC services are adequately covered in the benefits packages designed in the future. Following a request from the NHSU, and in cooperation with WHO Ukraine, up to 100 health service providers have agreed to share their cost data. The findings will help the NHSU to make necessary adjustments, and the recommendations will improve the national payment system to strengthen healthcare delivery in Ukraine. In addition to the PHC costing study, WHO Ukraine is preparing several case studies on recovery of small-to-medium sized health care facilities to contribute to the recovery efforts.</p>
+                <br>
+                <q>Compiling the cost data gave me a full picture of my medical practice’s financial health.</q>
+                <br>
+                <p>In these ways, WHO teams across country, regional and headquarter levels, have employed a coordinated and multipronged approach to addressing the challenges resulting from the outbreak of war. This work has engaged all levels of the system and has contributed to tangible improvements in 2022, despite the devastating impact of the war. A comparison of two Health Needs Assessments (HNAs), conducted in September and December 2022, showed a slight improvement in access to PHC [6]. However, the reports highlight differences between IDPs and the resident populations and show a slight improvement in access to medicines, but the cost of medicines and medical services remains a key barrier in access to health care. Improvements to the PMG, meanwhile, include a new mental health service package and an expected new rehabilitation package in 2023. However, the main achievement of the NHSU in 2022 has been maintaining the system in the context of the war.</p>
+    
             </div>
         </div>
 
-        <!-- Budget details tickers -->
 
-        <div class="section-blue pb-70 pt-40 bg-top-left">
-            <div class="container relative text-white text-center">
-                <h1 class="h2 title-section pb-20">BUDGET DETAILS</h1>
-                <div class="tickers pt-20 flex justify-content-evenly flex-wrap">
-                    <div class="ticker flex flex-direction-column ticker-approved-programme">
-                        <span class="ticker-number">100</span>
-                        <b>USD Million</b>
-                        <p>APPROVED PROGRAMME <br> BUDGET</p>
-                    </div>
-                    <div class="ticker flex flex-direction-column ticker-available-funds">
-                        <span class="ticker-number">54</span>
-                        <b>USD Million</b>
-                        <p>Available funds</p>
-                    </div>
-                    <div class="ticker flex flex-direction-column ticker-implementation">
-                        <span class="ticker-number">1000</span>
-                        <b>USD Million</b>
-                        <p>Implementation</p>
-                    </div>
-                </div>
-                <button class="button">View budget Details</button>
+
+        <!-- Lessons learned -->
+
+        <div class="pt-70">
+            <div>
+                <h2 class="text-center title-section mb-10">Lessons learned</h2>
             </div>
-        </div>
-
-        <!-- Indicator coming soon! -->
-
-        <div class="pb-70 pt-40 bg-bottom-right">
-            <div class="container text-center">
-                <h1 class="title-section mb-20">INDICATORS</h1>
-                <div class="d-flex align-items-center justify-content-center"
-                    style="background: url(./assets/bgcs.png) 270px center no-repeat; height: 300px">
-                    <h1 class="text-center mb-20 text-center text-grey my-0 w-100" style="font-size: 100px;">COMING SOON
-                    </h1>
+            <div class="container">    
+                <div class="lessons-learned">
+                    More than 50 countries transitioned crucial infrastructure from reliance on resources from the Global Polio Eradication Initiative, integrating their polio assets, tools and knowledge to sustain critical functions related to immunization, disease surveillance and emergency response. The 37 countries that have completed the transition in the African Region remain polio-free. Polio networks, which in the Eastern Mediterranean Region have been repurposed to reach high-risk and hard-to reach populations with a broader package of health services, have responded
+                </div>
+                <div class="lessons-learned">
+                    More than 50 countries transitioned crucial infrastructure from reliance on resources from the Global Polio Eradication Initiative, integrating their polio assets, tools and knowledge to sustain critical functions related to immunization, disease surveillance and emergency response. The 37 countries that have completed the transition in the African Region remain polio-free. Polio networks, which in the Eastern Mediterranean Region have been repurposed to reach high-risk and hard-to reach populations with a broader package of health services, have responded
+                </div>
+                <div class="lessons-learned">
+                    More than 50 countries transitioned crucial infrastructure from reliance on resources from the Global Polio Eradication Initiative, integrating their polio assets, tools and knowledge to sustain critical functions related to immunization, disease surveillance and emergency response. The 37 countries that have completed the transition in the African Region remain polio-free. Polio networks, which in the Eastern Mediterranean Region have been repurposed to reach high-risk and hard-to reach populations with a broader package of health services, have responded
                 </div>
             </div>
         </div>

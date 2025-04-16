@@ -109,7 +109,9 @@ $(document).ready(function () {
             }
         },
         chartArea: {
-            background: "#ffffff"
+            background: "#ffffff",
+            // width: 300,   
+            height: 300,
         },
         seriesDefaults: {
             type: "line",
